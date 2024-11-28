@@ -1,0 +1,66 @@
+INFO:logger:
+---------------------
+
+
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.18.0.3:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+INFO:logger:
+---------------------
+
+
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 125-393-725
+INFO:werkzeug:172.18.0.1 - - [11/Nov/2024 23:14:47] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [11/Nov/2024 23:14:47] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:172.18.0.1 - - [11/Nov/2024 23:14:47] "[33mGET /static/js/script.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:172.18.0.1 - - [11/Nov/2024 23:14:47] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:172.18.0.1 - - [11/Nov/2024 23:14:52] "GET /part1.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [11/Nov/2024 23:14:52] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:172.18.0.1 - - [11/Nov/2024 23:14:52] "[33mGET /static/js/script.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:172.18.0.1 - - [11/Nov/2024 23:14:54] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [11/Nov/2024 23:14:54] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:172.18.0.1 - - [11/Nov/2024 23:14:54] "[33mGET /static/js/script.js HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:logger:
+---------------------
+
+
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 125-393-725
+INFO:logger:
+---------------------
+
+
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.18.0.3:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+INFO:logger:
+---------------------
+
+
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 125-393-725
+INFO:werkzeug:172.18.0.1 - - [11/Nov/2024 23:21:35] "GET /part1.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [11/Nov/2024 23:21:36] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [11/Nov/2024 23:21:36] "GET /static/js/script.js HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [11/Nov/2024 23:21:41] "GET /part2.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [11/Nov/2024 23:21:41] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [11/Nov/2024 23:21:41] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [11/Nov/2024 23:21:48] "[33mGET /index HTTP/1.1[0m" 404 -
+INFO:werkzeug:172.18.0.1 - - [11/Nov/2024 23:21:52] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [11/Nov/2024 23:21:52] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [11/Nov/2024 23:21:52] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [11/Nov/2024 23:21:55] "GET /part3.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [11/Nov/2024 23:21:55] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [11/Nov/2024 23:21:55] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [11/Nov/2024 23:22:10] "GET /part1.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [11/Nov/2024 23:22:10] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [11/Nov/2024 23:22:10] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -

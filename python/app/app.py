@@ -5,7 +5,7 @@ from flask import Flask, render_template, g, request, redirect, url_for,  make_r
 import logging, psycopg2
 
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='templates/static/')
 
 
 
