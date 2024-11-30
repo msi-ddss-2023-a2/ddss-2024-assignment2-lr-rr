@@ -4,7 +4,8 @@
 from flask import Flask, render_template, g, request, redirect, url_for,  make_response
 import logging, psycopg2
 from register.routes import register_html, register
-
+from part1.routesv import part1_vulnerable
+from part1.routesc import part1_correct
 
 
 app = Flask(__name__, static_folder='templates/static/')
@@ -34,35 +35,12 @@ def login():
 
 
 @app.route("/part1_vulnerable", methods=['GET', 'POST'])
-def part1_vulnerable():
-    logger.info("---- part1_vulnerable ----")
-
-    if request.method == 'GET':
-        password = request.args.get('v_password') 
-        username = request.args.get('v_username') 
-        remember = request.args.get('v_remember') 
-    else:
-        password = request.form['v_password']
-        username = request.form['v_username']
-        remember = request.form['v_remember']
-        
-    
-
-    logger.info("v_password  -> " + password);
-    logger.info("v_username  -> " + username);
-    logger.info("v_remember  -> " + remember);
-
-
-    return "/part1_vulnerable "
-
+def part1_vulnerable_app():
+    return part1_vulnerable()
 
 @app.route("/part1_correct", methods=['GET', 'POST'])
-def part1_correct():
-    
-
-
-    return "/part1_correct"
-
+def part1_correct_app():
+    return part1_correct()
 
 
 @app.route("/part2.html", methods=['GET'])
