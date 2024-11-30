@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Register</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="static/css/style.css" />
+    <script type="text/javascript">
+      {% if message == 'The user exist in the database' %}
+          alert('The user exist in the database');
+      {% endif %}
+  </script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Design and Development of Secure Software</h1>
+      <h2>Practical Assignment #2 - Register</h2>
+      <br />
+
+      <!-- Vulnerable Form -->
+      <form action="/register" class="form-container vulnerable-form">
+        <table class="form-table">
+          <thead>
+            <tr>
+              <th colspan="2"><b>Register</b></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><label>Username</label></td>
+              <td>
+                <input
+                  type="text"
+                  placeholder="Enter Username"
+                  name="v_username"
+                  required
+                />
+              </td>
+            </tr>
+            <tr>
+              <td><label>Password</label></td>
+              <td>
+                <input
+                  type="password"
+                  placeholder="Enter Password"
+                  name="v_password"
+                  required
+                />
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2" align="right">
+                <button type="submit">Login</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+    </div>
+    <script src="static/js/script.js"></script>
+  </body>
+</html>

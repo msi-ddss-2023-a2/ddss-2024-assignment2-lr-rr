@@ -3,6 +3,8 @@
 
 from flask import Flask, render_template, g, request, redirect, url_for,  make_response
 import logging, psycopg2
+from register.routes import register_html, register
+
 
 
 app = Flask(__name__, static_folder='templates/static/')
@@ -14,6 +16,14 @@ app = Flask(__name__, static_folder='templates/static/')
 def home():
     return render_template("index.html");
 
+# Register routes for registration
+@app.route("/register.html")
+def register_page():
+    return register_html()
+
+@app.route("/register", methods=["POST", "GET"])
+def register_action():
+    return register()
 
 
 @app.route("/part1.html", methods=['GET'])
