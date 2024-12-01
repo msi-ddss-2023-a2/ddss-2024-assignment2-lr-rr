@@ -11,6 +11,7 @@ def db_connection():
                 database = "ddss-database-assignment-2")
     return conn
 
+
 def part1_vulnerable():
     if request.method == 'GET':
         password = request.args.get('v_password') 

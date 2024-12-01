@@ -13,6 +13,22 @@ def db_connection():
                 database = "ddss-database-assignment-2")
     return conn
 
+def sanitize_input(user_input):
+    if user_input.find("eval") == -1:
+        return -1
+    elif user_input.find("exec") == -1:
+        return -1
+    elif user_input.find("execfile") == -1:
+        return -1
+    elif user_input.find("input")  == -1:
+        return -1
+    elif user_input.find("compile")  == -1:
+        return -1
+    elif user_input.find("open")  == -1:
+        return -1
+    else:
+        return 0
+
 # Route for handling the registration process
 def register():
    
@@ -23,27 +39,27 @@ def register():
     else:
         password = request.form['v_password']
         username = request.form['v_username']
-    
+    #Verificar se o utilizador ou password nao tem codigo la pelo meio
+    verif_user = sanitize_input(username)
+    if verif_user == -1:
+        message = "Username not permitted"
+        return render_template("register.html",message=message)
+    verif_user = sanitize_input(username)
+    if verif_password == -1:
+        message = "Password not permitted"
+        return render_template("register.html",message=message)
     #Verificar se o utilizador existe        
     conn = db_connection()
     conn.autocommit = True
     cursor = conn.cursor()  
-    sql = "SELECT username,password FROM users where username = '" + username + "';" 
-    cursor.execute(sql) 
+    query = "SELECT username,password,salt FROM users WHERE username = %s"
+    cursor.execute(query, (username,)) 
     results = cursor.fetchall() 
     conn.commit()
     conn.close()
     if results:
         message = "The user exist in the database" 
         return render_template("register.html", message=message)
-    conn = db_connection()
-    conn.autocommit = True
-    cursor = conn.cursor()  
-    sql = "SELECT username,password FROM users where username = '" + username + "';" 
-    cursor.execute(sql) 
-    results = cursor.fetchall() 
-    conn.commit()
-    conn.close()
     
     #Criar o utilizador
     salt = os.urandom(64)
@@ -53,9 +69,11 @@ def register():
     salted_s = b64encode(salt).decode('utf-8')
     conn = db_connection()
     conn.autocommit = True
-    cursor = conn.cursor()  
-    sql = "INSERT INTO users (username, password, salt) VALUES ('" + username + "','" + hash_password + "','" + salted_s + "');" 
-    cursor.execute(sql)  
+    cursor = conn.cursor()
+    sql = """ INSERT INTO users
+                       (username, password, salt) VALUES (%s,%s,%s)"""
+    tuple1 = (username,hash_password, salted_s)
+    cursor.execute(sql, tuple1)  
     conn.commit()
     conn.close()
     return render_template("register.html")

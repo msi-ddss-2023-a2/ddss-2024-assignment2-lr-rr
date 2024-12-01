@@ -8,6 +8,10 @@
     <script type="text/javascript">
       {% if message == 'The user exist in the database' %}
           alert('The user exist in the database');
+      {% elif message == 'Username not permitted' %}
+          alert('Username not permitted');
+      {% elif message == 'Password not permitted' %}
+          alert('Password not permitted')
       {% endif %}
   </script>
   </head>
