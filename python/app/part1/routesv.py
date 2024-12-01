@@ -1,5 +1,5 @@
 
-from flask import Flask, render_template, g, request, redirect, url_for,  make_response
+from flask import Flask, render_template, g, request, redirect, url_for, session, make_response
 import logging, psycopg2
 from register.routes import register_html, register
 import base64, hashlib, os
@@ -10,6 +10,7 @@ def db_connection():
                 port = "5432",
                 database = "ddss-database-assignment-2")
     return conn
+
 
 
 def part1_vulnerable():
@@ -41,6 +42,11 @@ def part1_vulnerable():
     hash_password = hash_object.hexdigest()
     if password_d == hash_password:
         message = "Sucess"
+        if remember == "on":
+            session.permanent = True
+        else:
+            session.permanent = False
+        session['username'] = username
         return render_template("part1.html",message=message)
     else:
         return render_template("part1.html", message=message)

@@ -1,7 +1,8 @@
-from flask import Flask, render_template, g, request, redirect, url_for,  make_response
+from flask import Flask, render_template, g, request, redirect, url_for, session, make_response, app
 import logging, psycopg2
 from register.routes import register_html, register
 import base64, hashlib, os
+import datetime
 def db_connection():
     conn = psycopg2.connect(user = "ddss-database-assignment-2",
                 password = "ddss-database-assignment-2",
@@ -10,19 +11,19 @@ def db_connection():
                 database = "ddss-database-assignment-2")
     return conn
 def sanitize_input(user_input):
-    if user_input.find("eval") == -1:
+    if user_input.find("eval") != -1:
         return -1
-    elif user_input.find("exec") == -1:
+    elif user_input.find("exec") != -1:
         return -1
-    elif user_input.find("execfile") == -1:
+    elif user_input.find("execfile") != -1:
         return -1
-    elif user_input.find("input")  == -1:
+    elif user_input.find("input")  != -1:
         return -1
-    elif user_input.find("compile")  == -1:
+    elif user_input.find("compile")  != -1:
         return -1
-    elif user_input.find("open")  == -1:
+    elif user_input.find("open")  != -1:
         return -1
-    elif user_input.find("os.system")  == -1:
+    elif user_input.find("os.system")  != -1:
         return -1
     else:
         return 0
@@ -43,7 +44,7 @@ def part1_correct():
     if verif_user == -1:
         message = "Username not permitted"
         return render_template("part1.html",message=message)
-    verif_user = sanitize_input(username)
+    verif_password = sanitize_input(password)
     if verif_password == -1:
         message = "Password not permitted"
         return render_template("part1.html",message=message)
@@ -67,6 +68,11 @@ def part1_correct():
     hash_password = hash_object.hexdigest()
     if password_d == hash_password:
         message = "Sucess"
+        if remember == "on":
+            session.permanent = True
+        else:
+            session.permanent = False
+        session['username'] = username
         return render_template("part1.html",message=message)
     else:
         return render_template("part1.html", message=message)

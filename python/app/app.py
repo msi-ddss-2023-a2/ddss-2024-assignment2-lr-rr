@@ -1,21 +1,21 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from flask import Flask, render_template, g, request, redirect, url_for,  make_response
+from flask import Flask, render_template, g, request, redirect, url_for, session, make_response
 import logging, psycopg2
 from register.routes import register_html, register
 from part1.routesv import part1_vulnerable
+from part1.deletesession import delete_session
 from part1.routesc import part1_correct
-
+from datetime import timedelta, datetime
 
 app = Flask(__name__, static_folder='templates/static/')
 
 
 
-
 @app.route("/")
 def home():
-    return render_template("index.html");
+    return render_template("index.html")
 
 # Register routes for registration
 @app.route("/register.html")
@@ -29,8 +29,6 @@ def register_action():
 
 @app.route("/part1.html", methods=['GET'])
 def login():
-
-
     return render_template("part1.html");
 
 
@@ -40,8 +38,12 @@ def part1_vulnerable_app():
 
 @app.route("/part1_correct", methods=['GET', 'POST'])
 def part1_correct_app():
+    
     return part1_correct()
 
+@app.route('/logout')
+def delete_session_app():
+    return delete_session()
 
 @app.route("/part2.html", methods=['GET'])
 def part2():
@@ -155,7 +157,7 @@ if __name__ == "__main__":
     logger.setLevel(logging.DEBUG)
     ch = logging.StreamHandler()
     ch.setLevel(logging.DEBUG)
-
+     
     # create formatter
     formatter = logging.Formatter('%(asctime)s [%(levelname)s] %(name)s:  %(message)s')
 
@@ -166,7 +168,11 @@ if __name__ == "__main__":
     logger.addHandler(ch)
 
     logger.info("\n---------------------\n\n")
-
+    
+    ####################################
+    #TODO:Falar com o Rui sobre isto
+    app.secret_key = 'super secret key'
+    ####################################
     app.run(host="0.0.0.0", debug=True, threaded=True)
 
 

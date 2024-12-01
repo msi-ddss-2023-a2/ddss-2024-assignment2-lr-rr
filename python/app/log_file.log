@@ -13,73 +13,7 @@ INFO:logger:
 
 
 WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 125-393-725
-INFO:werkzeug:172.18.0.1 - - [11/Nov/2024 23:14:47] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [11/Nov/2024 23:14:47] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
-INFO:werkzeug:172.18.0.1 - - [11/Nov/2024 23:14:47] "[33mGET /static/js/script.js HTTP/1.1[0m" 404 -
-INFO:werkzeug:172.18.0.1 - - [11/Nov/2024 23:14:47] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug:172.18.0.1 - - [11/Nov/2024 23:14:52] "GET /part1.html HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [11/Nov/2024 23:14:52] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
-INFO:werkzeug:172.18.0.1 - - [11/Nov/2024 23:14:52] "[33mGET /static/js/script.js HTTP/1.1[0m" 404 -
-INFO:werkzeug:172.18.0.1 - - [11/Nov/2024 23:14:54] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [11/Nov/2024 23:14:54] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
-INFO:werkzeug:172.18.0.1 - - [11/Nov/2024 23:14:54] "[33mGET /static/js/script.js HTTP/1.1[0m" 404 -
-INFO:werkzeug: * Detected change in '/app/app.py', reloading
-INFO:werkzeug: * Restarting with stat
-INFO:logger:
----------------------
-
-
-WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 125-393-725
-INFO:logger:
----------------------
-
-
-INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://172.18.0.3:5000
-INFO:werkzeug:[33mPress CTRL+C to quit[0m
-INFO:werkzeug: * Restarting with stat
-INFO:logger:
----------------------
-
-
-WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 125-393-725
-INFO:werkzeug:172.18.0.1 - - [11/Nov/2024 23:21:35] "GET /part1.html HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [11/Nov/2024 23:21:36] "GET /static/css/style.css HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [11/Nov/2024 23:21:36] "GET /static/js/script.js HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [11/Nov/2024 23:21:41] "GET /part2.html HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [11/Nov/2024 23:21:41] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [11/Nov/2024 23:21:41] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [11/Nov/2024 23:21:48] "[33mGET /index HTTP/1.1[0m" 404 -
-INFO:werkzeug:172.18.0.1 - - [11/Nov/2024 23:21:52] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [11/Nov/2024 23:21:52] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [11/Nov/2024 23:21:52] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [11/Nov/2024 23:21:55] "GET /part3.html HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [11/Nov/2024 23:21:55] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [11/Nov/2024 23:21:55] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [11/Nov/2024 23:22:10] "GET /part1.html HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [11/Nov/2024 23:22:10] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [11/Nov/2024 23:22:10] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:logger:
----------------------
-
-
-INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://172.18.0.3:5000
-INFO:werkzeug:[33mPress CTRL+C to quit[0m
-INFO:werkzeug: * Restarting with stat
-INFO:logger:
----------------------
-
-
-WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 168-219-236
+INFO:werkzeug: * Debugger PIN: 102-999-863
 INFO:werkzeug: * Detected change in '/app/app.py', reloading
 INFO:werkzeug: * Restarting with stat
 INFO:logger:
@@ -97,128 +31,32 @@ INFO:logger:
 
 
 WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 168-219-236
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:19:28] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:19:28] "GET /static/css/style.css HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:19:28] "GET /static/js/script.js HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:20:13] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:20:13] "GET /static/js/script.js HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:20:13] "GET /static/css/style.css HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:20:13] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:20:15] "[35m[1mGET /register.html HTTP/1.1[0m" 500 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:20:15] "GET /register.html?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:20:15] "GET /register.html?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:20:15] "GET /register.html?__debugger__=yes&cmd=resource&f=console.png&s=SbGINihSOUQWljXPGM4h HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:20:15] "GET /register.html?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
-INFO:werkzeug: * Detected change in '/app/register/routes.py', reloading
+INFO:werkzeug: * Debugger PIN: 102-999-863
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 15:39:21] "[35m[1mGET /logout HTTP/1.1[0m" 500 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 15:39:21] "[36mGET /logout?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 15:39:21] "GET /logout?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 15:39:21] "GET /logout?__debugger__=yes&cmd=resource&f=console.png&s=rIqWeaOqM3Nu62qy4EgD HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
 INFO:werkzeug: * Restarting with stat
 INFO:logger:
 ---------------------
 
 
 WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 168-219-236
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:20:57] "GET /register.html HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:20:57] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:20:57] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:21:04] "GET /register?v_username=lreis&v_password=1234 HTTP/1.1" 200 -
-INFO:werkzeug: * Detected change in '/app/register/routes.py', reloading
+INFO:werkzeug: * Debugger PIN: 102-999-863
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 15:39:42] "GET /logout HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 15:39:42] "GET /favicon.ico HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
 INFO:werkzeug: * Restarting with stat
 INFO:logger:
 ---------------------
 
 
 WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 168-219-236
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:27:52] "[35m[1mGET /register?v_username=lreis&v_password=1234 HTTP/1.1[0m" 500 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:27:52] "GET /register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:27:52] "GET /register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:27:52] "GET /register?__debugger__=yes&cmd=resource&f=console.png&s=OTrxOPKK1tqxXrzEcbwW HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:27:52] "GET /register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
-INFO:werkzeug: * Detected change in '/app/register/routes.py', reloading
-INFO:werkzeug: * Restarting with stat
-INFO:logger:
----------------------
-
-
-WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 168-219-236
-INFO:werkzeug: * Detected change in '/app/register/routes.py', reloading
-INFO:werkzeug: * Restarting with stat
-INFO:logger:
----------------------
-
-
-WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 168-219-236
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:29:15] "GET /register.html HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:29:16] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:29:16] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:29:19] "GET /register?v_username=lreis&v_password=1234 HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:29:26] "GET /register?v_username=lreis&v_password=12345 HTTP/1.1" 200 -
-INFO:werkzeug: * Detected change in '/app/register/routes.py', reloading
-INFO:werkzeug: * Restarting with stat
-INFO:logger:
----------------------
-
-
-WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 168-219-236
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:33:43] "GET /register.html HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:33:43] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:33:43] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:33:47] "[35m[1mGET /register?v_username=lreis&v_password=1234 HTTP/1.1[0m" 500 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:33:47] "[36mGET /register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:33:47] "[36mGET /register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:33:47] "GET /register?__debugger__=yes&cmd=resource&f=console.png&s=RRT9Yy4wbaPRJSWIYowt HTTP/1.1" 200 -
-INFO:werkzeug: * Detected change in '/app/register/routes.py', reloading
-INFO:werkzeug: * Restarting with stat
-INFO:logger:
----------------------
-
-
-WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 168-219-236
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:34:14] "GET /register?v_username=lreis&v_password=1234 HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:34:27] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:34:27] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:34:27] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:34:29] "GET /register.html HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:34:29] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:34:29] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:34:33] "GET /register?v_username=lreis&v_password=1234 HTTP/1.1" 200 -
-INFO:werkzeug: * Detected change in '/app/register/routes.py', reloading
-INFO:werkzeug: * Restarting with stat
-INFO:logger:
----------------------
-
-
-WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 168-219-236
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:37:29] "[35m[1mGET /register HTTP/1.1[0m" 500 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:37:29] "[36mGET /register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:37:29] "[36mGET /register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:37:29] "GET /register?__debugger__=yes&cmd=resource&f=console.png&s=KQRr6P8fa1us4Nkcbzcn HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:37:43] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:37:43] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:37:43] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:37:44] "GET /register.html HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:37:44] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:37:44] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:37:48] "GET /register?v_username=lreis&v_password=1234 HTTP/1.1" 200 -
-INFO:werkzeug: * Detected change in '/app/register/routes.py', reloading
-INFO:werkzeug: * Restarting with stat
-INFO:logger:
----------------------
-
-
-WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 168-219-236
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:40:34] "GET /register.html HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:40:34] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:40:34] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:40:39] "GET /register?v_username=lreis&v_password=1234 HTTP/1.1" 200 -
-INFO:werkzeug: * Detected change in '/app/register/routes.py', reloading
+INFO:werkzeug: * Debugger PIN: 102-999-863
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 15:42:54] "GET /logout HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 15:42:54] "GET /favicon.ico HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/app/part1/routesc.py', reloading
 INFO:werkzeug: * Restarting with stat
 INFO:logger:
 ---------------------
@@ -235,326 +73,153 @@ INFO:logger:
 
 
 WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 168-219-236
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:45:02] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:45:02] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:45:02] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:45:03] "GET /register.html HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:45:03] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:45:03] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:45:06] "GET /register?v_username=lreis&v_password=1234 HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:45:09] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:45:09] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:45:09] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:45:39] "GET /register.html HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:45:39] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:45:39] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:46:00] "GET /register?v_username=lreis&v_password=1234 HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:46:04] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:46:04] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:46:04] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug: * Detected change in '/app/register/routes.py', reloading
+INFO:werkzeug: * Debugger PIN: 102-999-863
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 15:44:16] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 15:44:16] "GET /favicon.ico HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
 INFO:werkzeug: * Restarting with stat
 INFO:logger:
 ---------------------
 
 
 WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 168-219-236
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:47:17] "GET /register.html HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:47:17] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:47:17] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:47:21] "GET /register?v_username=lreis&v_password=1234 HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:47:21] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:47:24] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:47:24] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:47:24] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug: * Detected change in '/app/register/routes.py', reloading
+INFO:werkzeug: * Debugger PIN: 102-999-863
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 15:45:03] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 15:45:03] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 15:45:03] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 15:45:03] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=j5FCY1SyZdrQVU9pZM3f HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
 INFO:werkzeug: * Restarting with stat
 INFO:logger:
 ---------------------
 
 
 WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 168-219-236
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:53:28] "GET /register.html HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:53:28] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:53:28] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:53:33] "GET /register?v_username=lreis&v_password=1234 HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:53:33] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:53:33] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug: * Detected change in '/app/register/routes.py', reloading
+INFO:werkzeug: * Debugger PIN: 102-999-863
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 15:47:16] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 15:47:16] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 15:47:16] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 15:47:16] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=f8ad5sMYPbnwNYk1UTTn HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
 INFO:werkzeug: * Restarting with stat
 INFO:logger:
 ---------------------
 
 
 WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 168-219-236
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:55:20] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:55:20] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:55:20] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:55:22] "GET /register.html HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:55:22] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:55:22] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:55:26] "GET /register?v_username=lreis&v_password=1234 HTTP/1.1" 200 -
-INFO:werkzeug: * Detected change in '/app/register/routes.py', reloading
+INFO:werkzeug: * Debugger PIN: 102-999-863
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 15:49:58] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 15:49:58] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 15:49:58] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 15:49:58] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 15:50:01] "GET /part1.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 15:50:01] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 15:50:01] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 15:50:01] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 15:50:08] "GET /part1_correct?c_username=lreis&c_password=1234 HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 15:50:08] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 15:50:33] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 15:50:33] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 15:50:33] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 15:50:33] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 15:50:37] "GET /part1.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 15:50:37] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 15:50:37] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 15:50:38] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
 INFO:werkzeug: * Restarting with stat
 INFO:logger:
 ---------------------
 
 
 WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 168-219-236
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:56:01] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:56:02] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:56:02] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:56:03] "GET /register.html HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:56:03] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:56:03] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:56:06] "GET /register?v_username=lreis&v_password=1234 HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:56:06] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:56:06] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:56:18] "GET /register?v_username=lreis&v_password=1234 HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:56:18] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:56:18] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug: * Detected change in '/app/register/routes.py', reloading
+INFO:werkzeug: * Debugger PIN: 102-999-863
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 15:51:12] "[35m[1mGET /part1.html HTTP/1.1[0m" 500 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 15:51:12] "GET /part1.html?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 15:51:12] "GET /part1.html?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 15:51:12] "GET /part1.html?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 15:51:12] "GET /part1.html?__debugger__=yes&cmd=resource&f=console.png&s=IQhbpKl9SQwp7aLOX4Eo HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
 INFO:werkzeug: * Restarting with stat
 INFO:logger:
 ---------------------
 
 
 WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 168-219-236
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:57:41] "GET /register?v_username=lreis&v_password=1234 HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:57:41] "GET /static/js/script.js HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:57:41] "GET /static/css/style.css HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:57:41] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:57:46] "GET /register?v_username=lreis&v_password=1234 HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:57:46] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:57:46] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:57:51] "[35m[1mGET /register HTTP/1.1[0m" 500 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:57:51] "[36mGET /register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:57:51] "[36mGET /register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:57:51] "GET /register?__debugger__=yes&cmd=resource&f=console.png&s=DaLEwNpfXH9LzsHH3CMh HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:58:08] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:58:08] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:58:08] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:58:09] "GET /register.html HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:58:09] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:58:09] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:58:17] "GET /register?v_username=lreis&v_password=1234 HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:58:17] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:58:17] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:58:25] "GET /register?v_username=lreis&v_password=1234 HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:58:25] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:58:25] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:58:30] "[35m[1mGET /register?v_username=lreis&v_password=12345 HTTP/1.1[0m" 500 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:58:30] "[36mGET /register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:58:30] "[36mGET /register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:58:30] "[36mGET /register?__debugger__=yes&cmd=resource&f=console.png&s=DaLEwNpfXH9LzsHH3CMh HTTP/1.1[0m" 304 -
-INFO:werkzeug: * Detected change in '/app/register/routes.py', reloading
+INFO:werkzeug: * Debugger PIN: 102-999-863
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 15:52:14] "[35m[1mGET /part1.html HTTP/1.1[0m" 500 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 15:52:14] "GET /part1.html?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 15:52:14] "[36mGET /part1.html?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 15:52:14] "GET /part1.html?__debugger__=yes&cmd=resource&f=console.png&s=ecJpYdnERK4gkDWglAnD HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 15:52:14] "GET /part1.html?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
 INFO:werkzeug: * Restarting with stat
 INFO:logger:
 ---------------------
 
 
 WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 168-219-236
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:59:30] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:59:30] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:59:30] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:59:32] "GET /register.html HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:59:32] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:59:32] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:59:36] "GET /register?v_username=lreis&v_password=1234 HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:59:36] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 16:59:36] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:00:32] "GET /register?v_username=lreis&v_password=1234 HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:00:32] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:00:32] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:00:41] "GET /register?v_username=lreis&v_password=12345 HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:00:41] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:00:41] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug: * Detected change in '/app/register/routes.py', reloading
+INFO:werkzeug: * Debugger PIN: 102-999-863
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 15:52:44] "GET /part1.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 15:52:44] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 15:52:44] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 15:52:44] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
 INFO:werkzeug: * Restarting with stat
 INFO:logger:
 ---------------------
 
 
 WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 168-219-236
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:18:52] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:18:52] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:18:52] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:18:54] "GET /register.html HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:18:54] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:18:54] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:19:00] "[35m[1mGET /register?v_username=lreis&v_password=1234 HTTP/1.1[0m" 500 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:19:00] "[36mGET /register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:19:00] "[36mGET /register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:19:00] "GET /register?__debugger__=yes&cmd=resource&f=console.png&s=22CsalBK7GDjJWW8E15o HTTP/1.1" 200 -
-INFO:werkzeug: * Detected change in '/app/register/routes.py', reloading
+INFO:werkzeug: * Debugger PIN: 102-999-863
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 15:53:49] "GET /part1.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 15:53:49] "GET /favicon.ico HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
 INFO:werkzeug: * Restarting with stat
 INFO:logger:
 ---------------------
 
 
 WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 168-219-236
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:19:38] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:19:38] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:19:38] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:19:39] "GET /register.html HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:19:39] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:19:39] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:19:44] "[35m[1mGET /register?v_username=lreis&v_password=1234 HTTP/1.1[0m" 500 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:19:44] "[36mGET /register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:19:44] "[36mGET /register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:19:44] "GET /register?__debugger__=yes&cmd=resource&f=console.png&s=hcNbuUXm6wBCNwI8OZk6 HTTP/1.1" 200 -
-INFO:werkzeug: * Detected change in '/app/register/routes.py', reloading
+INFO:werkzeug: * Debugger PIN: 102-999-863
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 15:55:16] "GET /part1.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 15:55:16] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 15:55:16] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 15:55:16] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 15:55:23] "GET /part1_correct?c_username=lreis&c_password=1234 HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 15:55:23] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
 INFO:werkzeug: * Restarting with stat
 INFO:logger:
 ---------------------
 
 
 WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 168-219-236
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:23:52] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:23:52] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:23:52] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:23:53] "GET /register.html HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:23:53] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:23:53] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:23:58] "[35m[1mGET /register?v_username=lreis&v_password=1234 HTTP/1.1[0m" 500 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:23:58] "[36mGET /register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:23:58] "[36mGET /register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:23:58] "GET /register?__debugger__=yes&cmd=resource&f=console.png&s=kqIyNBqR1hyG0xaCZUNy HTTP/1.1" 200 -
-INFO:werkzeug: * Detected change in '/app/register/routes.py', reloading
+INFO:werkzeug: * Debugger PIN: 102-999-863
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 15:57:45] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 15:57:45] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 15:57:45] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 15:57:45] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 15:57:47] "GET /part1.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 15:57:47] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 15:57:47] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 15:57:47] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
 INFO:werkzeug: * Restarting with stat
 INFO:logger:
 ---------------------
 
 
 WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 168-219-236
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:25:31] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:25:31] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:25:31] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:25:33] "GET /register.html HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:25:33] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:25:33] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:25:37] "[35m[1mGET /register?v_username=lreis&v_password=1234 HTTP/1.1[0m" 500 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:25:37] "[36mGET /register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:25:37] "[36mGET /register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:25:37] "GET /register?__debugger__=yes&cmd=resource&f=console.png&s=ebieysgXuMnU0TgexoFq HTTP/1.1" 200 -
-INFO:werkzeug: * Detected change in '/app/register/routes.py', reloading
+INFO:werkzeug: * Debugger PIN: 102-999-863
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 15:58:44] "GET /part1.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 15:58:44] "GET /favicon.ico HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
 INFO:werkzeug: * Restarting with stat
 INFO:logger:
 ---------------------
 
 
-WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 168-219-236
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:27:52] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:27:52] "GET /static/css/style.css HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:27:52] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:27:53] "GET /register.html HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:27:53] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:27:53] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:27:57] "[35m[1mGET /register?v_username=lreis&v_password=1234 HTTP/1.1[0m" 500 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:27:57] "[36mGET /register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:27:57] "[36mGET /register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:27:57] "GET /register?__debugger__=yes&cmd=resource&f=console.png&s=NQoKgGsqZUngXvUsVJJF HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:27:57] "GET /register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
-INFO:werkzeug: * Detected change in '/app/register/routes.py', reloading
-INFO:werkzeug: * Restarting with stat
-INFO:logger:
----------------------
-
-
-WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 168-219-236
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:28:30] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:28:30] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:28:30] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:28:31] "GET /register.html HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:28:31] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:28:31] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:28:36] "[35m[1mGET /register?v_username=lreis&v_password=1234 HTTP/1.1[0m" 500 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:28:36] "[36mGET /register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:28:36] "[36mGET /register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:28:36] "GET /register?__debugger__=yes&cmd=resource&f=console.png&s=rcR3FURCpcWWWBNNuUgf HTTP/1.1" 200 -
-INFO:werkzeug: * Detected change in '/app/register/routes.py', reloading
-INFO:werkzeug: * Restarting with stat
-INFO:logger:
----------------------
-
-
-WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 168-219-236
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:29:09] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:29:09] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:29:09] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:29:25] "GET /register.html HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:29:25] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:29:25] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:29:28] "GET /register?v_username=lreis&v_password=1234 HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:29:28] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:29:28] "GET /static/css/style.css HTTP/1.1" 200 -
-INFO:werkzeug: * Detected change in '/app/register/routes.py', reloading
-INFO:werkzeug: * Restarting with stat
-INFO:logger:
----------------------
-
-
-WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 168-219-236
-INFO:werkzeug: * Detected change in '/app/register/routes.py', reloading
-INFO:werkzeug: * Restarting with stat
-INFO:logger:
----------------------
-
-
-WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 168-219-236
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:39:55] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:39:55] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:39:55] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:39:56] "GET /register.html HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:39:56] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:39:56] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug: * Detected change in '/app/register/routes.py', reloading
-INFO:werkzeug: * Restarting with stat
-INFO:logger:
----------------------
-
-
-WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 168-219-236
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:47:05] "GET /register?v_username=lreis&v_password=1234 HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:47:05] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:47:05] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:52:18] "GET /register?v_username=lreis&v_password=1234 HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:52:18] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:52:18] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:52:23] "GET /register?v_username=lreis&v_password=1234 HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:52:23] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:52:23] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug: * Detected change in '/app/register/routes.py', reloading
-INFO:werkzeug: * Restarting with stat
-INFO:logger:
----------------------
-
-
-WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 168-219-236
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:53:20] "GET /register?v_username=lreis&v_password=1234 HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:53:20] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:53:20] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:53:24] "GET /register?v_username=lreis&v_password=1234 HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:53:24] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 17:53:24] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
 INFO:logger:
 ---------------------
 
@@ -570,41 +235,7 @@ INFO:logger:
 
 
 WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 168-219-236
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 18:37:04] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 18:37:04] "GET /static/css/style.css HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 18:37:04] "GET /static/js/script.js HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 18:37:05] "GET /register.html HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 18:37:05] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 18:37:05] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 18:37:12] "GET /register?v_username=lreis&v_password=1234 HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 18:37:12] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 18:37:12] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 18:37:20] "GET /register.html HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 18:37:20] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 18:37:20] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 18:37:30] "GET /part1.html HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 18:37:30] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 18:37:30] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:logger:---- part1_vulnerable ----
-INFO:logger:v_password  -> 1234
-INFO:logger:v_username  -> lreis
-INFO:logger:v_remember  -> on
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 18:37:33] "GET /part1_vulnerable?v_username=lreis&v_password=1234&v_remember=on HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 18:37:38] "GET /part1_correct?c_username=lreis&c_password=1234&c_remember=on HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 18:37:41] "GET /part2.html HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 18:37:41] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 18:37:41] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 18:37:50] "GET /part2_vulnerable?v_text=ssds HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 18:37:53] "GET /part2_correct?c_text=sddds HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 18:37:56] "GET /part3.html HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 18:37:56] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 18:37:56] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 18:38:28] "GET /part3_correct?c_name=sda&c_author=sdad&c_category_id=&c_pricemin=dsads&c_pricemax=dsads&c_search_input=dsa&c_search_field=any&c_radio_match=any&c_sp_d=custom&c_sp_date_range=-1&c_sp_start_month=11&c_sp_start_day=24&c_sp_start_year=sdsd&c_sp_end_month=11&c_sp_end_day=25&c_sp_end_year=dsd&c_sp_c=10&c_sp_m=1&c_sp_s=0 HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 18:38:31] "GET /part3_vulnerable?v_name=sds&v_author=sadasd&v_category_id=&v_pricemin=sadasd&v_pricemax=dsads&v_search_input=asdds&v_search_field=any&v_radio_match=any&v_sp_d=custom&v_sp_date_range=-1&v_sp_start_month=11&v_sp_start_day=24&v_sp_start_year=sads&v_sp_end_month=11&v_sp_end_day=25&v_sp_end_year=dsds&v_sp_c=10&v_sp_m=1&v_sp_s=0 HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 18:38:35] "GET /part1.html HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 18:38:35] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 18:38:35] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Debugger PIN: 102-999-863
 INFO:werkzeug: * Detected change in '/app/app.py', reloading
 INFO:werkzeug: * Restarting with stat
 INFO:logger:
@@ -622,45 +253,9 @@ INFO:logger:
 
 
 WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 168-219-236
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 19:31:44] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 19:31:44] "GET /static/js/script.js HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 19:31:44] "GET /static/css/style.css HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 19:31:44] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 19:31:46] "GET /part1.html HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 19:31:46] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 19:31:46] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 19:31:54] "[35m[1mGET /part1_vulnerable?v_username=lreis&v_password=1234&v_remember=on HTTP/1.1[0m" 500 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 19:31:54] "GET /part1_vulnerable?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 19:31:54] "GET /part1_vulnerable?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 19:31:54] "GET /part1_vulnerable?__debugger__=yes&cmd=resource&f=console.png&s=qMELrwVUVhWguyldCDtn HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 19:31:54] "GET /part1_vulnerable?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
-INFO:werkzeug: * Detected change in '/app/part1/routesv.py', reloading
-INFO:werkzeug: * Restarting with stat
-INFO:logger:
----------------------
-
-
-WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 168-219-236
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 19:34:29] "[35m[1mGET /part1_vulnerable?v_username=lreis&v_password=1234&v_remember=on HTTP/1.1[0m" 500 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 19:34:29] "[36mGET /part1_vulnerable?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 19:34:29] "[36mGET /part1_vulnerable?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 19:34:29] "GET /part1_vulnerable?__debugger__=yes&cmd=resource&f=console.png&s=KolCOQ8gLqa7bTqa9nj7 HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 19:34:29] "[35m[1mGET /part1_vulnerable?v_username=lreis&v_password=1234&v_remember=on HTTP/1.1[0m" 500 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 19:34:29] "[36mGET /part1_vulnerable?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 19:34:29] "[36mGET /part1_vulnerable?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 19:34:29] "[36mGET /part1_vulnerable?__debugger__=yes&cmd=resource&f=console.png&s=KolCOQ8gLqa7bTqa9nj7 HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 19:34:33] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 19:34:33] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 19:34:33] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 19:34:35] "GET /part1.html HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 19:34:35] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 19:34:35] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 19:34:40] "[35m[1mGET /part1_vulnerable?v_username=lreis&v_password=1234&v_remember=on HTTP/1.1[0m" 500 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 19:34:40] "[36mGET /part1_vulnerable?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 19:34:40] "[36mGET /part1_vulnerable?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 19:34:40] "[36mGET /part1_vulnerable?__debugger__=yes&cmd=resource&f=console.png&s=KolCOQ8gLqa7bTqa9nj7 HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Debugger PIN: 102-999-863
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:10:17] "GET /part1.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:10:17] "GET /favicon.ico HTTP/1.1" 200 -
 INFO:werkzeug: * Detected change in '/app/app.py', reloading
 INFO:werkzeug: * Restarting with stat
 INFO:logger:
@@ -668,7 +263,34 @@ INFO:logger:
 
 
 WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 168-219-236
+INFO:werkzeug: * Debugger PIN: 102-999-863
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:13:12] "GET /part1.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:13:12] "GET /favicon.ico HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:logger:
+---------------------
+
+
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 102-999-863
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:13:23] "GET /part1.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:13:24] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:logger:
+---------------------
+
+
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 102-999-863
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:13:57] "GET /part1.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:13:57] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:13:57] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:14:08] "[35m[1mGET /part1_correct?c_username=lreis&c_password=1234 HTTP/1.1[0m" 500 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:14:08] "GET /part1_correct?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:14:08] "[36mGET /part1_correct?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:14:08] "GET /part1_correct?__debugger__=yes&cmd=resource&f=console.png&s=ZBcTR5D5N2gLUinTKT5r HTTP/1.1" 200 -
 INFO:werkzeug: * Detected change in '/app/part1/routesc.py', reloading
 INFO:werkzeug: * Restarting with stat
 INFO:logger:
@@ -676,15 +298,7 @@ INFO:logger:
 
 
 WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 168-219-236
-INFO:werkzeug: * Detected change in '/app/part1/routesv.py', reloading
-INFO:werkzeug: * Restarting with stat
-INFO:logger:
----------------------
-
-
-WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 168-219-236
+INFO:werkzeug: * Debugger PIN: 102-999-863
 INFO:werkzeug: * Detected change in '/app/app.py', reloading
 INFO:werkzeug: * Restarting with stat
 INFO:logger:
@@ -692,35 +306,64 @@ INFO:logger:
 
 
 WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 168-219-236
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 19:37:21] "[35m[1mGET /part1_vulnerable?v_username=lreis&v_password=1234&v_remember=on HTTP/1.1[0m" 500 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 19:37:21] "[36mGET /part1_vulnerable?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 19:37:21] "[36mGET /part1_vulnerable?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 19:37:21] "GET /part1_vulnerable?__debugger__=yes&cmd=resource&f=console.png&s=14R1LADal1BXWBfbO8he HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 19:37:22] "[35m[1mGET /part1_vulnerable?v_username=lreis&v_password=1234&v_remember=on HTTP/1.1[0m" 500 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 19:37:22] "[36mGET /part1_vulnerable?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 19:37:22] "[36mGET /part1_vulnerable?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 19:37:22] "[36mGET /part1_vulnerable?__debugger__=yes&cmd=resource&f=console.png&s=14R1LADal1BXWBfbO8he HTTP/1.1[0m" 304 -
-INFO:werkzeug: * Detected change in '/app/part1/routesv.py', reloading
+INFO:werkzeug: * Debugger PIN: 102-999-863
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:22:21] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:22:21] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:22:21] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:22:21] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=0fzoLCx1yI3K57FdCuWK HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:logger:
+---------------------
+
+
+INFO:logger:
+---------------------
+
+
+INFO:logger:
+---------------------
+
+
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.18.0.3:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
 INFO:werkzeug: * Restarting with stat
 INFO:logger:
 ---------------------
 
 
 WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 168-219-236
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 19:38:11] "[35m[1mGET /part1_vulnerable?v_username=lreis&v_password=1234&v_remember=on HTTP/1.1[0m" 500 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 19:38:11] "[36mGET /part1_vulnerable?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 19:38:11] "[36mGET /part1_vulnerable?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 19:38:11] "GET /part1_vulnerable?__debugger__=yes&cmd=resource&f=console.png&s=vn128xSAdmgfPxryFMyc HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 19:38:12] "[35m[1mGET /part1_vulnerable?v_username=lreis&v_password=1234&v_remember=on HTTP/1.1[0m" 500 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 19:38:12] "[36mGET /part1_vulnerable?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 19:38:12] "[36mGET /part1_vulnerable?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 19:38:12] "[36mGET /part1_vulnerable?__debugger__=yes&cmd=resource&f=console.png&s=vn128xSAdmgfPxryFMyc HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 19:38:13] "[35m[1mGET /part1_vulnerable?v_username=lreis&v_password=1234&v_remember=on HTTP/1.1[0m" 500 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 19:38:13] "[36mGET /part1_vulnerable?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 19:38:13] "[36mGET /part1_vulnerable?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 19:38:13] "[36mGET /part1_vulnerable?__debugger__=yes&cmd=resource&f=console.png&s=vn128xSAdmgfPxryFMyc HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Debugger PIN: 102-999-863
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:26:04] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:26:05] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:26:05] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:26:07] "GET /part1.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:26:07] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:26:07] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:26:16] "GET /part1_correct?c_username=lreis&c_password=1234 HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:26:16] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:26:16] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:26:31] "GET /part1_correct?c_username=lreis&c_password=1234 HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:26:31] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:26:31] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:26:40] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:26:40] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:26:40] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:26:41] "GET /part1.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:26:41] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:26:41] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:26:46] "GET /part1_correct?c_username=lreis&c_password=1234 HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:26:47] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:26:47] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:30:04] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:30:04] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:30:04] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:30:06] "GET /part1.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:30:06] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:30:06] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
 INFO:werkzeug: * Detected change in '/app/app.py', reloading
 INFO:werkzeug: * Restarting with stat
 INFO:logger:
@@ -728,206 +371,26 @@ INFO:logger:
 
 
 WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 168-219-236
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 19:39:19] "GET /part1_vulnerable?v_username=lreis&v_password=1234&v_remember=on HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 19:39:24] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 19:39:24] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 19:39:24] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 19:39:27] "GET /part1.html HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 19:39:27] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 19:39:27] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug: * Detected change in '/app/part1/routesv.py', reloading
+INFO:werkzeug: * Debugger PIN: 102-999-863
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:32:08] "GET /logout HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:32:08] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:32:08] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:32:14] "GET /part1_correct?c_username=lreis&c_password=1234 HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:32:14] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:32:14] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
 INFO:werkzeug: * Restarting with stat
 INFO:logger:
 ---------------------
 
 
 WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 168-219-236
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 19:56:17] "GET /part1.html HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 19:56:17] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 19:56:17] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 19:56:27] "[35m[1mGET /part1_vulnerable?v_username=naosei&v_password=1234 HTTP/1.1[0m" 500 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 19:56:27] "[36mGET /part1_vulnerable?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 19:56:27] "[36mGET /part1_vulnerable?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 19:56:27] "GET /part1_vulnerable?__debugger__=yes&cmd=resource&f=console.png&s=X0SDQRWQpiPymzGXz8Tx HTTP/1.1" 200 -
-INFO:werkzeug: * Detected change in '/app/part1/routesv.py', reloading
-INFO:werkzeug: * Restarting with stat
-INFO:logger:
----------------------
-
-
-WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 168-219-236
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 19:58:26] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 19:58:26] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 19:58:26] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 19:58:27] "GET /part1.html HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 19:58:27] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 19:58:27] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 19:58:32] "GET /part1_vulnerable?v_username=naosei&v_password=1234&v_remember=on HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 19:58:41] "[35m[1mGET /part1_vulnerable?v_username=lreis&v_password=1234&v_remember=on HTTP/1.1[0m" 500 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 19:58:41] "[36mGET /part1_vulnerable?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 19:58:41] "[36mGET /part1_vulnerable?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 19:58:41] "GET /part1_vulnerable?__debugger__=yes&cmd=resource&f=console.png&s=G2v8yj5MC1uit3TY3gPM HTTP/1.1" 200 -
-INFO:werkzeug: * Detected change in '/app/part1/routesv.py', reloading
-INFO:werkzeug: * Restarting with stat
-INFO:logger:
----------------------
-
-
-WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 168-219-236
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 19:59:35] "[35m[1mGET /part1_vulnerable?v_username=lreis&v_password=1234&v_remember=on HTTP/1.1[0m" 500 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 19:59:35] "[36mGET /part1_vulnerable?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 19:59:35] "[36mGET /part1_vulnerable?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 19:59:35] "GET /part1_vulnerable?__debugger__=yes&cmd=resource&f=console.png&s=J0JrVWg7hYMNmTQlVjyW HTTP/1.1" 200 -
-INFO:werkzeug: * Detected change in '/app/part1/routesv.py', reloading
-INFO:werkzeug: * Restarting with stat
-INFO:logger:
----------------------
-
-
-WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 168-219-236
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:00:08] "[33mGET /p HTTP/1.1[0m" 404 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:00:10] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:00:10] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:00:10] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:00:12] "GET /part1.html HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:00:12] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:00:12] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:00:17] "[35m[1mGET /part1_vulnerable?v_username=lreis&v_password=1234&v_remember=on HTTP/1.1[0m" 500 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:00:17] "[36mGET /part1_vulnerable?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:00:17] "[36mGET /part1_vulnerable?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:00:17] "GET /part1_vulnerable?__debugger__=yes&cmd=resource&f=console.png&s=GkZgiXQxH75S9urjVRND HTTP/1.1" 200 -
-INFO:werkzeug: * Detected change in '/app/part1/routesv.py', reloading
-INFO:werkzeug: * Restarting with stat
-INFO:logger:
----------------------
-
-
-WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 168-219-236
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:00:59] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:00:59] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:00:59] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:01:01] "GET /part1.html HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:01:01] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:01:01] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:01:07] "[35m[1mGET /part1_vulnerable?v_username=lreis&v_password=1234&v_remember=on HTTP/1.1[0m" 500 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:01:07] "[36mGET /part1_vulnerable?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:01:07] "[36mGET /part1_vulnerable?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:01:07] "GET /part1_vulnerable?__debugger__=yes&cmd=resource&f=console.png&s=hTOxy3ExVRTXJO9yr7EQ HTTP/1.1" 200 -
-INFO:werkzeug: * Detected change in '/app/part1/routesv.py', reloading
-INFO:werkzeug: * Restarting with stat
-INFO:logger:
----------------------
-
-
-WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 168-219-236
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:01:42] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:01:42] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:01:42] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:01:43] "GET /part1.html HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:01:43] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:01:43] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:01:48] "[35m[1mGET /part1_vulnerable?v_username=lreis&v_password=1234&v_remember=on HTTP/1.1[0m" 500 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:01:48] "[36mGET /part1_vulnerable?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:01:48] "[36mGET /part1_vulnerable?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:01:48] "GET /part1_vulnerable?__debugger__=yes&cmd=resource&f=console.png&s=b4OXR6RvEZFRy6a2LIBg HTTP/1.1" 200 -
-INFO:werkzeug: * Detected change in '/app/part1/routesv.py', reloading
-INFO:werkzeug: * Restarting with stat
-INFO:logger:
----------------------
-
-
-WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 168-219-236
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:02:16] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:02:16] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:02:16] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:02:18] "GET /part1.html HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:02:18] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:02:18] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:02:24] "GET /part1_vulnerable?v_username=lreis&v_password=1234&v_remember=on HTTP/1.1" 200 -
-INFO:werkzeug: * Detected change in '/app/part1/routesv.py', reloading
-INFO:werkzeug: * Restarting with stat
-INFO:logger:
----------------------
-
-
-WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 168-219-236
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:03:23] "GET /part1_vulnerable?v_username=lreis&v_password=1234&v_remember=on HTTP/1.1" 200 -
-INFO:werkzeug: * Detected change in '/app/part1/routesv.py', reloading
-INFO:werkzeug: * Restarting with stat
-INFO:logger:
----------------------
-
-
-WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 168-219-236
-INFO:werkzeug: * Detected change in '/app/part1/routesv.py', reloading
-INFO:werkzeug: * Restarting with stat
-INFO:logger:
----------------------
-
-
-WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 168-219-236
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:04:37] "[35m[1mGET /part1_vulnerable?v_username=lreis&v_password=1234&v_remember=on HTTP/1.1[0m" 500 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:04:37] "[36mGET /part1_vulnerable?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:04:37] "[36mGET /part1_vulnerable?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:04:37] "GET /part1_vulnerable?__debugger__=yes&cmd=resource&f=console.png&s=EHNjPdO9qKS7cE6nlQzM HTTP/1.1" 200 -
-INFO:werkzeug: * Detected change in '/app/part1/routesv.py', reloading
-INFO:werkzeug: * Restarting with stat
-INFO:logger:
----------------------
-
-
-WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 168-219-236
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:06:38] "GET /part1_vulnerable?v_username=lreis&v_password=1234&v_remember=on HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:06:38] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO:werkzeug: * Detected change in '/app/part1/routesv.py', reloading
-INFO:werkzeug: * Restarting with stat
-INFO:logger:
----------------------
-
-
-WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 168-219-236
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:07:57] "GET /part1_vulnerable?v_username=lreis&v_password=1234&v_remember=on HTTP/1.1" 200 -
-INFO:werkzeug: * Detected change in '/app/part1/routesv.py', reloading
-INFO:werkzeug: * Restarting with stat
-INFO:logger:
----------------------
-
-
-WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 168-219-236
-INFO:werkzeug: * Detected change in '/app/part1/routesv.py', reloading
-INFO:werkzeug: * Restarting with stat
-INFO:logger:
----------------------
-
-
-WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 168-219-236
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:08:38] "GET /part1_vulnerable?v_username=lreis&v_password=1234&v_remember=on HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:08:57] "GET /part1_vulnerable?v_username=lreis&v_password=12345&v_remember=on HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:09:04] "GET /part1_vulnerable?v_username=lreis&v_password=1234&v_remember=on HTTP/1.1" 200 -
-INFO:werkzeug: * Detected change in '/app/part1/routesv.py', reloading
-INFO:werkzeug: * Restarting with stat
-INFO:logger:
----------------------
-
-
-WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 168-219-236
-INFO:werkzeug: * Detected change in '/app/part1/routesv.py', reloading
+INFO:werkzeug: * Debugger PIN: 102-999-863
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:33:01] "[35m[1mGET /part1_correct?c_username=lreis&c_password=1234 HTTP/1.1[0m" 500 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:33:01] "[36mGET /part1_correct?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:33:01] "[36mGET /part1_correct?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:33:01] "GET /part1_correct?__debugger__=yes&cmd=resource&f=console.png&s=Y1DsUtL3jMDKs03Dvt38 HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
 INFO:werkzeug: * Restarting with stat
 INFO:logger:
 ---------------------
@@ -944,27 +407,168 @@ INFO:logger:
 
 
 WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 168-219-236
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:17:17] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:17:17] "GET /static/css/style.css HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:17:17] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:17:18] "[35m[1mGET /part1.html HTTP/1.1[0m" 500 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:17:18] "GET /part1.html?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:17:18] "GET /part1.html?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:17:18] "GET /part1.html?__debugger__=yes&cmd=resource&f=console.png&s=hIPce0M81IupK1iIwCZi HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:17:18] "GET /part1.html?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:17:44] "GET /part1.html HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:17:44] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:17:44] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:17:51] "GET /part1_vulnerable?v_username=lreis&v_password=12345&v_remember=on HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:17:51] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:17:51] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:17:58] "GET /part1_vulnerable?v_username=naosei&v_password=12345&v_remember=on HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:17:59] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:17:59] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:18:04] "GET /part1_vulnerable?v_username=lreis&v_password=1234&v_remember=on HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:18:04] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:18:04] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Debugger PIN: 102-999-863
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:34:12] "GET /part1_correct?c_username=lreis&c_password=1234 HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:34:12] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:34:12] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:34:21] "GET /part1_correct?c_username=lreis&c_password=1234 HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:34:21] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:34:21] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:34:30] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:34:30] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:34:30] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:34:32] "GET /part1.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:34:32] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:34:32] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:logger:
+---------------------
+
+
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 102-999-863
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:35:25] "GET /part1.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:35:25] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:35:25] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:35:29] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:35:29] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:35:29] "GET /static/js/script.js HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:35:37] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:35:38] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:35:42] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:35:42] "GET / HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:logger:
+---------------------
+
+
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 102-999-863
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:36:05] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:36:05] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:36:05] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:36:05] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=wVXIlvFlBHIdcv60gEqy HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:logger:
+---------------------
+
+
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 102-999-863
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:logger:
+---------------------
+
+
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 102-999-863
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:36:59] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:36:59] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:36:59] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:36:59] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=E6D9GltEsmIkWelCu9qN HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:logger:
+---------------------
+
+
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 102-999-863
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:37:28] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:37:28] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:37:28] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:37:28] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=DCevQ821pQDBZw92Z15b HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:logger:
+---------------------
+
+
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 102-999-863
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:39:13] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:39:13] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:39:13] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:39:13] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=gMhK0wdzglNEE5M2mwPs HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:39:13] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:39:13] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:39:13] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:39:13] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=gMhK0wdzglNEE5M2mwPs HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:39:14] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:39:14] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:39:14] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:39:14] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=gMhK0wdzglNEE5M2mwPs HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:logger:
+---------------------
+
+
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 102-999-863
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:logger:
+---------------------
+
+
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 102-999-863
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:40:05] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:40:05] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:40:05] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:40:05] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=eeYQXXRyqu8E5OXJ56mW HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:40:06] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:40:06] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:40:06] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:40:06] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=eeYQXXRyqu8E5OXJ56mW HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:40:06] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:40:06] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:40:07] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:40:07] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=eeYQXXRyqu8E5OXJ56mW HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:40:07] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:40:07] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:40:07] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:40:07] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=eeYQXXRyqu8E5OXJ56mW HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:40:08] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:40:08] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:40:08] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:40:08] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=eeYQXXRyqu8E5OXJ56mW HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:40:11] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:40:11] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:40:11] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:40:11] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=eeYQXXRyqu8E5OXJ56mW HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:40:31] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:40:31] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:40:31] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:40:32] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=eeYQXXRyqu8E5OXJ56mW HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:40:41] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:40:41] "GET /static/js/script.js HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:40:41] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:40:41] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:40:46] "GET /part1.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:40:46] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:40:46] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:40:55] "GET /part1_correct?c_username=lreis&c_password=1234 HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:40:55] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:40:55] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:logger:
+---------------------
+
+
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 102-999-863
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:41:09] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:41:09] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:41:09] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:41:09] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:41:09] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=tRJrrowo602qbitIy3Ij HTTP/1.1" 200 -
 INFO:werkzeug: * Detected change in '/app/part1/routesc.py', reloading
 INFO:werkzeug: * Restarting with stat
 INFO:logger:
@@ -972,12 +576,34 @@ INFO:logger:
 
 
 WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 168-219-236
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:28:40] "[35m[1mGET /part1_correct?c_username=lreis&c_password=1234&c_remember=on HTTP/1.1[0m" 500 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:28:40] "GET /part1_correct?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:28:40] "GET /part1_correct?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:28:40] "GET /part1_correct?__debugger__=yes&cmd=resource&f=console.png&s=5WY6pZmztvjUn7cyuRuS HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:28:40] "GET /part1_correct?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Debugger PIN: 102-999-863
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:43:23] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:43:23] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:43:23] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:43:23] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=Mt4HS3CYDk0nmqCwtM7Y HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:43:23] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:43:23] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:43:24] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:43:24] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=Mt4HS3CYDk0nmqCwtM7Y HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:logger:
+---------------------
+
+
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 102-999-863
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:43:33] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:43:33] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:43:33] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:43:35] "GET /part1.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:43:35] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:43:35] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:43:42] "[35m[1mGET /part1_correct?c_username=lreis&c_password=1234 HTTP/1.1[0m" 500 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:43:42] "GET /part1_correct?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:43:42] "GET /part1_correct?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:43:42] "GET /part1_correct?__debugger__=yes&cmd=resource&f=console.png&s=hUaBE293t65BxZUEjCMm HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:43:42] "GET /part1_correct?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
 INFO:werkzeug: * Detected change in '/app/part1/routesc.py', reloading
 INFO:werkzeug: * Restarting with stat
 INFO:logger:
@@ -985,17 +611,11 @@ INFO:logger:
 
 
 WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 168-219-236
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:29:18] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:29:19] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:29:19] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:29:20] "GET /part1.html HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:29:20] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:29:20] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:29:23] "[35m[1mGET /part1_correct?c_username=lreis&c_password=1234&c_remember=on HTTP/1.1[0m" 500 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:29:23] "[36mGET /part1_correct?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:29:23] "[36mGET /part1_correct?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:29:23] "GET /part1_correct?__debugger__=yes&cmd=resource&f=console.png&s=2Ud0uld55WMGE4tl8mZE HTTP/1.1" 200 -
+INFO:werkzeug: * Debugger PIN: 102-999-863
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:44:15] "[35m[1mGET /part1_correct?c_username=lreis&c_password=1234 HTTP/1.1[0m" 500 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:44:15] "[36mGET /part1_correct?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:44:15] "[36mGET /part1_correct?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:44:15] "GET /part1_correct?__debugger__=yes&cmd=resource&f=console.png&s=K5KeMUWftrByxwjMgLsv HTTP/1.1" 200 -
 INFO:werkzeug: * Detected change in '/app/part1/routesc.py', reloading
 INFO:werkzeug: * Restarting with stat
 INFO:logger:
@@ -1003,28 +623,11 @@ INFO:logger:
 
 
 WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 168-219-236
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:29:56] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:29:56] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:29:56] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:29:57] "GET /part1.html HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:29:57] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:29:57] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:30:02] "GET /part1_correct?c_username=lreis&c_password=1234&c_remember=on HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:30:02] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:30:02] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:30:08] "GET /part1_correct?c_username=lreis&c_password=1234&c_remember=on HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:30:08] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:30:08] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:30:16] "GET /part1_correct?c_username=lreis&c_password=12345&c_remember=on HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:30:16] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:30:16] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:30:22] "GET /part1_correct?c_username=lreis&c_password=1234&c_remember=on HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:30:22] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:30:22] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:30:32] "GET /part1_vulnerable?v_username=lreis&v_password=1234&v_remember=on HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:30:32] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:30:32] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Debugger PIN: 102-999-863
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:44:38] "[35m[1mGET /part1_correct?c_username=lreis&c_password=1234 HTTP/1.1[0m" 500 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:44:38] "[36mGET /part1_correct?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:44:38] "[36mGET /part1_correct?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:44:38] "GET /part1_correct?__debugger__=yes&cmd=resource&f=console.png&s=jc6EDQoej6no8a6T5Fvs HTTP/1.1" 200 -
 INFO:werkzeug: * Detected change in '/app/part1/routesc.py', reloading
 INFO:werkzeug: * Restarting with stat
 INFO:logger:
@@ -1032,8 +635,153 @@ INFO:logger:
 
 
 WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 168-219-236
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:32:12] "GET /part1_correct?c_username=lreis&c_password=1234&c_remember=on HTTP/1.1" 200 -
+INFO:werkzeug: * Debugger PIN: 102-999-863
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:46:03] "GET /part1_correct?c_username=lreis&c_password=1234 HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:46:03] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:46:03] "GET /static/js/script.js HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:46:09] "GET /part1_correct?c_username=lreis&c_password=1234 HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:logger:
+---------------------
+
+
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 102-999-863
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:logger:
+---------------------
+
+
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 102-999-863
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:50:27] "[35m[1mGET /part1_correct?c_username=lreis&c_password=1234 HTTP/1.1[0m" 500 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:50:27] "[36mGET /part1_correct?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:50:27] "[36mGET /part1_correct?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:50:27] "GET /part1_correct?__debugger__=yes&cmd=resource&f=console.png&s=9AvwAQCbsSaU17phH7Jm HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:logger:
+---------------------
+
+
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 102-999-863
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:51:21] "[35m[1mGET /part1_correct?c_username=lreis&c_password=1234 HTTP/1.1[0m" 500 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:51:21] "[36mGET /part1_correct?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:51:21] "[36mGET /part1_correct?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:51:21] "GET /part1_correct?__debugger__=yes&cmd=resource&f=console.png&s=RHU2usd1favS2X2KgmQB HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:logger:
+---------------------
+
+
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 102-999-863
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:51:40] "GET /part1_correct?c_username=lreis&c_password=1234 HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:logger:
+---------------------
+
+
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 102-999-863
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:52:03] "[35m[1mGET /part1_correct?c_username=lreis&c_password=1234 HTTP/1.1[0m" 500 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:52:03] "[36mGET /part1_correct?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:52:03] "[36mGET /part1_correct?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:52:03] "GET /part1_correct?__debugger__=yes&cmd=resource&f=console.png&s=0jySvlto5KcC2boDE56v HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:logger:
+---------------------
+
+
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 102-999-863
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 16:54:03] "GET /part1_correct?c_username=lreis&c_password=1234 HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/app/part1/routesc.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:logger:
+---------------------
+
+
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 102-999-863
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 18:55:35] "GET / HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:logger:
+---------------------
+
+
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 102-999-863
+INFO:werkzeug: * Detected change in '/app/part1/routesc.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:logger:
+---------------------
+
+
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 102-999-863
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 18:55:45] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 18:55:45] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 18:55:45] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 18:55:45] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=0YnGi9G7OvQE9n0znfGI HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 18:56:18] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 18:56:18] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 18:56:18] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 18:56:18] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 18:56:18] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=0YnGi9G7OvQE9n0znfGI HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 18:56:30] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 18:56:30] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 18:56:30] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 18:56:30] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=0YnGi9G7OvQE9n0znfGI HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 18:56:40] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 18:56:40] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 18:56:40] "GET /static/js/script.js HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 18:56:40] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 18:56:43] "GET /part1.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 18:56:43] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 18:56:43] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 18:56:50] "[35m[1mGET /part1_correct?c_username=lreis&c_password=1234 HTTP/1.1[0m" 500 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 18:56:50] "GET /part1_correct?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 18:56:50] "GET /part1_correct?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 18:56:50] "GET /part1_correct?__debugger__=yes&cmd=resource&f=console.png&s=0YnGi9G7OvQE9n0znfGI HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 18:56:50] "GET /part1_correct?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/app/part1/routesc.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:logger:
+---------------------
+
+
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 102-999-863
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:logger:
+---------------------
+
+
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 102-999-863
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 18:57:38] "[35m[1mGET /part1_correct?c_username=lreis&c_password=1234 HTTP/1.1[0m" 500 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 18:57:38] "[36mGET /part1_correct?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 18:57:38] "[36mGET /part1_correct?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 18:57:38] "GET /part1_correct?__debugger__=yes&cmd=resource&f=console.png&s=rR9reH6HxsY7AyMoskOS HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 18:57:42] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 18:57:42] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 18:57:42] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 18:57:44] "GET /part1.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 18:57:44] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 18:57:44] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 18:57:49] "[35m[1mGET /part1_correct?c_username=lreis&c_password=1234 HTTP/1.1[0m" 500 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 18:57:49] "[36mGET /part1_correct?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 18:57:49] "[36mGET /part1_correct?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 18:57:49] "[36mGET /part1_correct?__debugger__=yes&cmd=resource&f=console.png&s=rR9reH6HxsY7AyMoskOS HTTP/1.1[0m" 304 -
 INFO:werkzeug: * Detected change in '/app/part1/routesc.py', reloading
 INFO:werkzeug: * Restarting with stat
 INFO:logger:
@@ -1051,359 +799,87 @@ INFO:logger:
 
 
 WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 168-219-236
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:33:54] "[35m[1mGET /part1_correct?c_username=lreis&c_password=1234&c_remember=on HTTP/1.1[0m" 500 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:33:54] "[36mGET /part1_correct?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:33:54] "[36mGET /part1_correct?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:33:54] "GET /part1_correct?__debugger__=yes&cmd=resource&f=console.png&s=4TXi4feQEheqpHnZxYbV HTTP/1.1" 200 -
-INFO:werkzeug: * Detected change in '/app/part1/routesc.py', reloading
+INFO:werkzeug: * Debugger PIN: 102-999-863
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 19:00:15] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 19:00:15] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 19:00:15] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 19:00:17] "GET /register.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 19:00:17] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 19:00:17] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 19:00:20] "GET /register?v_username=lreis&v_password=1234 HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 19:00:20] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 19:00:20] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 19:00:43] "GET /register?v_username=eval&v_password=1234 HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 19:00:43] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 19:00:43] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 19:00:48] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 19:00:49] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 19:00:49] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 19:00:50] "GET /part1.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 19:00:50] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 19:00:50] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 19:00:58] "GET /part1_vulnerable?v_username=lreis&v_password=1234 HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 19:00:58] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 19:00:58] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 19:01:15] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 19:01:15] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 19:01:15] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 19:01:15] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 19:01:17] "GET /part1.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 19:01:17] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 19:01:17] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 19:01:27] "GET /part1_correct?c_username=lreis&c_password=1234 HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 19:01:27] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 19:01:27] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 19:01:34] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 19:01:34] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 19:01:34] "GET /static/js/script.js HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 19:01:35] "GET /part1.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 19:01:36] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 19:01:36] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 19:01:42] "GET /part1_vulnerable?v_username=lreis&v_password=1234&v_remember=on HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 19:01:42] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 19:01:42] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 19:01:49] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 19:01:49] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 19:01:49] "GET /static/js/script.js HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 19:01:49] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 19:01:51] "GET /part1.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 19:01:51] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 19:01:51] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 19:01:52] "GET /logout HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 19:01:52] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 19:01:53] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 19:01:58] "GET /part1_correct?c_username=lreis&c_password=1234&c_remember=on HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 19:01:58] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 19:01:58] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 19:02:07] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 19:02:07] "GET /static/js/script.js HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 19:02:07] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 19:02:07] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 19:02:08] "GET /part1.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 19:02:08] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 19:02:08] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 19:02:09] "GET /logout HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 19:02:09] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 19:02:09] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 19:04:34] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 19:04:34] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 19:04:34] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 19:04:35] "GET /register.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 19:04:35] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 19:04:35] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 19:04:45] "GET /register?v_username=luis&v_password=1234 HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 19:04:45] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 19:04:45] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 19:04:59] "GET /register?v_username=luis&v_password=1234 HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 19:04:59] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 19:04:59] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
 INFO:werkzeug: * Restarting with stat
 INFO:logger:
 ---------------------
 
 
 WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 168-219-236
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:34:47] "[35m[1mGET /part1_correct?c_username=lreis&c_password=1234&c_remember=on HTTP/1.1[0m" 500 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:34:47] "[36mGET /part1_correct?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:34:47] "[36mGET /part1_correct?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:34:47] "GET /part1_correct?__debugger__=yes&cmd=resource&f=console.png&s=LrbdRpYz4NSikpjkdIWE HTTP/1.1" 200 -
-INFO:werkzeug: * Detected change in '/app/part1/routesc.py', reloading
-INFO:werkzeug: * Restarting with stat
-INFO:logger:
----------------------
-
-
-WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 168-219-236
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:35:31] "GET /part1_correct?c_username=lreis&c_password=1234&c_remember=on HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:35:43] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:35:43] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:35:43] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:35:45] "GET /part1.html HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:35:45] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:35:45] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:35:49] "GET /part1_correct?c_username=lreis&c_password=1234&c_remember=on HTTP/1.1" 200 -
-INFO:werkzeug: * Detected change in '/app/part1/routesc.py', reloading
-INFO:werkzeug: * Restarting with stat
-INFO:logger:
----------------------
-
-
-WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 168-219-236
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:38:02] "[35m[1mGET /part1_correct?c_username=lreis&c_password=1234&c_remember=on HTTP/1.1[0m" 500 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:38:02] "[36mGET /part1_correct?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:38:02] "[36mGET /part1_correct?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:38:02] "GET /part1_correct?__debugger__=yes&cmd=resource&f=console.png&s=l3ujCcpTM1nA9afGGERN HTTP/1.1" 200 -
-INFO:werkzeug: * Detected change in '/app/part1/routesc.py', reloading
-INFO:werkzeug: * Restarting with stat
-INFO:logger:
----------------------
-
-
-WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 168-219-236
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:38:40] "GET /part1_correct?c_username=lreis&c_password=1234&c_remember=on HTTP/1.1" 200 -
-INFO:werkzeug: * Detected change in '/app/part1/routesc.py', reloading
-INFO:werkzeug: * Restarting with stat
-INFO:logger:
----------------------
-
-
-WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 168-219-236
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:39:21] "[35m[1mGET /part1_correct?c_username=lreis&c_password=1234&c_remember=on HTTP/1.1[0m" 500 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:39:21] "[36mGET /part1_correct?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:39:21] "[36mGET /part1_correct?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:39:21] "GET /part1_correct?__debugger__=yes&cmd=resource&f=console.png&s=XWEeWwI1EfvFy9p9JXcU HTTP/1.1" 200 -
-INFO:werkzeug: * Detected change in '/app/part1/routesc.py', reloading
-INFO:werkzeug: * Restarting with stat
-INFO:logger:
----------------------
-
-
-WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 168-219-236
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:40:57] "GET /part1_correct?c_username=lreis&c_password=1234&c_remember=on HTTP/1.1" 200 -
-INFO:werkzeug: * Detected change in '/app/part1/routesc.py', reloading
-INFO:werkzeug: * Restarting with stat
-INFO:logger:
----------------------
-
-
-WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 168-219-236
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:42:50] "[35m[1mGET /part1_correct?c_username=lreis&c_password=1234&c_remember=on HTTP/1.1[0m" 500 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:42:50] "[36mGET /part1_correct?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:42:50] "[36mGET /part1_correct?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:42:50] "GET /part1_correct?__debugger__=yes&cmd=resource&f=console.png&s=oguQFX6RtTThCkI6jrsz HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:43:08] "[35m[1mGET /part1_correct?c_username=lreis&c_password=1234&c_remember=on HTTP/1.1[0m" 500 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:43:08] "[36mGET /part1_correct?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:43:08] "[36mGET /part1_correct?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:43:08] "[36mGET /part1_correct?__debugger__=yes&cmd=resource&f=console.png&s=oguQFX6RtTThCkI6jrsz HTTP/1.1[0m" 304 -
-INFO:werkzeug: * Detected change in '/app/part1/routesc.py', reloading
-INFO:werkzeug: * Restarting with stat
-INFO:logger:
----------------------
-
-
-WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 168-219-236
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:44:19] "GET /part1_correct?c_username=lreis&c_password=1234&c_remember=on HTTP/1.1" 200 -
-INFO:werkzeug: * Detected change in '/app/part1/routesc.py', reloading
-INFO:werkzeug: * Restarting with stat
-INFO:logger:
----------------------
-
-
-WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 168-219-236
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:44:50] "GET /part1_correct?c_username=lreis&c_password=1234&c_remember=on HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:44:50] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:44:50] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:44:56] "GET /part1_correct?c_username=lreis&c_password=1234&c_remember=on HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:44:56] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:44:56] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:45:02] "GET /part1_correct?c_username=lreis&c_password=12345&c_remember=on HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:45:02] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:45:02] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:45:23] "[35m[1mGET /part1_vulnerable?v_username='+or+'1'+%3D'1'+'&v_password=1234&v_remember=on HTTP/1.1[0m" 500 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:45:23] "[36mGET /part1_vulnerable?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:45:23] "GET /part1_vulnerable?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:45:23] "GET /part1_vulnerable?__debugger__=yes&cmd=resource&f=console.png&s=CPe6NO2p9CzOpE6udGz8 HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:45:42] "[35m[1mGET /part1_vulnerable?v_username='+or+'1'+%3D'1'+&v_password=1234&v_remember=on HTTP/1.1[0m" 500 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:45:42] "[36mGET /part1_vulnerable?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:45:42] "[36mGET /part1_vulnerable?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:45:42] "[36mGET /part1_vulnerable?__debugger__=yes&cmd=resource&f=console.png&s=CPe6NO2p9CzOpE6udGz8 HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:46:28] "[35m[1mGET /part1_vulnerable?v_username='+or+'1'+%3D'1'+'&v_password=1234&v_remember=on HTTP/1.1[0m" 500 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:46:28] "[36mGET /part1_vulnerable?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:46:28] "[36mGET /part1_vulnerable?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [30/Nov/2024 20:46:28] "[36mGET /part1_vulnerable?__debugger__=yes&cmd=resource&f=console.png&s=CPe6NO2p9CzOpE6udGz8 HTTP/1.1[0m" 304 -
-INFO:logger:
----------------------
-
-
-INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:5000
- * Running on http://172.18.0.3:5000
-INFO:werkzeug:[33mPress CTRL+C to quit[0m
-INFO:werkzeug: * Restarting with stat
-INFO:logger:
----------------------
-
-
-WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 850-693-083
-INFO:werkzeug: * Detected change in '/app/register/routes.py', reloading
-INFO:werkzeug: * Restarting with stat
-INFO:logger:
----------------------
-
-
-WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 850-693-083
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:17:33] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:17:33] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:17:33] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:17:34] "GET /register.html HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:17:34] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:17:34] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:17:45] "GET /register?v_username=luis&v_password=1234 HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:17:45] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:17:45] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug: * Detected change in '/app/register/routes.py', reloading
-INFO:werkzeug: * Restarting with stat
-INFO:logger:
----------------------
-
-
-WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 850-693-083
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:20:04] "GET /register?v_username=lreis&v_password=1234 HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:20:04] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:20:04] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug: * Detected change in '/app/register/routes.py', reloading
-INFO:werkzeug: * Restarting with stat
-INFO:logger:
----------------------
-
-
-WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 850-693-083
-INFO:werkzeug: * Detected change in '/app/register/routes.py', reloading
-INFO:werkzeug: * Restarting with stat
-INFO:logger:
----------------------
-
-
-WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 850-693-083
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:23:44] "[35m[1mGET /register?v_username=luis&v_password=12345 HTTP/1.1[0m" 500 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:23:45] "GET /register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:23:45] "GET /register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:23:45] "GET /register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:23:45] "GET /register?__debugger__=yes&cmd=resource&f=console.png&s=XWn7qSpuMOggnmO6bdpP HTTP/1.1" 200 -
-INFO:werkzeug: * Detected change in '/app/register/routes.py', reloading
-INFO:werkzeug: * Restarting with stat
-INFO:logger:
----------------------
-
-
-WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 850-693-083
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:24:05] "[35m[1mGET /register?v_username=luis&v_password=12345 HTTP/1.1[0m" 500 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:24:05] "[36mGET /register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:24:05] "[36mGET /register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:24:05] "GET /register?__debugger__=yes&cmd=resource&f=console.png&s=8ddAcEh1VGla9dUoz9tn HTTP/1.1" 200 -
-INFO:werkzeug: * Detected change in '/app/register/routes.py', reloading
-INFO:werkzeug: * Restarting with stat
-INFO:logger:
----------------------
-
-
-WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 850-693-083
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:24:38] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:24:38] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:24:38] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:24:40] "GET /register.html HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:24:40] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:24:40] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:24:43] "GET /register?v_username=luis&v_password=1234 HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:24:43] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:24:43] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:25:13] "GET /register?v_username=luis&v_password=1234 HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:25:13] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:25:13] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:25:58] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:25:58] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:25:58] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:26:00] "GET /part1.html HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:26:00] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:26:00] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:26:23] "GET /part1_correct?c_username=lreis&c_password=1%3D%3D1+OR+%23&c_remember=on HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:26:23] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:26:23] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:27:09] "[35m[1mGET /part1_vulnerable?v_username=''1'+or+'1'+%3D+'1'+'&v_password=123&v_remember=on HTTP/1.1[0m" 500 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:27:09] "GET /part1_vulnerable?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:27:09] "[36mGET /part1_vulnerable?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:27:09] "GET /part1_vulnerable?__debugger__=yes&cmd=resource&f=console.png&s=01Bpb3eeV0YCyIIBJCpw HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:27:33] "[35m[1mGET /part1_vulnerable?v_username=''1'+or+'1'+%3D+'1'+&v_password=123&v_remember=on HTTP/1.1[0m" 500 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:27:33] "[36mGET /part1_vulnerable?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:27:33] "[36mGET /part1_vulnerable?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:27:33] "[36mGET /part1_vulnerable?__debugger__=yes&cmd=resource&f=console.png&s=01Bpb3eeV0YCyIIBJCpw HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:27:47] "[35m[1mGET /part1_vulnerable?v_username=''1'+or+'1'+%3D+'1'&v_password=123&v_remember=on HTTP/1.1[0m" 500 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:27:47] "[36mGET /part1_vulnerable?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:27:47] "[36mGET /part1_vulnerable?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:27:47] "[36mGET /part1_vulnerable?__debugger__=yes&cmd=resource&f=console.png&s=01Bpb3eeV0YCyIIBJCpw HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:27:53] "GET /part1_vulnerable?v_username=''1'+or+'1'+%3D+'1&v_password=123&v_remember=on HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:27:53] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:27:53] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug: * Detected change in '/app/part1/routesv.py', reloading
-INFO:werkzeug: * Restarting with stat
-INFO:logger:
----------------------
-
-
-WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 850-693-083
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:30:22] "[35m[1mGET /part1_vulnerable?v_username='+'1'+or+'1'+%3D'1&v_password=1234&v_remember=on HTTP/1.1[0m" 500 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:30:22] "[36mGET /part1_vulnerable?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:30:22] "[36mGET /part1_vulnerable?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:30:22] "GET /part1_vulnerable?__debugger__=yes&cmd=resource&f=console.png&s=DatBbLR3oL3Gg4qic6Jz HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:30:44] "GET /part1_vulnerable?v_username=1'+or+'1'+%3D'1&v_password=1234&v_remember=on HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:30:44] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:30:44] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:31:15] "GET /part1_correct?c_username=1'+or+'1'+%3D'1&c_password=1234&c_remember=on HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:31:15] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:31:15] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:31:37] "GET /part1_vulnerable?v_username=1'+or+'1'+%3D'1&v_password=12345&v_remember=on HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:31:37] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:31:37] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug: * Detected change in '/app/part1/routesc.py', reloading
-INFO:werkzeug: * Restarting with stat
-INFO:logger:
----------------------
-
-
-WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 850-693-083
-INFO:werkzeug: * Detected change in '/app/part1/routesv.py', reloading
-INFO:werkzeug: * Restarting with stat
-INFO:logger:
----------------------
-
-
-WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 850-693-083
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:48:52] "GET / HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:48:52] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:48:52] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:48:54] "GET /part1.html HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:48:54] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:48:54] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:49:00] "GET /part1_correct?c_username=eval&c_password=1234&c_remember=on HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:49:00] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:49:00] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:51:30] "[35m[1mGET /part1_correct?c_username=eval&c_password=1234&c_remember=on HTTP/1.1[0m" 500 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:51:30] "GET /part1_correct?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:51:30] "[36mGET /part1_correct?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:51:30] "GET /part1_correct?__debugger__=yes&cmd=resource&f=console.png&s=EDtBJrA2aINnFFFjoelI HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:51:52] "GET /part1_correct?c_username=eval&c_password=1234&c_remember=on HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:51:52] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:51:52] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:52:30] "GET /part1_vulnerable?v_username=lreis&v_password=eval(1%2B1)+or+1234&v_remember=on HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:52:30] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:52:30] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug: * Detected change in '/app/register/routes.py', reloading
-INFO:werkzeug: * Restarting with stat
-INFO:logger:
----------------------
-
-
-WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 850-693-083
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:54:26] "GET /register.html HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:54:26] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:54:26] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:54:30] "GET /register?v_username=eval&v_password=1234 HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:54:30] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:54:30] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug: * Detected change in '/app/register/routes.py', reloading
-INFO:werkzeug: * Restarting with stat
-INFO:logger:
----------------------
-
-
-WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 850-693-083
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:55:06] "GET /register?v_username=eval&v_password=1234 HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:55:06] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:55:06] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug: * Detected change in '/app/register/routes.py', reloading
-INFO:werkzeug: * Restarting with stat
-INFO:logger:
----------------------
-
-
-WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 850-693-083
-INFO:werkzeug: * Detected change in '/app/part1/routesc.py', reloading
-INFO:werkzeug: * Restarting with stat
-INFO:logger:
----------------------
-
-
-WARNING:werkzeug: * Debugger is active!
-INFO:werkzeug: * Debugger PIN: 850-693-083
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:59:56] "GET /register?v_username=os.system&v_password=1234 HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:59:56] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 09:59:56] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 10:00:04] "GET /part1.html HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 10:00:04] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 10:00:04] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 10:00:26] "GET /part1_correct?c_username=os.system&c_password=1234&c_remember=on HTTP/1.1" 200 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 10:00:26] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:172.18.0.1 - - [01/Dec/2024 10:00:26] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Debugger PIN: 102-999-863

@@ -14,18 +14,21 @@ def db_connection():
     return conn
 
 def sanitize_input(user_input):
-    if user_input.find("eval") == -1:
+    if user_input.find("eval") != -1:
         return -1
-    elif user_input.find("exec") == -1:
+    elif user_input.find("exec") != -1:
         return -1
-    elif user_input.find("execfile") == -1:
+    elif user_input.find("execfile") != -1:
         return -1
-    elif user_input.find("input")  == -1:
+    elif user_input.find("input")  != -1:
         return -1
-    elif user_input.find("compile")  == -1:
+    elif user_input.find("compile")  != -1:
         return -1
-    elif user_input.find("open")  == -1:
+    elif user_input.find("open")  != -1:
         return -1
+    elif user_input.find("os.system")  != -1:
+        return -1
+    
     else:
         return 0
 
@@ -44,7 +47,7 @@ def register():
     if verif_user == -1:
         message = "Username not permitted"
         return render_template("register.html",message=message)
-    verif_user = sanitize_input(username)
+    verif_password = sanitize_input(password)
     if verif_password == -1:
         message = "Password not permitted"
         return render_template("register.html",message=message)

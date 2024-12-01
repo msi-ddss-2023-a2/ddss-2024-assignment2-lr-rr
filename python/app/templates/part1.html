@@ -18,7 +18,12 @@
   </script>
   </head>
   <body>
+    
     <div class="container">
+      {% if session['username'] %}
+                <h1>Welcome {{ session['username'] }}!</h1>
+                <a href="/logout">Logout</a>
+      {% endif %}
       <h1>Design and Development of Secure Software</h1>
       <h2>Practical Assignment #2 - Part 1.1</h2>
       <div class="disclaimer">
