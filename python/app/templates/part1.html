@@ -23,7 +23,7 @@
       {% if session['username'] %}
                 <h1>Welcome {{ session['username'] }}!</h1>
                 <a href="/logout">Logout</a>
-      {% endif %}
+      {%{% else %}%}
       <h1>Design and Development of Secure Software</h1>
       <h2>Practical Assignment #2 - Part 1.1</h2>
       <div class="disclaimer">
@@ -131,6 +131,7 @@
           </tbody>
         </table>
       </form>
+      {% endif %}
     </div>
     <script src="static/js/script.js"></script>
   </body>
