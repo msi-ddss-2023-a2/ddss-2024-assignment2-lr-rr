@@ -8,14 +8,14 @@
     <script type="text/javascript">
       {% if message == 'Failed Credentials' %}
           alert('Failed Credentials');
-      {% elif message == 'Sucess' %}
-          alert('Sucess');
+      {% elif message == 'Success' %}
+          alert('Success');
       {% elif message == 'Username not permitted' %}
           alert('Username not permitted');
       {% elif message == 'Password not permitted' %}
-          alert('Password not permitted')
+          alert('Password not permitted');
       {% endif %}
-  </script>
+    </script>    
   </head>
   <body>
     
@@ -23,7 +23,7 @@
       {% if session['username'] %}
                 <h1>Welcome {{ session['username'] }}!</h1>
                 <a href="/logout">Logout</a>
-      {%{% else %}%}
+      {% else %}
       <h1>Design and Development of Secure Software</h1>
       <h2>Practical Assignment #2 - Part 1.1</h2>
       <div class="disclaimer">
