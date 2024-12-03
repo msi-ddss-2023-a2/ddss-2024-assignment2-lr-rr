@@ -3,6 +3,7 @@ import logging, psycopg2
 from register.routes import register_html, register
 import base64, hashlib, os
 import datetime
+
 def db_connection():
     conn = psycopg2.connect(user = "ddss-database-assignment-2",
                 password = "ddss-database-assignment-2",
@@ -10,6 +11,7 @@ def db_connection():
                 port = "5432",
                 database = "ddss-database-assignment-2")
     return conn
+
 def sanitize_input(user_input):
     if user_input.find("eval") != -1:
         return -1

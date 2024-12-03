@@ -45,22 +45,6 @@ CREATE TABLE books (
     recomendation   INTEGER
 );
 
-
-
--- Default data for messages
-insert into messages (author, message)
-          values ('Vulnerable', 'Hi! I wrote this message using Vulnerable Form.');
-
-insert into messages (author, message)
-          values ('Correct', 'OMG! This form is so correct!!!');
-
-insert into messages (author, message)
-          values ('Vulnerable', 'Oh really?');
-
-
-
-
-
 -- Default data for books
 
 insert into books (title, authors, category, price, book_date, keywords, notes, recomendation,

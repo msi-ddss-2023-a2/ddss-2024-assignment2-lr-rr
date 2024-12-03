@@ -3,6 +3,7 @@ from flask import Flask, render_template, g, request, redirect, url_for, session
 import logging, psycopg2
 from register.routes import register_html, register
 import base64, hashlib, os
+
 def db_connection():
     conn = psycopg2.connect(user = "ddss-database-assignment-2",
                 password = "ddss-database-assignment-2",
@@ -10,8 +11,6 @@ def db_connection():
                 port = "5432",
                 database = "ddss-database-assignment-2")
     return conn
-
-
 
 def part1_vulnerable():
     if request.method == 'GET':
@@ -32,6 +31,7 @@ def part1_vulnerable():
     conn.commit()
     conn.close()
     message = "Failed Credentials"
+    
     if not results:
         return render_template("part1.html",message=message)
     username_d, password_d, salt_d = results[0]

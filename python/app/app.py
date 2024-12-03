@@ -8,10 +8,9 @@ from part1.routesv import part1_vulnerable
 from part1.deletesession import delete_session
 from part1.routesc import part1_correct
 from datetime import timedelta, datetime
+from markupsafe import escape
 
 app = Flask(__name__, static_folder='templates/static/')
-
-
 
 @app.route("/")
 def home():
@@ -34,7 +33,6 @@ def target():
 def login():
     return render_template("part1.html");
 
-
 @app.route("/part1_vulnerable", methods=['GET', 'POST'])
 def part1_vulnerable_app():
     return part1_vulnerable()
@@ -48,52 +46,117 @@ def part1_correct_app():
 def delete_session_app():
     return delete_session()
 
-@app.route("/part2.html", methods=['GET'])
+
+@app.route("/part2.html", methods=["GET", "POST"])
 def part2():
+    conn = get_db()
+    cur = conn.cursor()
+
+    if request.method == "POST":
+        # Form submission handling
+        form_source = request.form.get("form_source")
+        author = session.get("username", "anonymous")
+        message = request.form.get("text", "")
+
+        if form_source == "vulnerable":
+            # Append a marker to the vulnerable message
+            message_with_marker = f"{message} [Vulnerable]"
+        elif form_source == "correct":
+            # Sanitize the input and append a marker for correct messages
+            message_with_marker = f"{escape(message)} [Correct]"
+        else:
+            message_with_marker = ""
+
+        if message_with_marker:
+            cur.execute(
+                "INSERT INTO messages (author, message) VALUES (%s, %s)",
+                (author, message_with_marker),
+            )
+            conn.commit()
+
+    # Fetch all messages for display
+    cur.execute("SELECT author, message FROM messages ORDER BY message_id DESC")
+    messages = cur.fetchall()
+    conn.close()
+
+    return render_template("part2.html", messages=messages)
 
 
+@app.route("/part2.html", methods=["GET", "POST"])
+def part2_page():  # Renamed to avoid conflicts
+    conn = get_db()
+    cur = conn.cursor()
 
-    return render_template("part2.html");
+    # Fetch all messages
+    cur.execute("SELECT text, is_vulnerable FROM messages ORDER BY id DESC")
+    messages = cur.fetchall()
+    conn.close()
 
+    return render_template("part2.html", messages=messages)
 
-@app.route("/part2_vulnerable", methods=['GET', 'POST'])
+@app.route("/part2_vulnerable", methods=["GET", "POST"])
 def part2_vulnerable():
-    
-   
+    conn = get_db()
+    cur = conn.cursor()
 
-    return "/part2_vulnerable"
+    if request.method == "POST":
+        author = session.get("username", "anonymous")
+        message = request.form["v_text"]
+
+        # Append "[Vulnerable]" marker to the message
+        message_with_marker = f"{message} [Vulnerable]"
+
+        cur.execute(
+            "INSERT INTO messages (author, message) VALUES (%s, %s)",
+            (author, message_with_marker),
+        )
+        conn.commit()
+
+    # Fetch all messages for display
+    cur.execute("SELECT author, message FROM messages ORDER BY message_id DESC")
+    messages = cur.fetchall()
+    conn.close()
+
+    return render_template("part2.html", messages=messages)
 
 
-@app.route("/part2_correct", methods=['GET', 'POST'])
+@app.route("/part2_correct", methods=["GET", "POST"])
 def part2_correct():
-    
+    conn = get_db()
+    cur = conn.cursor()
 
-    return "/part2_correct"
+    if request.method == "POST":
+        author = session.get("username", "anonymous")
+        message = escape(request.form["c_text"])  # Sanitize input
 
+        # Append "[Correct]" marker to the message
+        message_with_marker = f"{message} [Correct]"
 
+        cur.execute(
+            "INSERT INTO messages (author, message) VALUES (%s, %s)",
+            (author, message_with_marker),
+        )
+        conn.commit()
 
+    # Fetch all messages for display
+    cur.execute("SELECT author, message FROM messages ORDER BY message_id DESC")
+    messages = cur.fetchall()
+    conn.close()
 
-
+    return render_template("part2.html", messages=messages)
 
 @app.route("/part3.html", methods=['GET'])
 def part3():
-
-
     return render_template("part3.html");
 
 
 @app.route("/part3_vulnerable", methods=['GET', 'POST'])
 def part3_vulnerable():
-    
-   
-
     return "/part3_vulnerable"
 
 
 @app.route("/part3_correct", methods=['GET', 'POST'])
 def part3_correct():
-    
-
     return "/part3_correct"
 
 
