@@ -26,6 +26,9 @@ def register_page():
 def register_action():
     return register()
 
+@app.route('/target')
+def target():
+    return render_template('index.html')
 
 @app.route("/part1.html", methods=['GET'])
 def login():
