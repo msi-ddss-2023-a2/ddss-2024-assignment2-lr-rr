@@ -10,6 +10,8 @@ run pip install flask==3.0.0
 
 run pip install psycopg2-binary
 
+run pip3 install flask flask-talisman
+
 copy . /app
 
 volume ["/app"]

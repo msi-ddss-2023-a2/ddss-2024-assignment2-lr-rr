@@ -1,106 +1,120 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>DDSS PA2 - Part 1.2</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="static/css/style.css" />
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <h1>Design and Development of Secure Software</h1>
-        <h2>Practical Assignment #2 - Part 1.2</h2>
-        <div class="disclaimer">
-            DISCLAIMER: This code is to be used in the scope of the <em>DDSS</em> course. 
-            <br />
-            <b>Important:</b> these sources are merely suggestions of implementations. You should modify everything you deem necessary and be responsible for all the content delivered.
-            <em>The contents of this repository do not replace the proper reading of the assignment description.</em>
-        </div>
+      <h1>Design and Development of Secure Software</h1>
+      <h2>Practical Assignment #2 - Part 1.2</h2>
+      <div class="disclaimer">
+        DISCLAIMER: This code is to be used in the scope of the
+        <em>DDSS</em> course.
         <br />
+        <b>Important:</b> these sources are merely suggestions of
+        implementations. You should modify everything you deem necessary and be
+        responsible for all the content delivered.
+        <em
+          >The contents of this repository do not replace the proper reading of
+          the assignment description.</em
+        >
+      </div>
+      <br />
 
-        <!-- Vulnerable Form -->
-        <form action="/part2_vulnerable" method="POST" class="form-container vulnerable-form">
-            <table class="form-table">
-                <thead>
-                    <tr>
-                        <th>Part 2.0 - Vulnerable Form</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            <textarea
-                                placeholder="Enter Text"
-                                name="v_text"
-                                required
-                            ></textarea>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td align="right">
-                            <button type="submit">Submit</button>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </form>
-
-        <br />
-
-        <!-- Correct Form -->
-        <form action="/part2_correct" method="POST" class="form-container correct-form">
-            <table class="form-table">
-                <thead>
-                    <tr>
-                        <th>Part 2.1 - Correct Form</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            <textarea
-                                placeholder="Enter Text"
-                                name="c_text"
-                                required
-                            ></textarea>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td align="right">
-                            <button type="submit">Submit</button>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </form>
-
-        <br />
-
-        <!-- Output Box -->
-        <table class="output-box">
-            <thead>
-                <tr>
-                    <th>Messages</th>
-                </tr>
-            </thead>
-            <tbody>
-                {% for author, message in messages %}
-                <tr>
-                    <td>
-                        <strong>{{ author or 'anonymous' }}:</strong>
-                        {% if '[Vulnerable]' in message %}
-                        <span style="color: red;">{{ message | safe }}</span>
-                        {% else %}
-                        <span style="color: green;">{{ message }}</span>
-                        {% endif %}
-                    </td>
-                </tr>
-                {% endfor %}
-            </tbody>
+      <!-- Vulnerable Form -->
+      <form
+        action="/part2_vulnerable"
+        method="POST"
+        class="form-container vulnerable-form"
+      >
+        <table class="form-table">
+          <thead>
+            <tr>
+              <th>Part 2.0 - Vulnerable Form</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <textarea
+                  placeholder="Enter Text"
+                  name="v_text"
+                  required
+                ></textarea>
+              </td>
+            </tr>
+            <tr>
+              <td align="right">
+                <button type="submit">Submit</button>
+              </td>
+            </tr>
+          </tbody>
         </table>
+      </form>
 
-        <a href="{{ url_for('target') }}">Go to home</a>
+      <br />
+
+      <!-- Correct Form -->
+      <form
+        action="/part2_correct"
+        method="POST"
+        class="form-container correct-form"
+      >
+        <table class="form-table">
+          <thead>
+            <tr>
+              <th>Part 2.1 - Correct Form</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <textarea
+                  placeholder="Enter Text"
+                  name="c_text"
+                  required
+                ></textarea>
+              </td>
+            </tr>
+            <tr>
+              <td align="right">
+                <button type="submit">Submit</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+
+      <br />
+
+      <!-- Output Box -->
+      <table class="output-box">
+        <thead>
+          <tr>
+            <th>Messages</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for author, message in messages %}
+          <tr>
+            <td>
+              <strong>{{ author or 'anonymous' }}:</strong>
+              {% if '[Vulnerable]' in message %}
+              <span style="color: red">{{ message | safe }}</span>
+              {% else %}
+              <span style="color: green">{{ message }}</span>
+              {% endif %}
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+
+      <a href="{{ url_for('target') }}">Go to home</a>
     </div>
     <script src="static/js/script.js"></script>
-</body>
+  </body>
 </html>

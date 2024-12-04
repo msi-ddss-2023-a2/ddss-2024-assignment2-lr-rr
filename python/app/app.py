@@ -9,8 +9,17 @@ from part1.deletesession import delete_session
 from part1.routesc import part1_correct
 from datetime import timedelta, datetime
 from markupsafe import escape
+from flask_talisman import Talisman
 
 app = Flask(__name__, static_folder='templates/static/')
+Talisman(app)
+
+@app.before_request
+def redirect_to_https():
+    # Check if the request is not secure
+    if not request.is_secure:
+        # Redirect to HTTPS with the correct host and path
+        return redirect(f"https://{request.host}{request.path}", code=301)    
 
 @app.route("/")
 def home():
@@ -251,43 +260,6 @@ def part3_correct():
 
     return render_template("part3.html", results=results, error=error)
 
-@app.route("/demo", methods=['GET', 'POST'])
-def demo():
-    logger.info("\n DEMO \n");   
-
-    conn = get_db()
-    cur = conn.cursor()
-
-    logger.info("---- users  ----")
-    cur.execute("SELECT * FROM users")
-    rows = cur.fetchall()
-
-    for row in rows:
-        logger.info(row)
-
-    for row in rows:
-        logger.info(row)
-
-    logger.info("---- messages ----")
-    cur.execute("SELECT * FROM messages")
-    rows = cur.fetchall()
- 
-    for row in rows:
-        logger.info(row)
-
-    logger.info("---- books ----")
-    cur.execute("SELECT * FROM books")
-    rows = cur.fetchall()
- 
-    for row in rows:
-        logger.info(row)
-
-    conn.close ()
-    logger.info("\n---------------------\n\n") 
-
-    return "/demo"
-
-
 ##########################################################
 ## DATABASE ACCESS
 ##########################################################
@@ -299,10 +271,6 @@ def get_db():
                 port = "5432",
                 database = "ddss-database-assignment-2")
     return db
-
-
-
-
 
 ##########################################################
 ## MAIN
@@ -331,7 +299,7 @@ if __name__ == "__main__":
     #TODO:Falar com o Rui sobre isto
     app.secret_key = 'super secret key'
     ####################################
-    app.run(host="0.0.0.0", debug=True, threaded=True)
+    app.run(host="0.0.0.0", port=5000, debug=True, threaded=True, ssl_context=('certificates/cert.pem', 'certificates/key.pem'))  # Enable debug mode for development
 
 
 
