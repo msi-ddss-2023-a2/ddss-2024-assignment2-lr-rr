@@ -15,13 +15,96 @@
       {% elif message == 'Password not permitted' %}
           alert('Password not permitted');
       {% endif %}
-    </script>    
+    </script>   
+    <script>
+      async function submitForm(event) {
+          event.preventDefault(); // Prevent default form submission
+
+          const form = event.target;
+          const formData = new FormData(form);
+
+          try {
+              const response = await fetch(form.action, {
+                  method: "POST",
+                  body: formData,
+              });
+
+              const message = await response.text();
+
+              if (response.ok) {
+                  alert("Success: " + message); // Display success message
+                  form.reset();
+              } else {
+                  alert("Error: " + message); // Display error message
+              }
+          } catch (error) {
+              alert("An error occurred: " + error.message); // Handle any unexpected errors
+          }
+      }
+  </script>
   </head>
   <body>
     
     <div class="container">
       {% if session['username'] %}
                 <h1>Welcome {{ session['username'] }}!</h1>
+                <br>
+                <h2>Insert New Book</h2>
+                <form action="/insert_book" method="POST" onsubmit="submitForm(event)">
+                  <table>
+                      <tr>
+                          <td><label for="title">Title:</label></td>
+                          <td><input type="text" id="title" name="title" required></td>
+                      </tr>
+                      
+                      <tr>
+                          <td><label for="authors">Authors:</label></td>
+                          <td><input type="text" id="authors" name="authors" required></td>
+                      </tr>
+                      
+                      <tr>
+                          <td><label for="category">Category:</label></td>
+                          <td><input type="text" id="category" name="category" required></td>
+                      </tr>
+                      
+                      <tr>
+                          <td><label for="price">Price:</label></td>
+                          <td><input type="number" id="price" name="price" step="0.01" required></td>
+                      </tr>
+                      
+                      <tr>
+                          <td><label for="book_date">Book Date:</label></td>
+                          <td><input type="date" id="book_date" name="book_date" required></td>
+                      </tr>
+                      
+                      <tr>
+                          <td><label for="description">Description:</label></td>
+                          <td><textarea id="description" name="description" rows="4" cols="50" required></textarea></td>
+                      </tr>
+                      
+                      <tr>
+                          <td><label for="keywords">Keywords:</label></td>
+                          <td><input type="text" id="keywords" name="keywords"></td>
+                      </tr>
+                      
+                      <tr>
+                          <td><label for="notes">Notes:</label></td>
+                          <td><input type="text" id="notes" name="notes"></td>
+                      </tr>
+                      
+                      <tr>
+                          <td><label for="recommendation">Recommendation (1-5):</label></td>
+                          <td><input type="number" id="recommendation" name="recommendation" min="1" max="5" required></td>
+                      </tr>
+                      
+                      <tr>
+                          <td colspan="2" style="text-align:center;">
+                              <button type="submit" class="form-button">Add Book</button>
+                          </td>
+                      </tr>
+                  </table>
+              </form>              
+
                 <a href="/logout">Logout</a>
       {% else %}
       <h1>Design and Development of Secure Software</h1>

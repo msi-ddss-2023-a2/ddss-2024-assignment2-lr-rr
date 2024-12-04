@@ -146,6 +146,38 @@ def part2_correct():
 
     return render_template("part2.html", messages=messages)
 
+@app.route("/insert_book", methods=["POST"])
+def insert_book():
+    try:
+        # Get form data
+        title = request.form["title"]
+        authors = request.form["authors"]
+        category = request.form["category"]
+        price = request.form["price"]
+        book_date = request.form["book_date"]
+        description = request.form["description"]
+        keywords = request.form["keywords"]
+        notes = request.form["notes"]
+        recommendation = request.form["recommendation"]
+
+        # Insert into the database
+        conn = get_db()
+        cur = conn.cursor()
+
+        query = """
+        INSERT INTO books (title, authors, category, price, book_date, description, keywords, notes, recomendation)
+        VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)
+        """
+        cur.execute(query, (title, authors, category, price, book_date, description, keywords, notes, recommendation))
+
+        conn.commit()
+        cur.close()
+        conn.close()
+
+        return "Book has been successfully added to the database.", 200
+    except Exception as e:
+        return f"Failed to add the book: {str(e)}", 500
+
 @app.route("/part3.html", methods=['GET'])
 def part3():
     return render_template("part3.html");
