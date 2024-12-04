@@ -126,12 +126,13 @@ def part2_correct():
     cur = conn.cursor()
 
     if request.method == "POST":
-        author = session.get("username", "anonymous")
+        author = escape(session.get("username", "anonymous"))  # Sanitize session input
         message = escape(request.form["c_text"])  # Sanitize input
 
         # Append "[Correct]" marker to the message
         message_with_marker = f"{message} [Correct]"
 
+        # Correct parameterized query for psycopg2
         cur.execute(
             "INSERT INTO messages (author, message) VALUES (%s, %s)",
             (author, message_with_marker),
@@ -234,12 +235,14 @@ if __name__ == "__main__":
     logger.addHandler(ch)
 
     logger.info("\n---------------------\n\n")
-    
+
+    #app.run(debug=False)  # Disable debug mode in production    
     ####################################
     #TODO:Falar com o Rui sobre isto
     app.secret_key = 'super secret key'
     ####################################
     app.run(host="0.0.0.0", debug=True, threaded=True)
+
 
 
 
