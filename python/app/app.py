@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from flask import Flask, render_template, g, request, redirect, url_for, session, make_response
+from flask import Flask, render_template, jsonify, g, request, redirect, url_for, session, make_response
 import logging, psycopg2
 from register.routes import register_html, register
 from part1.routesv import part1_vulnerable
@@ -13,13 +13,6 @@ from flask_talisman import Talisman
 
 app = Flask(__name__, static_folder='templates/static/')
 Talisman(app)
-
-@app.before_request
-def redirect_to_https():
-    # Check if the request is not secure
-    if not request.is_secure:
-        # Redirect to HTTPS with the correct host and path
-        return redirect(f"https://{request.host}{request.path}", code=301)    
 
 @app.route("/")
 def home():
@@ -159,17 +152,44 @@ def part2_correct():
 def insert_book():
     try:
         # Get form data
-        title = request.form["title"]
-        authors = request.form["authors"]
-        category = request.form["category"]
-        price = request.form["price"]
-        book_date = request.form["book_date"]
-        description = request.form["description"]
-        keywords = request.form["keywords"]
-        notes = request.form["notes"]
-        recommendation = request.form["recommendation"]
+        title = request.form.get("title", "").strip()
+        authors = request.form.get("authors", "").strip()
+        category = request.form.get("category", "").strip()
+        price = request.form.get("price", "").strip()
+        book_date = request.form.get("book_date", "").strip()
+        description = request.form.get("description", "").strip()
+        keywords = request.form.get("keywords", "").strip()
+        notes = request.form.get("notes", "").strip()
+        recommendation = request.form.get("recommendation", "").strip()
 
-        # Insert into the database
+        # Validate required fields
+        if not title or not authors or not category or not price or not book_date:
+            return render_template("part1.html", message="Missing required fields.", message_type="error")
+
+        # Validate price
+        try:
+            price = float(price)
+            if price <= 0:
+                return render_template("part1.html", message="Price must be a positive number.", message_type="error")
+        except ValueError:
+            return render_template("part1.html", message="Invalid price format.", message_type="error")
+
+        # Validate date
+        try:
+            # Ensure the date is in the correct format
+            book_date = datetime.strptime(book_date, "%Y-%m-%d")
+        except ValueError:
+            return render_template("part1.html", message="Invalid date format. Use YYYY-MM-DD.", message_type="error")
+
+        # Ensure the date is not in the future
+        if book_date > datetime.today():
+            return render_template("part1.html", message="The book date cannot be in the future.", message_type="error")
+
+        # Optional length validation
+        if len(title) > 255 or len(authors) > 255 or len(category) > 100:
+            return render_template("part1.html", message="One or more fields exceed allowed length.", message_type="error")
+
+        # Database interaction
         conn = get_db()
         cur = conn.cursor()
 
@@ -177,20 +197,20 @@ def insert_book():
         INSERT INTO books (title, authors, category, price, book_date, description, keywords, notes, recomendation)
         VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)
         """
-        cur.execute(query, (title, authors, category, price, book_date, description, keywords, notes, recommendation))
+        cur.execute(query, (title, authors, category, price, book_date.strftime("%Y-%m-%d"), description, keywords, notes, recommendation))
 
         conn.commit()
         cur.close()
         conn.close()
 
-        return "Book has been successfully added to the database.", 200
+        return render_template("part1.html", message="Book has been successfully added to the database.", message_type="success")
     except Exception as e:
-        return f"Failed to add the book: {str(e)}", 500
+        return render_template("part1.html", message=f"Failed to add the book: {str(e)}", message_type="error")
+
 
 @app.route("/part3.html", methods=['GET'])
 def part3():
     return render_template("part3.html");
-
 
 @app.route("/part3_vulnerable", methods=["GET", "POST"])
 def part3_vulnerable():
@@ -198,23 +218,84 @@ def part3_vulnerable():
     error = None
     if request.method == "POST":
         try:
-            # Get form inputs
-            title = request.form.get("title", "")
-            authors = request.form.get("authors", "")
-            category = request.form.get("category", "")
-            keywords = request.form.get("keywords", "")
+            # Collect form inputs
+            v_name = request.form.get("v_name", "")
+            v_author = request.form.get("v_author", "")
+            v_category_id = request.form.get("v_category_id", "")
+            v_pricemin = request.form.get("v_pricemin", None)
+            v_pricemax = request.form.get("v_pricemax", None)
+            v_search_input = request.form.get("v_search_input", "")
+            v_search_field = request.form.get("v_search_field", "any")
+            v_radio_match = request.form.get("v_radio_match", "any")
+            v_sp_date_range = request.form.get("v_sp_date_range", "-1")
+            v_sp_start_month = request.form.get("v_sp_start_month", "0")
+            v_sp_start_day = request.form.get("v_sp_start_day", "0")
+            v_sp_start_year = request.form.get("v_sp_start_year", "")
+            v_sp_end_month = request.form.get("v_sp_end_month", "0")
+            v_sp_end_day = request.form.get("v_sp_end_day", "0")
+            v_sp_end_year = request.form.get("v_sp_end_year", "")
 
-            # Vulnerable SQL query
-            query = f"""
-            SELECT * FROM books
-            WHERE title LIKE '%{title}%'
-              AND authors LIKE '%{authors}%'
-              AND category LIKE '%{category}%'
-              AND keywords LIKE '%{keywords}%'
-            """
+            # Start building the SQL query
+            query = "SELECT * FROM books WHERE 1=1"
+            conditions = []
+
+            # Add conditions for title, author, and category
+            if v_name:
+                conditions.append(f"title ILIKE '%{v_name}%'")
+            if v_author:
+                conditions.append(f"authors ILIKE '%{v_author}%'")
+            if v_category_id:
+                conditions.append(f"category = '{v_category_id}'")
+
+            # Add conditions for price range
+            if v_pricemin:
+                conditions.append(f"price >= {v_pricemin}")
+            if v_pricemax:
+                conditions.append(f"price <= {v_pricemax}")
+
+            # Add advanced search input condition
+            if v_search_input:
+                if v_radio_match == "any":
+                    operator = " OR "
+                elif v_radio_match == "all":
+                    operator = " AND "
+                else:  # Exact phrase
+                    operator = ""
+
+                if v_search_field == "any":
+                    search_fields = ["title", "authors", "description", "keywords", "notes"]
+                else:
+                    search_fields = [v_search_field]
+
+                search_conditions = [f"{field} ILIKE '%{v_search_input}%'" for field in search_fields]
+                if operator:
+                    conditions.append(f"({operator.join(search_conditions)})")
+                else:
+                    conditions.append(search_conditions[0])
+
+             # Add date range conditions
+            if v_sp_date_range != "-1":
+                conditions.append(f"book_date >= NOW() - INTERVAL '{v_sp_date_range} days'")
+            elif v_sp_start_year and not v_sp_end_year:
+                # Search within a specific year
+                start_date = f"{v_sp_start_year}-01-01"
+                end_date = f"{v_sp_start_year}-12-31"
+                conditions.append(f"book_date BETWEEN '{start_date}' AND '{end_date}'")
+            elif v_sp_start_year and v_sp_end_year:
+                # Search within a specified range
+                start_date = f"{v_sp_start_year}-01-01"
+                end_date = f"{v_sp_end_year}-12-31"
+                conditions.append(f"book_date BETWEEN '{start_date}' AND '{end_date}'")
+
+
+            # Combine conditions
+            if conditions:
+                query += " AND " + " AND ".join(conditions)
+
+            # Execute the vulnerable query
             conn = get_db()
             cur = conn.cursor()
-            cur.execute(query)
+            cur.execute(query)  # Vulnerable to SQL injection
             results = cur.fetchall()
             cur.close()
             conn.close()
@@ -229,26 +310,81 @@ def part3_correct():
     error = None
     if request.method == "POST":
         try:
-            # Get form inputs
-            title = request.form.get("title", "")
-            authors = request.form.get("authors", "")
-            category = request.form.get("category", "")
-            keywords = request.form.get("keywords", "")
+            # Collect form inputs
+            v_name = request.form.get("v_name", "")
+            v_author = request.form.get("v_author", "")
+            v_category_id = request.form.get("v_category_id", "")
+            v_pricemin = request.form.get("v_pricemin", None)
+            v_pricemax = request.form.get("v_pricemax", None)
+            v_search_input = request.form.get("v_search_input", "")
+            v_search_field = request.form.get("v_search_field", "any")
+            v_radio_match = request.form.get("v_radio_match", "any")
+            v_sp_date_range = request.form.get("v_sp_date_range", "-1")
+            v_sp_start_month = request.form.get("v_sp_start_month", "0")
+            v_sp_start_day = request.form.get("v_sp_start_day", "0")
+            v_sp_start_year = request.form.get("v_sp_start_year", "")
+            v_sp_end_month = request.form.get("v_sp_end_month", "0")
+            v_sp_end_day = request.form.get("v_sp_end_day", "0")
+            v_sp_end_year = request.form.get("v_sp_end_year", "")
 
-            # Secure SQL query with parameterized inputs
-            query = """
-            SELECT * FROM books
-            WHERE title LIKE %s
-              AND authors LIKE %s
-              AND category LIKE %s
-              AND keywords LIKE %s
-            """
-            params = (
-                f"%{title}%",
-                f"%{authors}%",
-                f"%{category}%",
-                f"%{keywords}%",
-            )
+            # Start building the SQL query
+            query = "SELECT * FROM books WHERE 1=1"
+            params = []
+
+            # Add conditions for title, author, and category
+            if v_name:
+                query += " AND title ILIKE %s"
+                params.append(f"%{v_name}%")
+            if v_author:
+                query += " AND authors ILIKE %s"
+                params.append(f"%{v_author}%")
+            if v_category_id:
+                query += " AND category = %s"
+                params.append(v_category_id)
+
+            # Add conditions for price range
+            if v_pricemin:
+                query += " AND price >= %s"
+                params.append(v_pricemin)
+            if v_pricemax:
+                query += " AND price <= %s"
+                params.append(v_pricemax)
+
+            # Add advanced search input condition
+            if v_search_input:
+                if v_radio_match == "any":
+                    operator = " OR "
+                elif v_radio_match == "all":
+                    operator = " AND "
+                else:  # Exact phrase
+                    operator = ""
+
+                if v_search_field == "any":
+                    search_fields = ["title", "authors", "description", "keywords", "notes"]
+                else:
+                    search_fields = [v_search_field]
+
+                search_conditions = [f"{field} ILIKE %s" for field in search_fields]
+                params.extend([f"%{v_search_input}%"] * len(search_fields))
+                if operator:
+                    query += f" AND ({operator.join(search_conditions)})"
+                else:
+                    query += f" AND {search_conditions[0]}"
+
+            # Add date range conditions
+            if v_sp_date_range != "-1":
+                query += " AND book_date >= NOW() - INTERVAL %s"
+                params.append(f"{v_sp_date_range} days")
+            elif v_sp_start_year and v_sp_end_year:
+                try:
+                    start_date = f"{int(v_sp_start_year)}-{int(v_sp_start_month):02}-{int(v_sp_start_day):02}"
+                    end_date = f"{int(v_sp_end_year)}-{int(v_sp_end_month):02}-{int(v_sp_end_day):02}"
+                    query += " AND book_date BETWEEN %s AND %s"
+                    params.extend([start_date, end_date])
+                except ValueError:
+                    raise ValueError("Invalid date format provided.")
+
+            # Execute the secure query
             conn = get_db()
             cur = conn.cursor()
             cur.execute(query, params)

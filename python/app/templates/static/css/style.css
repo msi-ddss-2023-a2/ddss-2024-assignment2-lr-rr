@@ -19,13 +19,15 @@ body {
   height: 100vh;
 }
 
-body, html{
+body,
+html {
   height: 100%;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
   overflow-y: auto;
-  box-sizing: border-box;  padding: 0;
+  box-sizing: border-box;
+  padding: 0;
   overflow-x: hidden;
   overflow-y: auto;
 }
@@ -83,9 +85,9 @@ body, html{
   text-align: center;
 }
 
-#main-div{
+#main-div {
   padding-top: 5px;
-  width: 90vw;  /* 90% of the viewport width */
+  width: 90vw; /* 90% of the viewport width */
 }
 
 /* Headers Styling */
@@ -186,7 +188,8 @@ hr {
   margin: 10px 0;
 }
 
-th, td{
+th,
+td {
   text-align: left;
   padding: 2px;
   border: 1px solid #ddd;
@@ -218,7 +221,23 @@ th, td{
   background-color: #4fc3f7;
   color: #121212;
   padding: 10px;
-  border-radius: 8px 8px 0 0;
+}
+
+.message {
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.message.success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.message.error {
+  background-color: #f8d7da;
+  color: #721c24;
 }
 
 .form-table textarea,
@@ -251,4 +270,3 @@ th, td{
 .form-button:hover {
   background-color: #039be5;
 }
-
