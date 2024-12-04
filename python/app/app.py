@@ -183,15 +183,73 @@ def part3():
     return render_template("part3.html");
 
 
-@app.route("/part3_vulnerable", methods=['GET', 'POST'])
+@app.route("/part3_vulnerable", methods=["GET", "POST"])
 def part3_vulnerable():
-    return "/part3_vulnerable"
+    results = None
+    error = None
+    if request.method == "POST":
+        try:
+            # Get form inputs
+            title = request.form.get("title", "")
+            authors = request.form.get("authors", "")
+            category = request.form.get("category", "")
+            keywords = request.form.get("keywords", "")
 
+            # Vulnerable SQL query
+            query = f"""
+            SELECT * FROM books
+            WHERE title LIKE '%{title}%'
+              AND authors LIKE '%{authors}%'
+              AND category LIKE '%{category}%'
+              AND keywords LIKE '%{keywords}%'
+            """
+            conn = get_db()
+            cur = conn.cursor()
+            cur.execute(query)
+            results = cur.fetchall()
+            cur.close()
+            conn.close()
+        except Exception as e:
+            error = str(e)
 
-@app.route("/part3_correct", methods=['GET', 'POST'])
+    return render_template("part3.html", results=results, error=error)
+
+@app.route("/part3_correct", methods=["GET", "POST"])
 def part3_correct():
-    return "/part3_correct"
+    results = None
+    error = None
+    if request.method == "POST":
+        try:
+            # Get form inputs
+            title = request.form.get("title", "")
+            authors = request.form.get("authors", "")
+            category = request.form.get("category", "")
+            keywords = request.form.get("keywords", "")
 
+            # Secure SQL query with parameterized inputs
+            query = """
+            SELECT * FROM books
+            WHERE title LIKE %s
+              AND authors LIKE %s
+              AND category LIKE %s
+              AND keywords LIKE %s
+            """
+            params = (
+                f"%{title}%",
+                f"%{authors}%",
+                f"%{category}%",
+                f"%{keywords}%",
+            )
+            conn = get_db()
+            cur = conn.cursor()
+            cur.execute(query, params)
+            results = cur.fetchall()
+            cur.close()
+            conn.close()
+        except Exception as e:
+            error = str(e)
+
+    return render_template("part3.html", results=results, error=error)
 
 @app.route("/demo", methods=['GET', 'POST'])
 def demo():

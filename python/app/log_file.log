@@ -2512,3 +2512,109 @@ INFO:logger:
 
 WARNING:werkzeug: * Debugger is active!
 INFO:werkzeug: * Debugger PIN: 547-016-936
+INFO:werkzeug:172.18.0.1 - - [04/Dec/2024 02:55:51] "GET /part3.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [04/Dec/2024 02:55:52] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [04/Dec/2024 02:55:52] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:logger:
+---------------------
+
+
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 547-016-936
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:logger:
+---------------------
+
+
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 547-016-936
+INFO:werkzeug:172.18.0.1 - - [04/Dec/2024 03:03:27] "GET /part3.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [04/Dec/2024 03:03:27] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [04/Dec/2024 03:03:27] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:logger:
+---------------------
+
+
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 547-016-936
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:logger:
+---------------------
+
+
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 547-016-936
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:logger:
+---------------------
+
+
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 547-016-936
+INFO:werkzeug:172.18.0.1 - - [04/Dec/2024 03:07:58] "GET /part3.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [04/Dec/2024 03:07:58] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [04/Dec/2024 03:07:58] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [04/Dec/2024 03:08:30] "GET /part3_vulnerable?v_name=web+database&v_author=&v_category_id=&v_pricemin=&v_pricemax=&v_search_input=&v_search_field=any&v_radio_match=any&v_sp_d=custom&v_sp_date_range=-1&v_sp_start_month=0&v_sp_start_day=0&v_sp_start_year=&v_sp_end_month=0&v_sp_end_day=0&v_sp_end_year=&v_sp_c=10&v_sp_m=1&v_sp_s=0 HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [04/Dec/2024 03:08:30] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [04/Dec/2024 03:08:30] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [04/Dec/2024 03:08:55] "GET /part3_correct?c_name=J&c_author=Jim+Buyens&c_category_id=&c_pricemin=&c_pricemax=&c_search_input=&c_search_field=any&c_radio_match=any&c_sp_d=custom&c_sp_date_range=-1&c_sp_start_month=0&c_sp_start_day=0&c_sp_start_year=&c_sp_end_month=0&c_sp_end_day=0&c_sp_end_year=&c_sp_c=10&c_sp_m=1&c_sp_s=0 HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [04/Dec/2024 03:08:55] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [04/Dec/2024 03:08:55] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [04/Dec/2024 03:09:01] "GET /part3_correct?c_name=&c_author=&c_category_id=2&c_pricemin=&c_pricemax=&c_search_input=&c_search_field=any&c_radio_match=any&c_sp_d=custom&c_sp_date_range=-1&c_sp_start_month=0&c_sp_start_day=0&c_sp_start_year=&c_sp_end_month=0&c_sp_end_day=0&c_sp_end_year=&c_sp_c=10&c_sp_m=1&c_sp_s=0 HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [04/Dec/2024 03:09:01] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [04/Dec/2024 03:09:01] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [04/Dec/2024 03:11:10] "GET /part3_vulnerable?v_name=&v_author=&v_category_id=2&v_pricemin=&v_pricemax=&v_search_input=&v_search_field=any&v_radio_match=any&v_sp_d=custom&v_sp_date_range=-1&v_sp_start_month=0&v_sp_start_day=0&v_sp_start_year=&v_sp_end_month=0&v_sp_end_day=0&v_sp_end_year=&v_sp_c=10&v_sp_m=1&v_sp_s=0 HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [04/Dec/2024 03:11:10] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [04/Dec/2024 03:11:10] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [04/Dec/2024 03:11:24] "POST /part3_vulnerable HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [04/Dec/2024 03:11:24] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [04/Dec/2024 03:11:24] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [04/Dec/2024 03:13:01] "GET /target HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [04/Dec/2024 03:13:01] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [04/Dec/2024 03:13:01] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [04/Dec/2024 03:13:02] "GET /part3.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [04/Dec/2024 03:13:02] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [04/Dec/2024 03:13:02] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [04/Dec/2024 03:13:05] "POST /part3_vulnerable HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [04/Dec/2024 03:13:05] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [04/Dec/2024 03:13:05] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [04/Dec/2024 03:16:09] "POST /part3_vulnerable HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [04/Dec/2024 03:16:09] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [04/Dec/2024 03:16:09] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [04/Dec/2024 03:16:49] "POST /part3_vulnerable HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [04/Dec/2024 03:16:49] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [04/Dec/2024 03:16:49] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [04/Dec/2024 03:17:03] "GET /target HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [04/Dec/2024 03:17:03] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [04/Dec/2024 03:17:03] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [04/Dec/2024 03:17:04] "GET /part2.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [04/Dec/2024 03:17:04] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [04/Dec/2024 03:17:04] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [04/Dec/2024 03:17:13] "GET /target HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [04/Dec/2024 03:17:13] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [04/Dec/2024 03:17:13] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [04/Dec/2024 03:17:14] "GET /part1.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [04/Dec/2024 03:17:15] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [04/Dec/2024 03:17:15] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [04/Dec/2024 03:17:20] "GET /target HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [04/Dec/2024 03:17:20] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [04/Dec/2024 03:17:20] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [04/Dec/2024 03:17:21] "GET /part3.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [04/Dec/2024 03:17:22] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [04/Dec/2024 03:17:22] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [04/Dec/2024 03:17:28] "POST /part3_correct HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [04/Dec/2024 03:17:28] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [04/Dec/2024 03:17:28] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [04/Dec/2024 03:18:16] "POST /part3_vulnerable HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [04/Dec/2024 03:18:16] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [04/Dec/2024 03:18:16] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [04/Dec/2024 03:18:40] "GET /target HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [04/Dec/2024 03:18:40] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [04/Dec/2024 03:18:40] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -

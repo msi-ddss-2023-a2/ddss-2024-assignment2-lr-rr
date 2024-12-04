@@ -28,7 +28,7 @@
       <table class="form-row" >
         <tr>
           <td>
-            <form action="/part3_vulnerable" class="form-container vulnerable-form">
+            <form action="/part3_vulnerable" class="form-container vulnerable-form" method="post"> 
               <table                 
               border="1"
               cellpadding="1"
@@ -334,7 +334,7 @@
           </td>
           <td></td>
           <td>
-            <form action="/part3_correct" class="form-container correct-form">
+            <form action="/part3_correct" class="form-container correct-form" method="post">
               <table
                 border="1"
                 cellpadding="1"
@@ -641,7 +641,64 @@
           </td>
         </tr>
       </table>
-      
+    
+      {% if error %}
+      <div class="error">
+          <p>Error: {{ error }}</p>
+      </div>
+      {% endif %}
+  
+      {% if results %}
+          <h2>Search Results</h2>
+          <table>
+              <tbody>
+                  {% for book in results %}
+                      <tr>
+                          <td><strong>Title:</strong></td>
+                          <td>{{ book[1] }}</td>
+                      </tr>
+                      <tr>
+                          <td><strong>Authors:</strong></td>
+                          <td>{{ book[2] }}</td>
+                      </tr>
+                      <tr>
+                          <td><strong>Category:</strong></td>
+                          <td>{{ book[3] }}</td>
+                      </tr>
+                      <tr>
+                          <td><strong>Price:</strong></td>
+                          <td>${{ book[4] }}</td>
+                      </tr>
+                      <tr>
+                          <td><strong>Date:</strong></td>
+                          <td>{{ book[5] }}</td>
+                      </tr>
+                      <tr>
+                          <td><strong>Description:</strong></td>
+                          <td>{{ book[6] }}</td>
+                      </tr>
+                      <tr>
+                          <td><strong>Keywords:</strong></td>
+                          <td>{{ book[7] }}</td>
+                      </tr>
+                      <tr>
+                          <td><strong>Notes:</strong></td>
+                          <td>{{ book[8] }}</td>
+                      </tr>
+                      <tr>
+                          <td><strong>Recommendation:</strong></td>
+                          <td>{{ book[9] }}</td>
+                      </tr>
+                      <tr>
+                          <td colspan="2"><hr></td>
+                      </tr>
+                  {% endfor %}
+              </tbody>
+          </table>
+      {% elif request.method == "POST" %}
+          <p>No results found.</p>
+      {% endif %}
+  
         <a href="{{ url_for('target') }}">Go to home</a>
     </div>
     <script src="static/js/script.js"></script>
