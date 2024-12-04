@@ -14,13 +14,20 @@ body {
   ); /* Deep blue gradient, transitioning from a dark navy to a soft blue */
   color: #e0e0e0; /* Light gray text for contrast */
   font-family: Arial, sans-serif;
-  display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  overflow: hidden;
-  position: relative;
-  perspective: 1px;
+}
+
+body, html{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  box-sizing: border-box;  padding: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 /* Realistic Bubble Styling */
@@ -74,6 +81,11 @@ body {
   margin: 0 auto;
   padding: 20px;
   text-align: center;
+}
+
+#main-div{
+  padding-top: 5px;
+  width: 90vw;  /* 90% of the viewport width */
 }
 
 /* Headers Styling */
@@ -150,6 +162,12 @@ a:hover {
   background-color: rgba(255, 0, 0, 0.3);
 }
 
+th, td{
+  text-align: left;
+  padding: 2px;
+  border: 1px solid #ddd;
+}
+
 .correct-form .form-table {
   width: 500px;
   background-color: rgba(0, 255, 0, 0.3);
@@ -209,3 +227,4 @@ a:hover {
 .form-button:hover {
   background-color: #039be5;
 }
+

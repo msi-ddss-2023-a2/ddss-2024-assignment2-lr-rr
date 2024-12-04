@@ -21,3 +21,4 @@ function createBubble() {
 
 // Create bubbles at a regular interval
 setInterval(createBubble, 500);
+
