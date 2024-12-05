@@ -37,8 +37,15 @@
                       </tr>
                       
                       <tr>
-                          <td><label for="category">Category:</label></td>
-                          <td><input type="text" id="category" name="category" required></td>
+                        <td><label for="category">Category:</label></td>
+                        <td>
+                            <select id="category" name="category" required>
+                                <option value=""> </option>
+                                <option value="2">Databases</option>
+                                <option value="3">HTML &amp; Web design</option>
+                                <option value="1">Programming</option>
+                            </select>
+                        </td>
                       </tr>
                       
                       <tr>
@@ -79,9 +86,9 @@
                   </table>
               </form>              
                <!-- Display message if available -->
-                {% if message %}
+                {% if messages %}
                 <div class="message {{ message_type }}">
-                    {{ message }}
+                    {{ messages }}
                 </div>
                 {% endif %}
                 <a href="/logout">Logout</a>

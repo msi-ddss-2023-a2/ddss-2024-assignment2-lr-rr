@@ -108,9 +108,9 @@ def part2_vulnerable():
         # Append "[Vulnerable]" marker to the message
         message_with_marker = f"{message} [Vulnerable]"
 
+        # Vulnerable SQL query without parameterization
         cur.execute(
-            "INSERT INTO messages (author, message) VALUES (%s, %s)",
-            (author, message_with_marker),
+            f"INSERT INTO messages (author, message) VALUES ('{author}', '{message_with_marker}')"
         )
         conn.commit()
 
@@ -164,30 +164,35 @@ def insert_book():
 
         # Validate required fields
         if not title or not authors or not category or not price or not book_date:
-            return render_template("part1.html", message="Missing required fields.", message_type="error")
+            return render_template("part1.html", messages="Missing required fields.", message_type="error")
+
+        # Validate category selection
+        valid_categories = {"1": "Programming", "2": "Databases", "3": "HTML & Web design"}
+        if category not in valid_categories:
+            return render_template("part1.html", messages="You must submit a category!", message_type="error")
 
         # Validate price
         try:
             price = float(price)
             if price <= 0:
-                return render_template("part1.html", message="Price must be a positive number.", message_type="error")
+                return render_template("part1.html", messages="Price must be a positive number.", message_type="error")
         except ValueError:
-            return render_template("part1.html", message="Invalid price format.", message_type="error")
+            return render_template("part1.html", messages="Invalid price format.", message_type="error")
 
         # Validate date
         try:
             # Ensure the date is in the correct format
             book_date = datetime.strptime(book_date, "%Y-%m-%d")
         except ValueError:
-            return render_template("part1.html", message="Invalid date format. Use YYYY-MM-DD.", message_type="error")
+            return render_template("part1.html", messages="Invalid date format. Use YYYY-MM-DD.", message_type="error")
 
         # Ensure the date is not in the future
         if book_date > datetime.today():
-            return render_template("part1.html", message="The book date cannot be in the future.", message_type="error")
+            return render_template("part1.html", messages="The book date cannot be in the future.", message_type="error")
 
         # Optional length validation
         if len(title) > 255 or len(authors) > 255 or len(category) > 100:
-            return render_template("part1.html", message="One or more fields exceed allowed length.", message_type="error")
+            return render_template("part1.html", messages="One or more fields exceed allowed length.", message_type="error")
 
         # Database interaction
         conn = get_db()
@@ -203,9 +208,9 @@ def insert_book():
         cur.close()
         conn.close()
 
-        return render_template("part1.html", message="Book has been successfully added to the database.", message_type="success")
+        return render_template("part1.html", messages="Book has been successfully added to the database.", message_type="success")
     except Exception as e:
-        return render_template("part1.html", message=f"Failed to add the book: {str(e)}", message_type="error")
+        return render_template("part1.html", messages=f"Failed to add the book: {str(e)}", message_type="error")
 
 
 @app.route("/part3.html", methods=['GET'])
@@ -227,83 +232,107 @@ def part3_vulnerable():
             v_pricemax = request.form.get("v_pricemax", None)
             v_search_input = request.form.get("v_search_input", "")
             v_search_field = request.form.get("v_search_field", "any")
-            v_radio_match = request.form.get("v_radio_match", "any")
-            v_sp_date_range = request.form.get("v_sp_date_range", "-1")
-            v_sp_start_month = request.form.get("v_sp_start_month", "0")
-            v_sp_start_day = request.form.get("v_sp_start_day", "0")
-            v_sp_start_year = request.form.get("v_sp_start_year", "")
-            v_sp_end_month = request.form.get("v_sp_end_month", "0")
-            v_sp_end_day = request.form.get("v_sp_end_day", "0")
-            v_sp_end_year = request.form.get("v_sp_end_year", "")
+            v_radio_match = request.form.get("v_radio_match", "any").strip()
+            v_sp_start_date = request.form.get("v_sp_start_date", "").strip()
+            v_sp_end_date = request.form.get("v_sp_end_date", "").strip()
+            sort_by = request.form.get("v_sp_s", "0")
 
             # Start building the SQL query
             query = "SELECT * FROM books WHERE 1=1"
-            conditions = []
+            params = []
 
             # Add conditions for title, author, and category
             if v_name:
-                conditions.append(f"title ILIKE '%{v_name}%'")
+                query += " AND title ILIKE %s"
+                params.append(f"%{v_name}%")
             if v_author:
-                conditions.append(f"authors ILIKE '%{v_author}%'")
+                query += " AND authors ILIKE %s"
+                params.append(f"%{v_author}%")
             if v_category_id:
-                conditions.append(f"category = '{v_category_id}'")
+                query += " AND category = %s"
+                params.append(v_category_id)
 
             # Add conditions for price range
             if v_pricemin:
-                conditions.append(f"price >= {v_pricemin}")
+                try:
+                    v_pricemin = float(v_pricemin)
+                    query += " AND price >= %s"
+                    params.append(v_pricemin)
+                except ValueError:
+                    error = "Invalid minimum price."
+                    return render_template("part3.html", results=None, error=error)
             if v_pricemax:
-                conditions.append(f"price <= {v_pricemax}")
+                try:
+                    v_pricemax = float(v_pricemax)
+                    query += " AND price <= %s"
+                    params.append(v_pricemax)
+                except ValueError:
+                    error = "Invalid maximum price."
+                    return render_template("part3.html", results=None, error=error)
+
+            # Add conditions for date range
+            if v_sp_start_date or v_sp_end_date:
+                try:
+                    if v_sp_start_date:
+                        start_date = datetime.strptime(v_sp_start_date, "%Y-%m-%d")
+                    else:
+                        start_date = None
+
+                    if v_sp_end_date:
+                        end_date = datetime.strptime(v_sp_end_date, "%Y-%m-%d")
+                    else:
+                        end_date = None
+
+                    if start_date and end_date and start_date > end_date:
+                        error = "Start date cannot be greater than end date."
+                        return render_template("part3.html", results=None, error=error)
+
+                    if start_date:
+                        query += " AND book_date >= %s"
+                        params.append(start_date)
+                    if end_date:
+                        query += " AND book_date <= %s"
+                        params.append(end_date)
+
+                except ValueError:
+                    error = "Invalid date format. Use YYYY-MM-DD."
+                    return render_template("part3.html", results=None, error=error)
 
             # Add advanced search input condition
             if v_search_input:
-                if v_radio_match == "any":
-                    operator = " OR "
-                elif v_radio_match == "all":
-                    operator = " AND "
-                else:  # Exact phrase
-                    operator = ""
-
                 if v_search_field == "any":
                     search_fields = ["title", "authors", "description", "keywords", "notes"]
                 else:
                     search_fields = [v_search_field]
 
-                search_conditions = [f"{field} ILIKE '%{v_search_input}%'" for field in search_fields]
-                if operator:
-                    conditions.append(f"({operator.join(search_conditions)})")
-                else:
-                    conditions.append(search_conditions[0])
+                search_conditions = [f"{field} ILIKE %s" for field in search_fields]
+                if v_radio_match == "any":
+                    query += " AND (" + " OR ".join(search_conditions) + ")"
+                elif v_radio_match == "all":
+                    query += " AND (" + " AND ".join(search_conditions) + ")"
+                else:  # Exact phrase
+                    query += " AND (" + search_conditions[0] + ")"
+                params.extend([f"%{v_search_input}%"] * len(search_fields))
 
-             # Add date range conditions
-            if v_sp_date_range != "-1":
-                conditions.append(f"book_date >= NOW() - INTERVAL '{v_sp_date_range} days'")
-            elif v_sp_start_year and not v_sp_end_year:
-                # Search within a specific year
-                start_date = f"{v_sp_start_year}-01-01"
-                end_date = f"{v_sp_start_year}-12-31"
-                conditions.append(f"book_date BETWEEN '{start_date}' AND '{end_date}'")
-            elif v_sp_start_year and v_sp_end_year:
-                # Search within a specified range
-                start_date = f"{v_sp_start_year}-01-01"
-                end_date = f"{v_sp_end_year}-12-31"
-                conditions.append(f"book_date BETWEEN '{start_date}' AND '{end_date}'")
+            # Add sorting condition
+            if sort_by == "0":  # Sort by recommendation
+                query += " ORDER BY recomendation DESC"
+            else:  # Default: sort by book_date
+                query += " ORDER BY book_date DESC"
 
-
-            # Combine conditions
-            if conditions:
-                query += " AND " + " AND ".join(conditions)
-
-            # Execute the vulnerable query
+            # Execute the query
             conn = get_db()
             cur = conn.cursor()
-            cur.execute(query)  # Vulnerable to SQL injection
+            cur.execute(query, params)
             results = cur.fetchall()
             cur.close()
             conn.close()
+
         except Exception as e:
             error = str(e)
 
     return render_template("part3.html", results=results, error=error)
+
 
 @app.route("/part3_correct", methods=["GET", "POST"])
 def part3_correct():
