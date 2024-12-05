@@ -4982,3 +4982,19 @@ INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 19:35:55] "[36mGET /static/css/style.
 INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 19:36:10] "POST /part3_vulnerable HTTP/1.1" 200 -
 INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 19:36:10] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
 INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 19:36:10] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:logger:
+---------------------
+
+
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 275-539-077
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:logger:
+---------------------
+
+
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 275-539-077

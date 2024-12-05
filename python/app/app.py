@@ -340,89 +340,120 @@ def part3_correct():
     error = None
     if request.method == "POST":
         try:
-            # Collect form inputs
-            v_name = request.form.get("v_name", "")
-            v_author = request.form.get("v_author", "")
-            v_category_id = request.form.get("v_category_id", "")
-            v_pricemin = request.form.get("v_pricemin", None)
-            v_pricemax = request.form.get("v_pricemax", None)
-            v_search_input = request.form.get("v_search_input", "")
-            v_search_field = request.form.get("v_search_field", "any")
-            v_radio_match = request.form.get("v_radio_match", "any")
-            v_sp_date_range = request.form.get("v_sp_date_range", "-1")
-            v_sp_start_month = request.form.get("v_sp_start_month", "0")
-            v_sp_start_day = request.form.get("v_sp_start_day", "0")
-            v_sp_start_year = request.form.get("v_sp_start_year", "")
-            v_sp_end_month = request.form.get("v_sp_end_month", "0")
-            v_sp_end_day = request.form.get("v_sp_end_day", "0")
-            v_sp_end_year = request.form.get("v_sp_end_year", "")
+            # Collect form inputs and sanitize them
+            c_name = escape(request.form.get("c_name", "").strip())
+            c_author = escape(request.form.get("c_author", "").strip())
+            c_category_id = escape(request.form.get("c_category_id", "").strip())
+            c_pricemin = request.form.get("c_pricemin", None)
+            c_pricemax = request.form.get("c_pricemax", None)
+            c_search_input = escape(request.form.get("c_search_input", "").strip())
+            c_search_field = escape(request.form.get("c_search_field", "any").strip())
+            c_radio_match = escape(request.form.get("c_radio_match", "any").strip())
+            c_sp_start_date = escape(request.form.get("c_sp_start_date", "").strip())
+            c_sp_end_date = escape(request.form.get("c_sp_end_date", "").strip())
+            sort_by = escape(request.form.get("c_sp_s", "0").strip())
 
             # Start building the SQL query
             query = "SELECT * FROM books WHERE 1=1"
             params = []
 
             # Add conditions for title, author, and category
-            if v_name:
+            if c_name:
                 query += " AND title ILIKE %s"
-                params.append(f"%{v_name}%")
-            if v_author:
+                params.append(f"%{c_name}%")
+            if c_author:
                 query += " AND authors ILIKE %s"
-                params.append(f"%{v_author}%")
-            if v_category_id:
+                params.append(f"%{c_author}%")
+            if c_category_id:
                 query += " AND category = %s"
-                params.append(v_category_id)
+                params.append(c_category_id)
 
             # Add conditions for price range
-            if v_pricemin:
-                query += " AND price >= %s"
-                params.append(v_pricemin)
-            if v_pricemax:
-                query += " AND price <= %s"
-                params.append(v_pricemax)
+            if c_pricemin:
+                try:
+                    c_pricemin = float(c_pricemin)
+                    query += " AND price >= %s"
+                    params.append(c_pricemin)
+                except ValueError:
+                    error = "Invalid minimum price. Please enter a valid number."
+                    return render_template("part3.html", results=None, error=error)
+            if c_pricemax:
+                try:
+                    c_pricemax = float(c_pricemax)
+                    query += " AND price <= %s"
+                    params.append(c_pricemax)
+                except ValueError:
+                    error = "Invalid maximum price. Please enter a valid number."
+                    return render_template("part3.html", results=None, error=error)
+
+            # Add conditions for date range
+            if c_sp_start_date or c_sp_end_date:
+                try:
+                    if c_sp_start_date:
+                        start_date = datetime.strptime(c_sp_start_date, "%Y-%m-%d")
+                    else:
+                        start_date = None
+
+                    if c_sp_end_date:
+                        end_date = datetime.strptime(c_sp_end_date, "%Y-%m-%d")
+                    else:
+                        end_date = None
+
+                    if start_date and end_date and start_date > end_date:
+                        error = "Start date cannot be greater than end date."
+                        return render_template("part3.html", results=None, error=error)
+
+                    if start_date:
+                        query += " AND book_date >= %s"
+                        params.append(start_date)
+                    if end_date:
+                        query += " AND book_date <= %s"
+                        params.append(end_date)
+
+                except ValueError:
+                    error = "Invalid date format. Please use YYYY-MM-DD."
+                    return render_template("part3.html", results=None, error=error)
 
             # Add advanced search input condition
-            if v_search_input:
-                if v_radio_match == "any":
-                    operator = " OR "
-                elif v_radio_match == "all":
-                    operator = " AND "
-                else:  # Exact phrase
-                    operator = ""
-
-                if v_search_field == "any":
-                    search_fields = ["title", "authors", "description", "keywords", "notes"]
+            if c_search_input:
+                valid_search_fields = ["title", "authors", "description", "keywords", "notes"]
+                if c_search_field == "any":
+                    search_fields = valid_search_fields
+                elif c_search_field in valid_search_fields:
+                    search_fields = [c_search_field]
                 else:
-                    search_fields = [v_search_field]
+                    error = "Invalid search field specified."
+                    return render_template("part3.html", results=None, error=error)
 
                 search_conditions = [f"{field} ILIKE %s" for field in search_fields]
-                params.extend([f"%{v_search_input}%"] * len(search_fields))
-                if operator:
-                    query += f" AND ({operator.join(search_conditions)})"
+                if c_radio_match == "any":
+                    query += " AND (" + " OR ".join(search_conditions) + ")"
+                elif c_radio_match == "all":
+                    query += " AND (" + " AND ".join(search_conditions) + ")"
                 else:
-                    query += f" AND {search_conditions[0]}"
+                    error = "Invalid match type specified."
+                    return render_template("part3.html", results=None, error=error)
+                params.extend([f"%{c_search_input}%"] * len(search_fields))
 
-            # Add date range conditions
-            if v_sp_date_range != "-1":
-                query += " AND book_date >= NOW() - INTERVAL %s"
-                params.append(f"{v_sp_date_range} days")
-            elif v_sp_start_year and v_sp_end_year:
-                try:
-                    start_date = f"{int(v_sp_start_year)}-{int(v_sp_start_month):02}-{int(v_sp_start_day):02}"
-                    end_date = f"{int(v_sp_end_year)}-{int(v_sp_end_month):02}-{int(v_sp_end_day):02}"
-                    query += " AND book_date BETWEEN %s AND %s"
-                    params.extend([start_date, end_date])
-                except ValueError:
-                    raise ValueError("Invalid date format provided.")
+            # Add sorting condition
+            if sort_by == "1":  # Sort by recommendation
+                query += " ORDER BY recommendation DESC"
+            elif sort_by == "0":  # Sort by book_date
+                query += " ORDER BY book_date DESC"
+            else:
+                error = "Invalid sorting option specified."
+                return render_template("part3.html", results=None, error=error)
 
-            # Execute the secure query
+            # Execute the query safely
             conn = get_db()
             cur = conn.cursor()
             cur.execute(query, params)
             results = cur.fetchall()
             cur.close()
             conn.close()
+
         except Exception as e:
-            error = str(e)
+            error = "An unexpected error occurred. Please try again later."
 
     return render_template("part3.html", results=results, error=error)
 
