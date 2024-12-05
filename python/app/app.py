@@ -160,7 +160,7 @@ def insert_book():
         description = request.form.get("description", "").strip()
         keywords = request.form.get("keywords", "").strip()
         notes = request.form.get("notes", "").strip()
-        recommendation = request.form.get("recommendation", "").strip()
+        recommendation = request.form.get("recomendation", "").strip()
 
         # Validate required fields
         if not title or not authors or not category or not price or not book_date:
@@ -437,7 +437,7 @@ def part3_correct():
 
             # Add sorting condition
             if sort_by == "1":  # Sort by recommendation
-                query += " ORDER BY recommendation DESC"
+                query += " ORDER BY recomendation DESC"
             elif sort_by == "0":  # Sort by book_date
                 query += " ORDER BY book_date DESC"
             else:
