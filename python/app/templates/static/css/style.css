@@ -154,6 +154,11 @@ a:hover {
   transition: background 0.3s;
 }
 
+#forms-mix {
+  display: flex;
+  gap: 20px;
+}
+
 .form-table button:hover {
   background-color: #81d4fa;
 }
@@ -162,6 +167,14 @@ a:hover {
 .vulnerable-form .form-table {
   width: 500px;
   background-color: rgba(255, 0, 0, 0.3);
+}
+
+.vuln-table {
+  background-color: rgba(255, 0, 0, 0.3);
+}
+
+.correct-table {
+  background-color: rgba(0, 255, 0, 0.3);
 }
 
 table {

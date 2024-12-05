@@ -3792,3 +3792,640 @@ INFO:werkzeug:172.18.0.1 - - [04/Dec/2024 16:55:41] "GET /part3.html HTTP/1.1" 2
 INFO:werkzeug:172.18.0.1 - - [04/Dec/2024 16:55:41] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
 INFO:werkzeug:172.18.0.1 - - [04/Dec/2024 16:55:41] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
 INFO:werkzeug:172.18.0.1 - - [04/Dec/2024 16:55:41] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [04/Dec/2024 16:56:35] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [04/Dec/2024 16:56:36] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [04/Dec/2024 16:56:36] "GET /static/js/script.js HTTP/1.1" 200 -
+INFO:logger:
+---------------------
+
+
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:5000
+ * Running on https://172.18.0.3:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+INFO:logger:
+---------------------
+
+
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 297-860-640
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:08:30] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:08:30] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:08:30] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:08:30] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:08:32] "GET /part3.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:08:32] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:08:32] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:08:32] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:08:44] "POST /part3_vulnerable HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:08:44] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:08:44] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:08:44] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:09:10] "POST /part3_vulnerable HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:09:10] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:09:10] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:09:10] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:10:18] "POST /part3_vulnerable HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:10:18] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:10:18] "GET /static/js/script.js HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:10:18] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:12:21] "POST /part3_vulnerable HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:12:22] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:12:22] "GET /static/js/script.js HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:12:22] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:13:34] "POST /part3_vulnerable HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:13:34] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:13:34] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:13:34] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:14:33] "POST /part3_vulnerable HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:14:33] "GET /static/js/script.js HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:14:33] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:14:33] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:14:49] "POST /part3_vulnerable HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:14:49] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:14:49] "GET /static/js/script.js HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:14:49] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:14:51] "POST /part3_vulnerable HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:14:51] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:14:51] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:14:51] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:14:56] "POST /part3_vulnerable HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:14:57] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:14:57] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:14:57] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:15:01] "GET /target HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:15:01] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:15:01] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:15:01] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:15:02] "GET /part1.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:15:02] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:15:02] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:15:02] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:15:24] "POST /insert_book HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:15:24] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:15:24] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:15:24] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:15:26] "GET /logout HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:15:26] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:15:26] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:15:26] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:15:29] "GET /target HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:15:29] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:15:29] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:15:31] "GET /part3.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:15:31] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:15:31] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:15:49] "POST /part3_vulnerable HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:15:49] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:15:49] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:16:13] "POST /part3_vulnerable HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:16:13] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:16:13] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:18:20] "POST /part3_vulnerable HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:18:20] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:18:20] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:18:25] "POST /part3_vulnerable HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:18:25] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:18:25] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:18:29] "GET /target HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:18:30] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:18:30] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:18:31] "GET /part3.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:18:31] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:18:31] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:19:31] "GET /part3.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:19:31] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:19:31] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:19:33] "GET /part3.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:19:33] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:19:33] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:19:37] "GET /part3.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:19:37] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:19:37] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:19:37] "GET /part3.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:19:37] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:19:37] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:20:23] "GET /part3.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:20:23] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:20:23] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:22:11] "GET /part3.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:22:11] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:22:11] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:22:51] "GET /part3.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:22:51] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:22:51] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:23:47] "GET /part3.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:23:47] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:23:47] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:23:48] "GET /part3.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:23:48] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:23:48] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:23:58] "GET /part3.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:23:58] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:23:58] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:24:03] "GET /target HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:24:03] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:24:03] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:24:04] "GET /part3.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:24:04] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:24:04] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:24:49] "POST /part3_correct HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:24:49] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:24:49] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:26:14] "POST /part3_correct HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:26:14] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:26:14] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:26:19] "POST /part3_correct HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:26:20] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:26:20] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:26:21] "POST /part3_correct HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:26:21] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:26:21] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:26:25] "GET /part3.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:26:25] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:26:25] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:26:44] "GET /part3.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:26:44] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:26:44] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:26:47] "GET /part3.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:26:47] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:26:47] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:26:47] "GET /part3.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:26:47] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:26:47] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:26:48] "GET /part3.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:26:48] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:26:48] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:26:55] "GET /part3.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:26:55] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:26:55] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:27:49] "GET /part3.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:27:49] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:27:49] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:27:53] "POST /part3_correct HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:27:53] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:27:53] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:29:15] "POST /part3_correct HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:29:15] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:29:15] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:29:18] "POST /part3_correct HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:29:18] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:29:18] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:29:48] "POST /part3_correct HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:29:48] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:29:48] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:29:52] "POST /part3_correct HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:29:52] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:29:52] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:30:16] "GET /part3.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:30:16] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:30:16] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:30:24] "POST /part3_vulnerable HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:30:24] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:30:24] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:36:10] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:36:10] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:36:10] "GET /static/js/script.js HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:36:10] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:36:12] "GET /part3.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:36:12] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:36:12] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:37:17] "GET /part3.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:37:17] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:37:17] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:37:19] "GET /part3.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:37:19] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:37:19] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:37:19] "GET /part3.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:37:19] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:37:19] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.228 - - [05/Dec/2024 00:37:39] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [05/Dec/2024 00:37:39] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [05/Dec/2024 00:37:39] "GET /static/js/script.js HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [05/Dec/2024 00:37:39] "GET /static/js/script.js HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [05/Dec/2024 00:37:41] "GET /part3.html HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [05/Dec/2024 00:37:41] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.228 - - [05/Dec/2024 00:37:41] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.228 - - [05/Dec/2024 00:37:42] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:38:44] "GET /part3.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:38:44] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:38:44] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:38:47] "GET /part3.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:38:47] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:38:47] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:38:47] "GET /part3.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:38:48] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:38:48] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:40:01] "GET /part3.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:40:01] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:40:01] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:40:02] "GET /part3.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:40:02] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:40:02] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:40:03] "GET /part3.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:40:03] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:40:03] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:41:53] "GET /part3.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:41:53] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:41:53] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:41:54] "GET /part3.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:41:54] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:41:54] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:41:55] "GET /part3.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:41:55] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:41:55] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:42:42] "GET /part3.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:42:42] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:42:42] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:43:01] "GET /part3.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:43:01] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:43:01] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.228 - - [05/Dec/2024 00:43:26] "GET /part3.html HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [05/Dec/2024 00:43:26] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.228 - - [05/Dec/2024 00:43:26] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.228 - - [05/Dec/2024 00:43:27] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:43:59] "GET /part3.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:43:59] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:43:59] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:44:00] "GET /part3.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:44:00] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:44:00] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:44:01] "GET /part3.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:44:01] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:44:01] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:44:01] "GET /part3.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:44:01] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:44:01] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:46:47] "GET /part3.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:46:47] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:46:47] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:47:28] "GET /part3.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:47:28] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:47:28] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:47:40] "GET /part3.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:47:40] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:47:40] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:47:49] "GET /part3.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:47:49] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:47:49] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:48:29] "GET /part3.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:48:29] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:48:29] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:48:29] "GET /part3.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:48:29] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:48:29] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:48:30] "GET /part3.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:48:30] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:48:30] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:49:12] "GET /part3.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:49:12] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:49:12] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:49:13] "GET /part3.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:49:13] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:49:13] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:49:14] "GET /part3.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:49:14] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:49:14] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:49:26] "GET /part3.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:49:26] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:49:26] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:50:24] "GET /part3.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:50:24] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:50:24] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:50:29] "POST /part3_vulnerable HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:50:29] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 00:50:29] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.228 - - [05/Dec/2024 00:50:41] "GET /part3.html HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [05/Dec/2024 00:50:41] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [05/Dec/2024 00:50:41] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.228 - - [05/Dec/2024 00:50:41] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.228 - - [05/Dec/2024 00:56:13] "GET /target HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [05/Dec/2024 00:56:14] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.228 - - [05/Dec/2024 00:56:14] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.228 - - [05/Dec/2024 00:56:14] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:logger:
+---------------------
+
+
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 297-860-640
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:logger:
+---------------------
+
+
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 297-860-640
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 01:31:44] "POST /part3_vulnerable HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 01:31:44] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 01:31:44] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 01:31:51] "GET /target HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 01:31:51] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 01:31:51] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 01:31:52] "GET /part3.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 01:31:52] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 01:31:52] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 01:31:59] "POST /part3_vulnerable HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 01:31:59] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 01:31:59] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 01:32:24] "POST /part3_vulnerable HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 01:32:24] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 01:32:24] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 01:34:22] "POST /part3_vulnerable HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 01:34:23] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 01:34:23] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 01:34:36] "POST /part3_vulnerable HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 01:34:36] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 01:34:36] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 01:34:50] "POST /part3_vulnerable HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 01:34:50] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 01:34:50] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 01:35:07] "POST /part3_vulnerable HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 01:35:07] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 01:35:07] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:logger:
+---------------------
+
+
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 297-860-640
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 01:40:47] "POST /part3_vulnerable HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 01:40:47] "GET /static/js/script.js HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 01:40:47] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 01:40:55] "POST /part3_vulnerable HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 01:40:55] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 01:40:55] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 01:41:10] "POST /part3_vulnerable HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 01:41:10] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 01:41:10] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 01:41:23] "POST /part3_vulnerable HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 01:41:23] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 01:41:23] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 01:41:37] "POST /part3_vulnerable HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 01:41:37] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 01:41:37] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 01:41:56] "POST /part3_vulnerable HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 01:41:56] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 01:41:56] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 01:42:09] "POST /part3_vulnerable HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 01:42:09] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 01:42:09] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 01:42:21] "POST /part3_vulnerable HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 01:42:21] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 01:42:21] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 01:42:39] "POST /part3_vulnerable HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 01:42:39] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 01:42:39] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 01:43:29] "POST /part3_vulnerable HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 01:43:29] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 01:43:29] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 01:43:41] "POST /part3_vulnerable HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 01:43:41] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 01:43:41] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 01:50:00] "POST /part3_vulnerable HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 01:50:00] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 01:50:00] "GET /static/js/script.js HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 01:50:11] "POST /part3_vulnerable HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 01:50:11] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 01:50:11] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:logger:
+---------------------
+
+
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 297-860-640
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 01:52:53] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 01:52:53] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 01:52:53] "GET /static/js/script.js HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 01:52:54] "[33mGET /part3.html HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:logger:
+---------------------
+
+
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:5000
+ * Running on https://172.18.0.3:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+INFO:logger:
+---------------------
+
+
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 297-860-640
+INFO:werkzeug:192.168.1.228 - - [05/Dec/2024 01:58:05] "GET /target HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [05/Dec/2024 01:58:05] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.228 - - [05/Dec/2024 01:58:06] "GET /static/js/script.js HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [05/Dec/2024 01:58:06] "GET /static/js/script.js HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [05/Dec/2024 01:58:08] "GET /part2.html HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [05/Dec/2024 01:58:08] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.228 - - [05/Dec/2024 01:58:08] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.228 - - [05/Dec/2024 01:58:08] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.228 - - [05/Dec/2024 01:58:10] "GET /target HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [05/Dec/2024 01:58:10] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.228 - - [05/Dec/2024 01:58:10] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.228 - - [05/Dec/2024 01:58:10] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.228 - - [05/Dec/2024 01:58:11] "GET /part3.html HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [05/Dec/2024 01:58:11] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.228 - - [05/Dec/2024 01:58:11] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.228 - - [05/Dec/2024 01:58:11] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.228 - - [05/Dec/2024 01:58:21] "POST /part3_vulnerable HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [05/Dec/2024 01:58:22] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.228 - - [05/Dec/2024 01:58:22] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.228 - - [05/Dec/2024 01:58:22] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.228 - - [05/Dec/2024 01:58:46] "POST /part3_vulnerable HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [05/Dec/2024 01:58:46] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.228 - - [05/Dec/2024 01:58:46] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.228 - - [05/Dec/2024 01:58:46] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.228 - - [05/Dec/2024 01:59:04] "POST /part3_vulnerable HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [05/Dec/2024 01:59:04] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.228 - - [05/Dec/2024 01:59:04] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.228 - - [05/Dec/2024 01:59:04] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.228 - - [05/Dec/2024 01:59:18] "POST /part3_vulnerable HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [05/Dec/2024 01:59:18] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.228 - - [05/Dec/2024 01:59:18] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.228 - - [05/Dec/2024 01:59:18] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:logger:
+---------------------
+
+
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 297-860-640
+INFO:werkzeug:192.168.1.228 - - [05/Dec/2024 02:04:04] "POST /part3_vulnerable HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [05/Dec/2024 02:04:04] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.228 - - [05/Dec/2024 02:04:04] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.228 - - [05/Dec/2024 02:04:04] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.228 - - [05/Dec/2024 02:04:20] "POST /part3_vulnerable HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [05/Dec/2024 02:04:20] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.228 - - [05/Dec/2024 02:04:20] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.228 - - [05/Dec/2024 02:04:20] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.228 - - [05/Dec/2024 02:04:27] "POST /part3_vulnerable HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [05/Dec/2024 02:04:27] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.228 - - [05/Dec/2024 02:04:27] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.228 - - [05/Dec/2024 02:04:27] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.228 - - [05/Dec/2024 02:05:43] "POST /part3_vulnerable HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [05/Dec/2024 02:05:43] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.228 - - [05/Dec/2024 02:05:44] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.228 - - [05/Dec/2024 02:05:44] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.228 - - [05/Dec/2024 02:05:50] "POST /part3_vulnerable HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [05/Dec/2024 02:05:50] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.228 - - [05/Dec/2024 02:05:50] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.228 - - [05/Dec/2024 02:05:50] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.228 - - [05/Dec/2024 02:08:45] "POST /part3_vulnerable HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [05/Dec/2024 02:08:46] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.228 - - [05/Dec/2024 02:08:46] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.228 - - [05/Dec/2024 02:08:46] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.228 - - [05/Dec/2024 02:09:03] "POST /part3_vulnerable HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [05/Dec/2024 02:09:03] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.228 - - [05/Dec/2024 02:09:03] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.228 - - [05/Dec/2024 02:09:03] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.228 - - [05/Dec/2024 02:09:09] "POST /part3_vulnerable HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [05/Dec/2024 02:09:09] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.228 - - [05/Dec/2024 02:09:09] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.228 - - [05/Dec/2024 02:09:09] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.228 - - [05/Dec/2024 02:13:42] "POST /part3_vulnerable HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [05/Dec/2024 02:13:42] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.228 - - [05/Dec/2024 02:13:42] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.228 - - [05/Dec/2024 02:13:42] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.228 - - [05/Dec/2024 02:16:32] "POST /part3_vulnerable HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [05/Dec/2024 02:16:32] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.228 - - [05/Dec/2024 02:16:32] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.228 - - [05/Dec/2024 02:16:32] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 02:24:25] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 02:24:25] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 02:24:25] "GET /static/js/script.js HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 02:24:26] "GET /part3.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 02:24:26] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 02:24:26] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 02:24:29] "POST /part3_vulnerable HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 02:24:29] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 02:24:29] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 02:24:41] "POST /part3_vulnerable HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 02:24:42] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 02:24:42] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 02:24:57] "POST /part3_vulnerable HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 02:24:57] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 02:24:57] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 02:25:04] "POST /part3_vulnerable HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 02:25:04] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 02:25:04] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 02:25:08] "POST /part3_vulnerable HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 02:25:08] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 02:25:08] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 02:25:18] "POST /part3_vulnerable HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 02:25:18] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 02:25:18] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 02:25:36] "POST /part3_vulnerable HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 02:25:36] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 02:25:36] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 02:25:42] "POST /part3_vulnerable HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 02:25:42] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 02:25:42] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 02:25:47] "POST /part3_vulnerable HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 02:25:47] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 02:25:47] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 02:25:54] "POST /part3_vulnerable HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 02:25:54] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 02:25:54] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 02:26:04] "POST /part3_vulnerable HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 02:26:04] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 02:26:04] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 02:29:49] "POST /part3_vulnerable HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 02:29:49] "GET /static/js/script.js HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 02:29:49] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 02:29:55] "POST /part3_vulnerable HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 02:29:55] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 02:29:55] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 02:30:08] "POST /part3_vulnerable HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 02:30:08] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 02:30:08] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 02:30:56] "POST /part3_vulnerable HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 02:30:56] "GET /static/js/script.js HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 02:30:57] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 02:30:59] "POST /part3_vulnerable HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 02:30:59] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 02:30:59] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 02:31:03] "POST /part3_vulnerable HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 02:31:03] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 02:31:03] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 02:35:12] "POST /part3_vulnerable HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 02:35:12] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 02:35:12] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 02:35:22] "POST /part3_vulnerable HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 02:35:22] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 02:35:22] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 02:35:32] "POST /part3_vulnerable HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 02:35:32] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 02:35:32] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 02:35:44] "POST /part3_vulnerable HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 02:35:44] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 02:35:44] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 02:36:22] "POST /part3_vulnerable HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 02:36:22] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 02:36:22] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 02:36:29] "POST /part3_vulnerable HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 02:36:29] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 02:36:29] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 02:36:34] "POST /part3_vulnerable HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 02:36:34] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 02:36:34] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 02:36:38] "GET /target HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 02:36:39] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 02:36:39] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 02:36:40] "GET /part3.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 02:36:40] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 02:36:40] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:logger:
+---------------------
+
+
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:5000
+ * Running on https://172.18.0.3:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+INFO:logger:
+---------------------
+
+
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 109-749-230
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 12:03:37] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 12:03:37] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 12:03:37] "GET /static/js/script.js HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 12:03:39] "GET /part3.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 12:03:39] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 12:03:39] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 12:03:48] "POST /part3_vulnerable HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 12:03:48] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 12:03:48] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 12:03:58] "POST /part3_correct HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 12:03:58] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 12:03:58] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 12:04:08] "POST /part3_correct HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 12:04:08] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 12:04:08] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 12:04:23] "POST /part3_correct HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 12:04:23] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 12:04:23] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 12:04:40] "POST /part3_correct HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 12:04:40] "GET /static/js/script.js HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 12:04:40] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 12:06:04] "POST /part3_correct HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 12:06:04] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [05/Dec/2024 12:06:04] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -

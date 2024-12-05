@@ -212,6 +212,7 @@ def insert_book():
 def part3():
     return render_template("part3.html");
 
+
 @app.route("/part3_vulnerable", methods=["GET", "POST"])
 def part3_vulnerable():
     results = None

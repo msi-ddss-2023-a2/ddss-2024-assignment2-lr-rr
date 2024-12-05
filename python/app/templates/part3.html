@@ -25,17 +25,12 @@
       <br />
       <br />
 
-      <table class="form-row" >
-        <tr>
-          <td>
+      <div id="forms-mix">
             <form action="/part3_vulnerable" class="form-container vulnerable-form" method="post"> 
-              <table                 
-              border="1"
-              cellpadding="1"
-              style="font-size: 10pt; width: 400px;  background-color: rgba(255, 0, 0, 0.3);">
+              <table class="vuln-table">
                 <thead>
                   <tr>
-                    <th colspan="2" style="font-size: 12pt">
+                    <th colspan="2">
                       <b>Part 3.0 - Vulnerable Form</b>
                     </th>
                   </tr>
@@ -44,7 +39,7 @@
                 <tbody>
                   <tr>
                     <td valign="middle">Title</td>
-                    <td style="border-width: 1pt">
+                    <td>
                       <input
                         type="text"
                         name="v_name"
@@ -56,7 +51,7 @@
                   </tr>
                   <tr>
                     <td valign="middle">Author</td>
-                    <td style="border-width: 1pt">
+                    <td>
                       <input
                         type="text"
                         name="v_author"
@@ -69,7 +64,7 @@
 
                   <tr>
                     <td valign="middle">Category</td>
-                    <td style="border-width: 1pt">
+                    <td>
                       <select name="v_category_id">
                         <option value="">All</option>
                         <option value="2">Databases</option>
@@ -80,7 +75,7 @@
                   </tr>
                   <tr>
                     <td valign="middle">Price more then</td>
-                    <td style="border-width: 1pt">
+                    <td>
                       <input
                         type="text"
                         name="v_pricemin"
@@ -92,7 +87,7 @@
                   </tr>
                   <tr>
                     <td valign="middle">Price less then</td>
-                    <td style="border-width: 1pt">
+                    <td>
                       <input
                         type="text"
                         name="v_pricemax"
@@ -149,34 +144,8 @@
                     <td colspan="2" align="center">Date</td>
                   </tr>
                   <tr>
-                    <td align="right">
-                      <input
-                        type="radio"
-                        name="v_sp_d"
-                        value="custom"
-                        checked
-                      />
-                    </td>
+                    <td align="right">From:</td>
                     <td>
-                      <select name="v_sp_date_range" size="1">
-                        <option value="-1" selected>Anytime</option>
-                        <option value="7">Within the last week</option>
-                        <option value="14">Within the last 2 weeks</option>
-                        <option value="30">Within the last 30 days</option>
-                        <option value="60">Within the last 60 days</option>
-                        <option value="90">Within the last 90 days</option>
-                        <option value="180">Within the last 180 days</option>
-                        <option value="365">Within the last year</option>
-                        <option value="730">Within the last two years</option>
-                      </select>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td rowspan="2" align="right">
-                      <input type="radio" name="v_sp_d" value="specific" />
-                    </td>
-                    <td>
-                      From:
                       <select name="v_sp_start_month" size="1">
                         <option value="0" selected></option>
                         <option value="1">January</option>
@@ -226,14 +195,13 @@
                         <option value="30">30</option>
                         <option value="31">31</option>
                       </select>
-                      <!--comma-->,
+                      ,
                       <input size="4" name="v_sp_start_year" />
                     </td>
                   </tr>
                   <tr>
+                    <td align="right">To:</td>
                     <td>
-                      To:
-
                       <select name="v_sp_end_month" size="1">
                         <option value="0" selected></option>
                         <option value="1">January</option>
@@ -283,35 +251,12 @@
                         <option value="30">30</option>
                         <option value="31">31</option>
                       </select>
-                      <!--comma-->,
+                      ,
                       <input size="4" name="v_sp_end_year" />
                     </td>
                   </tr>
 
-                  <tr>
-                    <td colspan="2" align="center"></td>
-                  </tr>
 
-                  <!-- List box selects number of results to show per page -->
-                  <tr>
-                    <td valign="middle">Show:</td>
-                    <td>
-                      <select name="v_sp_c" size="1">
-                        <option value="5">5</option>
-                        <option value="10" selected>10</option>
-                        <option value="25">25</option>
-                        <option value="50">50</option>
-                        <option value="100">100</option>
-                      </select>
-                      results
-                      <!-- Show or hide summaries in search results -->
-                      <select name="v_sp_m" size="1">
-                        <option value="1" selected>with</option>
-                        <option value="0">without</option>
-                      </select>
-                      summaries<br />
-                    </td>
-                  </tr>
                   <!-- Sort results by relevance or by date -->
                   <tr>
                     <td valign="middle">Sort by:</td>
@@ -331,18 +276,12 @@
                 </tbody>
               </table>
             </form>
-          </td>
-          <td></td>
-          <td>
+
             <form action="/part3_correct" class="form-container correct-form" method="post">
-              <table
-                border="1"
-                cellpadding="1"
-                style="font-size: 10pt; width: 400px;  background-color: rgba(0, 255, 0, 0.3);"
-              >
+              <table  class="correct-table">
                 <thead>
                   <tr>
-                    <th colspan="2" style="font-size: 12pt">
+                    <th colspan="2">
                       <b>Part 3.1 - Correct Form</b>
                     </th>
                   </tr>
@@ -351,7 +290,7 @@
                 <tbody>
                   <tr>
                     <td valign="middle">Title</td>
-                    <td style="border-width: 1pt">
+                    <td>
                       <input
                         type="text"
                         name="c_name"
@@ -363,7 +302,7 @@
                   </tr>
                   <tr>
                     <td valign="middle">Author</td>
-                    <td style="border-width: 1pt">
+                    <td>
                       <input
                         type="text"
                         name="c_author"
@@ -376,7 +315,7 @@
 
                   <tr>
                     <td valign="middle">Category</td>
-                    <td style="border-width: 1pt">
+                    <td>
                       <select name="c_category_id">
                         <option value="">All</option>
                         <option value="2">Databases</option>
@@ -387,7 +326,7 @@
                   </tr>
                   <tr>
                     <td valign="middle">Price more then</td>
-                    <td style="border-width: 1pt">
+                    <td>
                       <input
                         type="text"
                         name="c_pricemin"
@@ -399,7 +338,7 @@
                   </tr>
                   <tr>
                     <td valign="middle">Price less then</td>
-                    <td style="border-width: 1pt">
+                    <td>
                       <input
                         type="text"
                         name="c_pricemax"
@@ -456,34 +395,8 @@
                     <td colspan="2" align="center">Date</td>
                   </tr>
                   <tr>
-                    <td align="right">
-                      <input
-                        type="radio"
-                        name="c_sp_d"
-                        value="custom"
-                        checked
-                      />
-                    </td>
+                    <td align="right">From:</td>
                     <td>
-                      <select name="c_sp_date_range" size="1">
-                        <option value="-1" selected>Anytime</option>
-                        <option value="7">Within the last week</option>
-                        <option value="14">Within the last 2 weeks</option>
-                        <option value="30">Within the last 30 days</option>
-                        <option value="60">Within the last 60 days</option>
-                        <option value="90">Within the last 90 days</option>
-                        <option value="180">Within the last 180 days</option>
-                        <option value="365">Within the last year</option>
-                        <option value="730">Within the last two years</option>
-                      </select>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td rowspan="2" align="right">
-                      <input type="radio" name="c_sp_d" value="specific" />
-                    </td>
-                    <td>
-                      From:
                       <select name="c_sp_start_month" size="1">
                         <option value="0" selected></option>
                         <option value="1">January</option>
@@ -533,14 +446,13 @@
                         <option value="30">30</option>
                         <option value="31">31</option>
                       </select>
-                      <!--comma-->,
+                      ,
                       <input size="4" name="c_sp_start_year" />
                     </td>
                   </tr>
                   <tr>
+                    <td align="right">To:</td>
                     <td>
-                      To:
-
                       <select name="c_sp_end_month" size="1">
                         <option value="0" selected></option>
                         <option value="1">January</option>
@@ -590,35 +502,12 @@
                         <option value="30">30</option>
                         <option value="31">31</option>
                       </select>
-                      <!--comma-->,
+                      ,
                       <input size="4" name="c_sp_end_year" />
                     </td>
                   </tr>
 
-                  <tr>
-                    <td colspan="2" align="center"></td>
-                  </tr>
 
-                  <!-- List box selects number of results to show per page -->
-                  <tr>
-                    <td valign="middle">Show:</td>
-                    <td>
-                      <select name="c_sp_c" size="1">
-                        <option value="5">5</option>
-                        <option value="10" selected>10</option>
-                        <option value="25">25</option>
-                        <option value="50">50</option>
-                        <option value="100">100</option>
-                      </select>
-                      results
-                      <!-- Show or hide summaries in search results -->
-                      <select name="c_sp_m" size="1">
-                        <option value="1" selected>with</option>
-                        <option value="0">without</option>
-                      </select>
-                      summaries<br />
-                    </td>
-                  </tr>
                   <!-- Sort results by relevance or by date -->
                   <tr>
                     <td valign="middle">Sort by:</td>
@@ -638,9 +527,8 @@
                 </tbody>
               </table>
             </form>
-          </td>
-        </tr>
-      </table>
+
+      </div>
     
       {% if error %}
       <div class="error">
