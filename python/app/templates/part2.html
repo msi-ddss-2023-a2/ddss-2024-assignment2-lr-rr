@@ -24,70 +24,71 @@
       </div>
       <br />
 
-      <!-- Vulnerable Form -->
-      <form
-        action="/part2_vulnerable"
-        method="POST"
-        class="form-container vulnerable-form"
-      >
-        <table class="form-table">
-          <thead>
-            <tr>
-              <th>Part 2.0 - Vulnerable Form</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>
-                <textarea
-                  placeholder="Enter Text"
-                  name="v_text"
-                  required
-                ></textarea>
-              </td>
-            </tr>
-            <tr>
-              <td align="right">
-                <button type="submit">Submit</button>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </form>
+      <div class="container">
+        <!-- Vulnerable Form -->
+        <form
+          action="/part2_vulnerable"
+          method="POST"
+          class="form-container vulnerable-form"
+        >
+          <table class="form-table">
+            <thead>
+              <tr>
+                <th>Part 2.0 - Vulnerable Form</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <textarea
+                    placeholder="Enter Text (max 250 characters)"
+                    name="v_text"
+                    maxlength="250"
+                    required
+                  ></textarea>
+                </td>
+              </tr>
+              <tr>
+                <td align="right">
+                  <button type="submit">Submit</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </form>
 
-      <br />
-
-      <!-- Correct Form -->
-      <form
-        action="/part2_correct"
-        method="POST"
-        class="form-container correct-form"
-      >
-        <table class="form-table">
-          <thead>
-            <tr>
-              <th>Part 2.1 - Correct Form</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>
-                <textarea
-                  placeholder="Enter Text"
-                  name="c_text"
-                  required
-                ></textarea>
-              </td>
-            </tr>
-            <tr>
-              <td align="right">
-                <button type="submit">Submit</button>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </form>
-
+        <!-- Correct Form -->
+        <form
+          action="/part2_correct"
+          method="POST"
+          class="form-container correct-form"
+        >
+          <table class="form-table">
+            <thead>
+              <tr>
+                <th>Part 2.1 - Correct Form</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <textarea
+                    placeholder="Enter Text (max 250 characters)"
+                    name="c_text"
+                    maxlength="250"
+                    required
+                  ></textarea>
+                </td>
+              </tr>
+              <tr>
+                <td align="right">
+                  <button type="submit">Submit</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </form>
+      </div>
       <br />
 
       <!-- Output Box -->
@@ -103,9 +104,9 @@
             <td>
               <strong>{{ author or 'anonymous' }}:</strong>
               {% if '[Vulnerable]' in message %}
-              <span style="color: red">{{ message | safe }}</span>
+              <span id="sp1">{{ message|safe }}</span>
               {% else %}
-              <span style="color: green">{{ message }}</span>
+              <span id="sp2">{{ message }}</span>
               {% endif %}
             </td>
           </tr>

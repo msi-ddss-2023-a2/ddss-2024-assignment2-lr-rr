@@ -9,10 +9,10 @@ from part1.deletesession import delete_session
 from part1.routesc import part1_correct
 from datetime import timedelta, datetime
 from markupsafe import escape
-from flask_talisman import Talisman
+#from flask_talisman import Talisman
 
 app = Flask(__name__, static_folder='templates/static/')
-Talisman(app)
+#Talisman(app)
 
 @app.route("/")
 def home():
@@ -49,12 +49,12 @@ def delete_session_app():
     return delete_session()
 
 
-@app.route("/part2.html", methods=["GET", "POST"])
+@app.route("/part2.html", methods=["GET"])
 def part2():
     conn = get_db()
     cur = conn.cursor()
 
-    if request.method == "POST":
+    if request.method == "GET":
         # Form submission handling
         form_source = request.form.get("form_source")
         author = session.get("username", "anonymous")
@@ -84,19 +84,7 @@ def part2():
     return render_template("part2.html", messages=messages)
 
 
-@app.route("/part2.html", methods=["GET", "POST"])
-def part2_page():  # Renamed to avoid conflicts
-    conn = get_db()
-    cur = conn.cursor()
-
-    # Fetch all messages
-    cur.execute("SELECT text, is_vulnerable FROM messages ORDER BY id DESC")
-    messages = cur.fetchall()
-    conn.close()
-
-    return render_template("part2.html", messages=messages)
-
-@app.route("/part2_vulnerable", methods=["GET", "POST"])
+@app.route("/part2_vulnerable", methods=["POST"])
 def part2_vulnerable():
     conn = get_db()
     cur = conn.cursor()
@@ -105,8 +93,13 @@ def part2_vulnerable():
         author = session.get("username", "anonymous")
         message = request.form["v_text"]
 
-        # Append "[Vulnerable]" marker to the message
-        message_with_marker = f"{message} [Vulnerable]"
+        # Truncate the message to 256 characters if it's too long (adjust for the marker length)
+        max_message_length = 256 - len(" [Vulnerable]")
+        if len(message) > max_message_length:
+            message = message[:max_message_length]
+
+        # Escape single quotes in the message to avoid SQL syntax errors
+        message_with_marker = f"{message} [Vulnerable]".replace("'", "''")
 
         # Vulnerable SQL query without parameterization
         cur.execute(
@@ -116,11 +109,9 @@ def part2_vulnerable():
 
     # Fetch all messages for display
     cur.execute("SELECT author, message FROM messages ORDER BY message_id DESC")
-    messages = cur.fetchall()
     conn.close()
 
-    return render_template("part2.html", messages=messages)
-
+    return redirect("part2.html")
 
 @app.route("/part2_correct", methods=["GET", "POST"])
 def part2_correct():
@@ -130,6 +121,11 @@ def part2_correct():
     if request.method == "POST":
         author = escape(session.get("username", "anonymous"))  # Sanitize session input
         message = escape(request.form["c_text"])  # Sanitize input
+
+        # Truncate the message to 256 characters if it's too long (adjust for the marker length)
+        max_message_length = 256 - len(" [Correct]")
+        if len(message) > max_message_length:
+            message = message[:max_message_length]
 
         # Append "[Correct]" marker to the message
         message_with_marker = f"{message} [Correct]"
@@ -146,7 +142,7 @@ def part2_correct():
     messages = cur.fetchall()
     conn.close()
 
-    return render_template("part2.html", messages=messages)
+    return redirect("part2.html")
 
 @app.route("/insert_book", methods=["POST"])
 def insert_book():

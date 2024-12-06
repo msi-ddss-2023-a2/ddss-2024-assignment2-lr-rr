@@ -177,6 +177,14 @@ a:hover {
   background-color: rgba(0, 255, 0, 0.3);
 }
 
+#sp1 {
+  color: red;
+}
+
+#sp2 {
+  color: green;
+}
+
 table {
   width: 100%;
   border-collapse: collapse;
