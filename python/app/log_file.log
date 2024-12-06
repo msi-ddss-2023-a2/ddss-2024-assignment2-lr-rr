@@ -592,3 +592,103 @@ INFO:werkzeug:172.18.0.4 - - [06/Dec/2024 19:35:57] "GET / HTTP/1.0" 200 -
 INFO:werkzeug:172.18.0.4 - - [06/Dec/2024 19:35:57] "[36mGET /static/js/script.js HTTP/1.0[0m" 304 -
 INFO:werkzeug:172.18.0.4 - - [06/Dec/2024 19:35:57] "[36mGET /static/css/style.css HTTP/1.0[0m" 304 -
 INFO:werkzeug:172.18.0.4 - - [06/Dec/2024 19:35:57] "[36mGET /static/js/script.js HTTP/1.0[0m" 304 -
+INFO:logger:
+---------------------
+
+
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:5000
+ * Running on https://172.18.0.3:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+INFO:logger:
+---------------------
+
+
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 514-701-929
+INFO:werkzeug:172.18.0.1 - - [06/Dec/2024 22:45:11] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [06/Dec/2024 22:45:11] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [06/Dec/2024 22:45:11] "GET /static/js/script.js HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [06/Dec/2024 22:45:11] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:172.18.0.1 - - [06/Dec/2024 22:45:13] "GET /part1.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [06/Dec/2024 22:45:13] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [06/Dec/2024 22:45:13] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [06/Dec/2024 22:45:15] "GET /register.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [06/Dec/2024 22:45:15] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [06/Dec/2024 22:45:15] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [06/Dec/2024 22:45:20] "GET /register?v_username=lreis&v_password=1234 HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [06/Dec/2024 22:45:20] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [06/Dec/2024 22:45:20] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [06/Dec/2024 22:45:27] "GET /register?v_username=lreis&v_password=1234 HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [06/Dec/2024 22:45:27] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [06/Dec/2024 22:45:27] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [06/Dec/2024 22:47:29] "GET /part1.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [06/Dec/2024 22:47:29] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [06/Dec/2024 22:47:29] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [06/Dec/2024 22:47:39] "GET /part1_vulnerable?v_username=lreis&v_password=aaaaa HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [06/Dec/2024 22:47:39] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [06/Dec/2024 22:47:39] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [06/Dec/2024 22:50:48] "GET /register.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [06/Dec/2024 22:50:48] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [06/Dec/2024 22:50:48] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [06/Dec/2024 22:50:55] "GET /register?v_username=luis&v_password=1234 HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [06/Dec/2024 22:50:55] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [06/Dec/2024 22:50:55] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [06/Dec/2024 22:51:01] "GET /register?v_username=luis&v_password=1234 HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [06/Dec/2024 22:51:01] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [06/Dec/2024 22:51:01] "GET /static/js/script.js HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [06/Dec/2024 22:51:03] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:172.18.0.1 - - [06/Dec/2024 22:51:09] "[35m[1mGET /register HTTP/1.1[0m" 500 -
+INFO:werkzeug:172.18.0.1 - - [06/Dec/2024 22:51:09] "GET /register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [06/Dec/2024 22:51:09] "GET /register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [06/Dec/2024 22:51:09] "GET /register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [06/Dec/2024 22:51:13] "GET /register.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [06/Dec/2024 22:51:13] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [06/Dec/2024 22:51:13] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [06/Dec/2024 22:51:14] "GET /register.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [06/Dec/2024 22:51:14] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [06/Dec/2024 22:51:14] "GET /static/js/script.js HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [06/Dec/2024 22:51:14] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:172.18.0.1 - - [06/Dec/2024 22:53:36] "GET /register.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [06/Dec/2024 22:53:36] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [06/Dec/2024 22:53:36] "GET /static/js/script.js HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [06/Dec/2024 22:53:36] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:172.18.0.1 - - [06/Dec/2024 22:53:44] "GET /register?v_username=lreis&v_password=1234 HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [06/Dec/2024 22:53:44] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [06/Dec/2024 22:53:44] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [06/Dec/2024 22:55:25] "GET /register?v_username=luis&v_password=1234 HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [06/Dec/2024 22:55:25] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [06/Dec/2024 22:55:25] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in '/app/register/routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:logger:
+---------------------
+
+
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 514-701-929
+INFO:werkzeug:172.18.0.1 - - [06/Dec/2024 22:56:37] "GET /register?v_username=luis&v_password=1234 HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [06/Dec/2024 22:56:37] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [06/Dec/2024 22:56:37] "GET /static/js/script.js HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [06/Dec/2024 22:56:43] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:172.18.0.1 - - [06/Dec/2024 22:56:48] "GET /part1.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [06/Dec/2024 22:56:48] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [06/Dec/2024 22:56:48] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [06/Dec/2024 22:56:51] "GET /target HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [06/Dec/2024 22:56:51] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [06/Dec/2024 22:56:51] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [06/Dec/2024 22:56:53] "GET /target HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [06/Dec/2024 22:56:53] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [06/Dec/2024 22:56:54] "GET /static/js/script.js HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [06/Dec/2024 22:56:54] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:172.18.0.1 - - [06/Dec/2024 22:57:01] "GET /part1.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [06/Dec/2024 22:57:01] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [06/Dec/2024 22:57:01] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [06/Dec/2024 22:57:03] "GET /register.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [06/Dec/2024 22:57:03] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [06/Dec/2024 22:57:03] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [06/Dec/2024 22:57:07] "GET /register?v_username=lreis&v_password=1234 HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [06/Dec/2024 22:57:07] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [06/Dec/2024 22:57:07] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -

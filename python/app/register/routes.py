@@ -79,4 +79,5 @@ def register():
     cursor.execute(sql, tuple1)  
     conn.commit()
     conn.close()
-    return render_template("register.html")
+    message = "The user created successfly" 
+    return render_template("register.html", message=message)
