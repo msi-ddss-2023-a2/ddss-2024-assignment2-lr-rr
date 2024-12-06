@@ -257,3 +257,338 @@ INFO:werkzeug:172.18.0.1 - - [06/Dec/2024 00:59:38] "[36mGET /static/css/style.
 INFO:werkzeug:172.18.0.1 - - [06/Dec/2024 01:01:34] "GET /target HTTP/1.1" 200 -
 INFO:werkzeug:172.18.0.1 - - [06/Dec/2024 01:01:34] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
 INFO:werkzeug:172.18.0.1 - - [06/Dec/2024 01:01:34] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:logger:
+---------------------
+
+
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:5000
+ * Running on https://172.18.0.3:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+INFO:logger:
+---------------------
+
+
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 118-568-452
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:22:24] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:22:24] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:22:24] "GET /static/js/script.js HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:22:24] "GET /static/js/script.js HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:05] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:05] "[33mGET /sitemap.xml HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:05] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:05] "[33mGET /robots.txt HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:05] "GET /part1.html HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:05] "GET /part3.html HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:05] "GET /part2.html HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:05] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:05] "GET /static/js/script.js HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:05] "GET /register.html HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:05] "GET /target HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:05] "GET /part1_vulnerable?v_password=ZAP&v_remember=on&v_username=ZAP HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:05] "GET /part1_correct?c_password=ZAP&c_remember=on&c_username=ZAP HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:05] "POST /part3_correct HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:05] "[32mPOST /part2_vulnerable HTTP/1.1[0m" 302 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:05] "[32mPOST /part2_correct HTTP/1.1[0m" 302 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:05] "POST /part3_vulnerable HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:05] "GET /register?v_password=ZAP&v_username=ZAP HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:10] "[33mGET /1418702643856007167 HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:10] "[33mGET /static/2596513781345941387 HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:10] "[33mGET /static/css/8137322254441855839 HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:10] "[33mGET /static/js/165319844470337267 HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:10] "[33mGET /WEB-INF/web.xml HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:10] "GET /?-s HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:10] "[33mGET /WEB-INF/applicationContext.xml HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:10] "[31m[1mPOST /?-d+allow_url_include%3d1+-d+auto_prepend_file%3dphp://input HTTP/1.1[0m" 405 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:10] "[31m[1mPOST /?-d+allow_url_include%3d1+-d+auto_prepend_file%3dphp://input HTTP/1.1[0m" 405 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:10] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:13] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:13] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:13] "GET /static/js/script.js HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:13] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:14] "GET /part1.html HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:14] "GET /static/js/script.js HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:14] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:15] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:15] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:15] "GET /static/js/script.js HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:15] "GET /?name=abc HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:15] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:15] "GET /static/js/script.js HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:17] "GET /?class.module.classLoader.DefaultAssertionStatus=nonsense HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:17] "[31m[1mPOST / HTTP/1.1[0m" 405 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:17] "[33mGET /latest/meta-data/ HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:17] "[33mGET /latest/meta-data/ HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:17] "[33mGET /latest/meta-data/ HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:17] "[33mGET /latest/meta-data/ HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:17] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:17] "[33mGET /elmah.axd HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:17] "[33mGET /trace.axd HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:17] "[33mGET /.htaccess HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:17] "[33mGET /.env HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:17] "[33mGET /lfm.php HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:17] "[33mGET /actuator/health HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:17] "[33mGET /.idea/WebServers.xml HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:17] "[33mGET /actuator/health HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:17] "[33mGET /config/databases.yml HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:17] "[33mGET /config/database.yml HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:17] "[33mGET /.git/config HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:17] "[33mGET /.svn/entries HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:17] "[33mGET /.svn/wc.db HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:17] "[33mGET /CVS/root HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:17] "[33mGET /server-status HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:17] "[33mGET /core HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:17] "[33mGET /sftp-config.json HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:17] "[33mGET /WS_FTP.ini HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:17] "[33mGET /ws_ftp.ini HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:18] "[33mGET /WS_FTP.INI HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:18] "[33mGET /filezilla.xml HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:18] "[33mGET /sitemanager.xml HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:18] "[33mGET /FileZilla.xml HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:18] "[33mGET /winscp.ini HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:18] "[33mGET /WinSCP.ini HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:18] "[33mGET /.DS_Store HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:18] "[33mGET /.php_cs.cache HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:18] "[33mGET /DEADJOE HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:18] "[33mGET /sites/default/private/files/backup_migrate/scheduled/test.txt HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:18] "[33mGET /app/etc/local.xml HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:18] "[33mGET /server.key HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:18] "[33mGET /privatekey.key HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:18] "[33mGET /myserver.key HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:18] "[33mGET /key.pem HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:18] "[33mGET /id_rsa HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:18] "[33mGET /id_dsa HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:18] "[33mGET /.ssh/id_rsa HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:18] "[33mGET /.ssh/id_dsa HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:18] "[33mGET /adminer.php HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:18] "[33mGET /vb_test.php HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:18] "[33mGET /CHANGELOG.txt HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:18] "[33mGET /sites/default/files/.ht.sqlite HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:18] "[33mGET /composer.json HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:18] "[33mGET /composer.lock HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:18] "[33mGET /vim_settings.xml HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:18] "[33mGET /server-info HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:18] "[33mGET /phpinfo.php HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:18] "[33mGET /info.php HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:18] "[33mGET /i.php HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:18] "[33mGET /test.php HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:18] "[33mGET /_wpeprivate/config.json HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:18] "[33mGET /_framework/blazor.boot.json HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:19] "[33mGET /.hg HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:19] "[33mGET /.bzr HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:19] "[33mGET /._darcs HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:19] "[33mGET /BitKeeper HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:19] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:19] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:19] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:19] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:19] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:19] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:19] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:19] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:19] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:19] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:19] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:23:19] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:01] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:01] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:01] "[33mGET /robots.txt HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:01] "[33mGET /sitemap.xml HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:01] "GET /part1.html HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:01] "GET /part2.html HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:01] "GET /part3.html HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:01] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:01] "GET /static/js/script.js HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:01] "GET /register.html HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:01] "GET /target HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:01] "GET /part1_correct?c_password=ZAP&c_remember=on&c_username=ZAP HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:01] "GET /part1_vulnerable?v_password=ZAP&v_remember=on&v_username=ZAP HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:01] "[32mPOST /part2_correct HTTP/1.1[0m" 302 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:01] "[32mPOST /part2_vulnerable HTTP/1.1[0m" 302 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:01] "POST /part3_vulnerable HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:01] "POST /part3_correct HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:01] "GET /register?v_password=ZAP&v_username=ZAP HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:01] "GET /logout HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:01] "POST /insert_book HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:06] "[33mGET /510519625175642533 HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:06] "[33mGET /static/8712816701159290160 HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:06] "[33mGET /static/css/6912645120802841138 HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:06] "[33mGET /static/js/7329355968449799916 HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:06] "[33mGET /WEB-INF/web.xml HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:06] "GET /?-s HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:06] "[33mGET /WEB-INF/applicationContext.xml HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:06] "[31m[1mPOST /?-d+allow_url_include%3d1+-d+auto_prepend_file%3dphp://input HTTP/1.1[0m" 405 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:06] "[31m[1mPOST /?-d+allow_url_include%3d1+-d+auto_prepend_file%3dphp://input HTTP/1.1[0m" 405 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:06] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:08] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:08] "GET /static/js/script.js HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:08] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:08] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:09] "GET /part1.html HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:09] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:09] "GET /static/js/script.js HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:09] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:09] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:09] "GET /static/js/script.js HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:10] "GET /?name=abc HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:10] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:10] "GET /static/js/script.js HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:11] "GET /?class.module.classLoader.DefaultAssertionStatus=nonsense HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:11] "[31m[1mPOST / HTTP/1.1[0m" 405 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:11] "[33mGET /latest/meta-data/ HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:11] "[33mGET /latest/meta-data/ HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:11] "[33mGET /latest/meta-data/ HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:11] "[33mGET /latest/meta-data/ HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:11] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:11] "[33mGET /elmah.axd HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:11] "[33mGET /trace.axd HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:11] "[33mGET /.htaccess HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:11] "[33mGET /.env HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:11] "[33mGET /lfm.php HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:11] "[33mGET /actuator/health HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:12] "[33mGET /.idea/WebServers.xml HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:12] "[33mGET /actuator/health HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:12] "[33mGET /config/databases.yml HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:12] "[33mGET /config/database.yml HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:12] "[33mGET /.git/config HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:12] "[33mGET /.svn/entries HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:12] "[33mGET /.svn/wc.db HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:12] "[33mGET /CVS/root HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:12] "[33mGET /server-status HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:12] "[33mGET /core HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:12] "[33mGET /sftp-config.json HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:12] "[33mGET /WS_FTP.ini HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:12] "[33mGET /ws_ftp.ini HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:12] "[33mGET /WS_FTP.INI HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:12] "[33mGET /filezilla.xml HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:12] "[33mGET /sitemanager.xml HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:12] "[33mGET /FileZilla.xml HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:12] "[33mGET /winscp.ini HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:12] "[33mGET /WinSCP.ini HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:12] "[33mGET /.DS_Store HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:12] "[33mGET /.php_cs.cache HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:12] "[33mGET /DEADJOE HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:12] "[33mGET /sites/default/private/files/backup_migrate/scheduled/test.txt HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:12] "[33mGET /app/etc/local.xml HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:12] "[33mGET /server.key HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:12] "[33mGET /privatekey.key HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:12] "[33mGET /myserver.key HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:12] "[33mGET /key.pem HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:12] "[33mGET /id_rsa HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:12] "[33mGET /id_dsa HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:12] "[33mGET /.ssh/id_rsa HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:12] "[33mGET /.ssh/id_dsa HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:12] "[33mGET /adminer.php HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:12] "[33mGET /vb_test.php HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:12] "[33mGET /CHANGELOG.txt HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:12] "[33mGET /sites/default/files/.ht.sqlite HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:12] "[33mGET /composer.json HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:13] "[33mGET /composer.lock HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:13] "[33mGET /vim_settings.xml HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:13] "[33mGET /server-info HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:13] "[33mGET /phpinfo.php HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:13] "[33mGET /info.php HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:13] "[33mGET /i.php HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:13] "[33mGET /test.php HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:13] "[33mGET /_wpeprivate/config.json HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:13] "[33mGET /_framework/blazor.boot.json HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:13] "[33mGET /.hg HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:13] "[33mGET /.bzr HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:13] "[33mGET /._darcs HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:13] "[33mGET /BitKeeper HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:13] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:13] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:13] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:13] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:13] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:13] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:13] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:13] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:13] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:13] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:13] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.1.228 - - [06/Dec/2024 14:26:13] "GET / HTTP/1.1" 200 -
+INFO:logger:
+---------------------
+
+
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:5000
+ * Running on https://172.18.0.3:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+INFO:logger:
+---------------------
+
+
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 851-840-181
+INFO:werkzeug:172.18.0.1 - - [06/Dec/2024 19:17:48] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [06/Dec/2024 19:17:48] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [06/Dec/2024 19:17:48] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [06/Dec/2024 19:17:53] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [06/Dec/2024 19:17:53] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [06/Dec/2024 19:17:53] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:logger:
+---------------------
+
+
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:5000
+ * Running on https://172.18.0.3:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+INFO:logger:
+---------------------
+
+
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 851-840-181
+INFO:werkzeug:172.18.0.1 - - [06/Dec/2024 19:21:52] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [06/Dec/2024 19:21:52] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [06/Dec/2024 19:21:52] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:logger:
+---------------------
+
+
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:5000
+ * Running on https://172.18.0.3:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+INFO:logger:
+---------------------
+
+
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 851-840-181
+INFO:logger:
+---------------------
+
+
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:5000
+ * Running on https://172.18.0.3:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+INFO:logger:
+---------------------
+
+
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 851-840-181
+INFO:werkzeug:172.18.0.4 - - [06/Dec/2024 19:35:42] "GET / HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [06/Dec/2024 19:35:42] "GET /static/css/style.css HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [06/Dec/2024 19:35:42] "GET /static/js/script.js HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [06/Dec/2024 19:35:42] "GET /static/js/script.js HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [06/Dec/2024 19:35:57] "GET / HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [06/Dec/2024 19:35:57] "[36mGET /static/js/script.js HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [06/Dec/2024 19:35:57] "[36mGET /static/css/style.css HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [06/Dec/2024 19:35:57] "[36mGET /static/js/script.js HTTP/1.0[0m" 304 -

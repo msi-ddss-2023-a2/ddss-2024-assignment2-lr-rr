@@ -21,7 +21,16 @@ services:
       - "./python/app:/app"
     expose:
       - "5000"
-    ports:
-      - "8080:5000"
     depends_on:
       - db
+  nginx:
+    image: nginx:latest
+    container_name: nginx
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+      - ./python/app/certificates:/certificates # Mount certificates folder
+    ports:
+      - "443:443"
+      - "80:80"
+    depends_on:
+      - web
