@@ -1,4 +1,5 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/XKmDKkvn)
+
 # MSI DDSS - Assignment 2
 
 The code and resources available in this repository are to be used in the scope of the _DDSS_ course.
@@ -40,10 +41,9 @@ Then you just need to develop inside the folder and run the script (e.g. [`./doc
 
 [`Python`](python), [`php`](php) and [`NodeJS`](nodejs) allow you to be developing while the containers are running, and the sources are continuously being integrated.
 
-In the case of [`Java`](java) we suggest that you have the container of the database running and you develop from your favourite IDE. 
+In the case of [`Java`](java) we suggest that you have the container of the database running and you develop from your favourite IDE.
 Only for delivery you need the code to be working inside the `docker` image.
-All IDEs support `maven`, and if your program works with `maven` it should be OK. Ask for the help of the professors if you face difficulties. 
-
+All IDEs support `maven`, and if your program works with `maven` it should be OK. Ask for the help of the professors if you face difficulties.
 
 **Delete everything you are not planing to you in your assignment.**
 
@@ -63,3 +63,8 @@ After the required commands and having started the web application, they will av
 
 - Nuno Antunes <nmsa@dei.uc.pt>
 - Marco Vieira <mvieira@dei.uc.pt>
+
+# Developers
+
+- Rui Rodrigues <ruirodrigues@student.dei.uc.pt>
+- Luís Reis <luisreis@student.dei.uc.pt>
