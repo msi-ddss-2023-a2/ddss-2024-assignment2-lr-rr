@@ -186,9 +186,15 @@
               </td>
             </tr>
             <tr>
+              {% if message_type == 'success'%}
               <td colspan="2" align="right">
-                <button type="submit" onclick="window.open('https://127.0.0.1/mfa_verification');">Login</button>
+                <button type="submit" onclick="window.open('mfa_verification/');">Login</button>
               </td>
+              {% else %}
+              <td colspan="2" align="right">
+                <button type="submit">Login</button>
+              </td>
+              {% endif %}
             </tr>
           </tbody>
         </table>

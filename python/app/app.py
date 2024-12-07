@@ -46,8 +46,13 @@ def login():
 def part1_vulnerable_app():
     return part1_vulnerable()
 
-#@app.route("/part1_correct", methods=['GET', 'POST'])
-@app.route("/part1_correct", methods=['GET'])
+
+
+@app.route("/mfa_verification.html", methods=['GET', 'POST'])
+def mfa_verification_func():
+    return render_template("mfa_verification.html")
+
+@app.route("/part1_correct", methods=['GET', 'POST'])
 def part1_correct_app():
     
     return part1_correct()
@@ -121,21 +126,7 @@ def part2_vulnerable():
 
     return redirect("part2.html")
 
-@app.route('/mfa-verification', methods=['GET', 'POST'])
-def mfa_verification():
-    #if 'username' not in session:
-     #   return redirect(url_for('register'))
-    
-    #if request.method == 'POST':
-        # Simulate MFA verification (e.g., verify OTP)
-    #    otp = request.form['otp']
-    #    if otp == "123456":  # Replace with actual OTP validation logic
-    #        return render_template("success.html", messages="MFA completed successfully! User registration finalized.", message_type="success")
-    #    else:
-    #        return render_template("mfa_verification.html", messages="Invalid OTP. Please try again.", message_type="error")
-    
-    # Render MFA verification page
-    return render_template("mfa_verification.html")
+
 @app.route("/part2_correct", methods=["GET", "POST"])
 def part2_correct():
     conn = get_db()
