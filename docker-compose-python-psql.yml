@@ -28,7 +28,7 @@ services:
     container_name: nginx
     volumes:
       - ./nginx.conf:/etc/nginx/nginx.conf
-      - ./python/app/certificates:/certificates # Mount certificates folder
+      - ./python/app/certificates:/certificates
     ports:
       - "443:443"
       - "80:80"

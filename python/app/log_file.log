@@ -2589,3 +2589,28 @@ INFO:logger:
 ---------------------
 
 
+INFO:logger:
+---------------------
+
+
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:5000
+ * Running on https://172.18.0.3:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+INFO:logger:
+---------------------
+
+
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 881-812-289
+INFO:werkzeug:172.18.0.1 - - [07/Dec/2024 12:37:00] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [07/Dec/2024 12:37:00] "GET /static/js/script.js HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [07/Dec/2024 12:37:00] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:logger:
+---------------------
+
+

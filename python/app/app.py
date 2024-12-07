@@ -9,8 +9,7 @@ from part1.deletesession import delete_session
 from part1.routesc import part1_correct
 from datetime import timedelta, datetime
 from markupsafe import escape
-import os,pyotp
-from twilio.rest import Client
+import os, pyotp
 from dotenv import load_dotenv
 
 #Load environment variables from a .env file
@@ -518,7 +517,7 @@ if __name__ == "__main__":
     #Use environment variable for Flask secret key
     app.secret_key = os.getenv("FLASK_SECRET_KEY", "fallback_secret_key")
 
-    app.run(host="0.0.0.0", port=5000, debug=False, threaded=True, ssl_context=(cert_path, key_path)) 
+    app.run(host="0.0.0.0", port=5000, threaded=True, ssl_context=(cert_path, key_path)) 
     
 
 
