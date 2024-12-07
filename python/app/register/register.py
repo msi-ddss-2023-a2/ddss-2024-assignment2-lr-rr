@@ -3,14 +3,18 @@ import psycopg2, hashlib, os,re
 from base64 import b64encode
 # Route for showing the registration page
 
-def db_connection():
-    conn = psycopg2.connect(user = "ddss-database-assignment-2",
-                password = "ddss-database-assignment-2",
-                host = "db",
-                port = "5432",
-                database = "ddss-database-assignment-2")
-    return conn
+from dotenv import load_dotenv
 
+load_dotenv()
+def db_connection():
+    conn = psycopg2.connect(
+        user=os.getenv("DB_USER"),
+        password=os.getenv("DB_PASSWORD"),
+        host=os.getenv("DB_HOST"),
+        port=os.getenv("DB_PORT"),
+        database=os.getenv("DB_NAME")
+    )
+    return conn
 def sanitize_input(user_input):
     if user_input.find("eval") != -1:
         return -1

@@ -84,12 +84,6 @@
                       </tr>
                   </table>
               </form>              
-               <!-- Display message if available -->
-                {% if messages %}
-                <div class="message {{ message_type }}">
-                    {{ messages }}
-                </div>
-                {% endif %}
                 <a href="/logout">Logout</a>
       {% else %}
       <h1>Design and Development of Secure Software</h1>
@@ -199,7 +193,6 @@
           </tbody>
         </table>
       </form>
-      <!-- Display message if available -->
       {% if messages %}
       <div class="message {{ message_type }}">
           {{ messages }}

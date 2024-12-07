@@ -1345,3 +1345,57 @@ INFO:logger:
 
 WARNING:werkzeug: * Debugger is active!
 INFO:werkzeug: * Debugger PIN: 514-701-929
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:logger:
+---------------------
+
+
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 514-701-929
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:logger:
+---------------------
+
+
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 514-701-929
+INFO:werkzeug:172.18.0.4 - - [07/Dec/2024 01:05:23] "GET /logout HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [07/Dec/2024 01:05:23] "[36mGET /static/css/style.css HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [07/Dec/2024 01:05:23] "[36mGET /static/js/script.js HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [07/Dec/2024 01:05:29] "GET /part1_correct?c_username=lreis&c_password=1234 HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [07/Dec/2024 01:05:29] "[36mGET /static/css/style.css HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [07/Dec/2024 01:05:29] "[36mGET /static/js/script.js HTTP/1.0[0m" 304 -
+INFO:werkzeug: * Detected change in '/app/register/register.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:logger:
+---------------------
+
+
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 514-701-929
+INFO:werkzeug: * Detected change in '/app/part1/routesv.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:logger:
+---------------------
+
+
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 514-701-929
+INFO:werkzeug: * Detected change in '/app/part1/routesc.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:logger:
+---------------------
+
+
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 514-701-929
+INFO:werkzeug:172.18.0.4 - - [07/Dec/2024 01:18:19] "GET /logout HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [07/Dec/2024 01:18:19] "[36mGET /static/css/style.css HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [07/Dec/2024 01:18:19] "[36mGET /static/js/script.js HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [07/Dec/2024 01:18:25] "GET /part1_correct?c_username=lreis&c_password=1234 HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [07/Dec/2024 01:18:25] "[36mGET /static/js/script.js HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [07/Dec/2024 01:18:25] "[36mGET /static/css/style.css HTTP/1.0[0m" 304 -
+INFO:werkzeug: * Detected change in '/app/part1/routesc.py', reloading
+INFO:werkzeug: * Restarting with stat

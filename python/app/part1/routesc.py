@@ -4,6 +4,7 @@ import base64, hashlib, os
 import datetime
 from dotenv import load_dotenv
 
+load_dotenv()
 def db_connection():
     conn = psycopg2.connect(
         user=os.getenv("DB_USER"),
@@ -75,12 +76,13 @@ def part1_correct():
     hash_password = hash_object.hexdigest()
     if password_d == hash_password:
 
-        message = "Sucess"
+        message = "Success"
         if remember == "on":
             session.permanent = True
         else:
             session.permanent = False
         session['username'] = username
-        return render_template("part1.html",messages=message,message_type="success")
+        #return render_template("part1.html",messages=message,message_type="success")
+         return redirect(url_for('mfa_verification'))
     else:
         return render_template("part1.html", messages=message,message_type="error")
