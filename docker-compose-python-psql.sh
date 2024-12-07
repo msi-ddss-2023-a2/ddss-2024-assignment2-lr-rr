@@ -20,7 +20,6 @@ docker rm $(docker stop $(docker ps -a -q))
 docker-compose  -f docker-compose-python-psql.yml   build  --no-cache 
 
 
-mkdir -p python/app/logs
 
 # add  -d  to the command below if you want the containers running in background without logs
 docker-compose  -f docker-compose-python-psql.yml up --build

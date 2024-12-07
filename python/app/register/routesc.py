@@ -1,5 +1,5 @@
 from flask import Flask, render_template, g, request, redirect, url_for,  make_response,  render_template_string
-import psycopg2, hashlib, os
+import psycopg2, hashlib, os,re
 from base64 import b64encode
 # Route for showing the registration page
 

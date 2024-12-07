@@ -109,6 +109,50 @@
       <br />
       <div class="container">
       <!-- Vulnerable Form -->
+      <form action="/part1_vulnerable" class="form-container vulnerable-form">
+        <table class="form-table">
+          <thead>
+            <tr>
+              <th colspan="2"><b>Part 1.0 - Vulnerable Form</b></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><label>Username</label></td>
+              <td>
+                <input
+                  type="text"
+                  placeholder="Enter Username"
+                  name="v_username"
+                  required
+                />
+              </td>
+            </tr>
+            <tr>
+              <td><label>Password</label></td>
+              <td>
+                <input
+                  type="password"
+                  placeholder="Enter Password"
+                  name="v_password"
+                  required
+                />
+              </td>
+            </tr>
+            <tr>
+              <td><label>Remember me</label></td>
+              <td>
+                <input type="checkbox" checked="checked" name="v_remember" />
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2" align="right">
+                <button type="submit">Login</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </form>
 
       <!-- Correct Form -->
       <form action="/part1_correct" class="form-container correct-form">

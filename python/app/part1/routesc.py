@@ -4,29 +4,6 @@ import base64, hashlib, os
 import datetime
 from dotenv import load_dotenv
 
-#Password validation function
-def is_password_strong(password):
-    # Minimum 8 characters, maximum 64
-    if len(password) < 8 or len(password) > 64:
-        return "Password must be between 8 and 64 characters long."
-
-    #Must include at least one uppercase, one lowercase, one number, and one special character
-    if not re.search(r'[A-Z]', password):
-        return "Password must include at least one uppercase letter."
-    if not re.search(r'[a-z]', password):
-        return "Password must include at least one lowercase letter."
-    if not re.search(r'\d', password):
-        return "Password must include at least one digit."
-    if not re.search(r'[!@#$%^&*(),.?":{}|<>]', password):
-        return "Password must include at least one special character."
-
-    #No spaces allowed
-    if ' ' in password:
-        return "Password must not contain spaces."
-
-    # All checks passed
-    return None 
-
 def db_connection():
     conn = psycopg2.connect(
         user=os.getenv("DB_USER"),
@@ -88,10 +65,7 @@ def part1_correct():
     if not results:
         return render_template("part1.html",messages=message, message_type="error")
     
-    #Check password strength
-    #password_feedback = is_password_strong(password)
-    #if password_feedback:
-    #    return render_template("register.html", messages=password_feedback, message_type="error") 
+   
     
     username_d, password_d, salt_d = results[0]
     salt_d = salt_d.encode(encoding="utf-8")
