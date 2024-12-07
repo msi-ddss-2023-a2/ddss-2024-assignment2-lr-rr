@@ -15,21 +15,6 @@ def db_connection():
     )
     return conn
 
-#@app.route('/mfa_verification', methods=['GET', 'POST'])
-#def mfa_verification():
-    #if 'username' not in session:
-     #   return redirect(url_for('register'))
-    
-    #if request.method == 'POST':
-        # Simulate MFA verification (e.g., verify OTP)
-    #    otp = request.form['otp']
-    #    if otp == "123456":  # Replace with actual OTP validation logic
-    #        return render_template("success.html", messages="MFA completed successfully! User registration finalized.", message_type="success")
-    #    else:
-    #        return render_template("mfa_verification.html", messages="Invalid OTP. Please try again.", message_type="error")
-    
-    # Render MFA verification page
- #   return render_template("mfa_verification.html")
 
 def sanitize_input(user_input):
     dangerous_terms = {"eval", "exec", "execfile", "input", "compile", "open", "os.system"}

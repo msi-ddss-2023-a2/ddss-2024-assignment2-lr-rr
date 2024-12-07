@@ -9,7 +9,6 @@ from part1.deletesession import delete_session
 from part1.routesc import part1_correct
 from datetime import timedelta, datetime
 from markupsafe import escape
-#from flask_talisman import Talisman
 import os,pyotp
 from twilio.rest import Client
 from dotenv import load_dotenv
@@ -17,8 +16,6 @@ from dotenv import load_dotenv
 #Load environment variables from a .env file
 load_dotenv() 
 app = Flask(__name__, static_folder='templates/static/')
-#Talisman(app)
-
 
 @app.route("/")
 def home():
@@ -514,7 +511,6 @@ if __name__ == "__main__":
 
     logger.info("\n---------------------\n\n")
 
-    #app.run(debug=False)  # Disable debug mode in production    
     #Use environment variable for SSL context (optional for production)
     cert_path = os.getenv("SSL_CERT_PATH", "certificates/cert.pem")
     key_path = os.getenv("SSL_KEY_PATH", "certificates/key.pem")
@@ -522,7 +518,7 @@ if __name__ == "__main__":
     #Use environment variable for Flask secret key
     app.secret_key = os.getenv("FLASK_SECRET_KEY", "fallback_secret_key")
 
-    app.run(host="0.0.0.0", port=5000, debug=True, threaded=True, ssl_context=(cert_path, key_path))  # Enable debug mode for development
+    app.run(host="0.0.0.0", port=5000, debug=False, threaded=True, ssl_context=(cert_path, key_path)) 
     
 
 

@@ -1,2 +1,4 @@
 /.DS_Store
 /.history/
+# you should remove this comment in production, so that the environment variables won't
+#.env 

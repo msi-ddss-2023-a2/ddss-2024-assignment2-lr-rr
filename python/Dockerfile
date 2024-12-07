@@ -12,8 +12,6 @@ run pip install psycopg2-binary
 
 run pip install python-dotenv
 
-run pip install twilio
-
 run pip install pyotp
 
 run pip install pyotp qrcode pillow

@@ -62,12 +62,11 @@ def register():
         password = request.args.get('c_password')
         passwordv =  request.args.get('c_passwordv')
         username = request.args.get('c_username')
-        #phonenumber =  request.args.get('c_phonenumber')
+        
     else:
         password = request.form['c_password']
         username = request.form['c_username']
         passwordv =  request.args.get('c_passwordv')
-        #phonenumber =  request.args.get('c_phonenumber')
     
     #Verificar se a password e igual
     if password != passwordv:
@@ -95,17 +94,9 @@ def register():
         message = "The user exist in the database" 
         return render_template("register.html", messages=message,message_type="error")
      #Check password strength
-    #password_feedback = is_password_strong(password)
-    #if password_feedback:
-    #    return render_template("register.html", messages=password_feedback, message_type="error") 
-    
-    #Verificar o numero de telemovel
-    #if not phonenumber.isnumeric():
-    #    message = "Input only numbers"
-    #    return render_template("register.html", messages=message, message_type="error")
-    #if not len(phonenumber) == 9:
-    #    message = "Input nine numbers"
-    #    return render_template("register.html", messages=message, message_type="error")
+    password_feedback = is_password_strong(password)
+    if password_feedback:
+        return render_template("register.html", messages=password_feedback, message_type="error") 
     
     #Criar o utilizador
     salt = os.urandom(64)

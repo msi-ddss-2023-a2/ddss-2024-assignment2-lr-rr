@@ -2575,3 +2575,17 @@ INFO:werkzeug:172.18.0.4 - - [07/Dec/2024 12:15:42] "[33mGET /favicon.ico HTTP/
 INFO:werkzeug:172.18.0.4 - - [07/Dec/2024 12:15:52] "POST /mfa_verification HTTP/1.0" 200 -
 INFO:werkzeug:172.18.0.4 - - [07/Dec/2024 12:15:52] "[36mGET /static/css/style.css HTTP/1.0[0m" 304 -
 INFO:werkzeug:172.18.0.4 - - [07/Dec/2024 12:15:52] "[36mGET /static/js/script.js HTTP/1.0[0m" 304 -
+INFO:werkzeug: * Detected change in '/app/part1/routesc.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:logger:
+---------------------
+
+
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 118-211-071
+INFO:werkzeug: * Detected change in '/app/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:logger:
+---------------------
+
+
