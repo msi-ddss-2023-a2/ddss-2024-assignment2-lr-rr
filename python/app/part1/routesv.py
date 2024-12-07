@@ -1,15 +1,19 @@
 
 from flask import Flask, render_template, g, request, redirect, url_for, session, make_response
 import logging, psycopg2
-from register.routes import register_html, register
 import base64, hashlib, os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 def db_connection():
-    conn = psycopg2.connect(user = "ddss-database-assignment-2",
-                password = "ddss-database-assignment-2",
-                host = "db",
-                port = "5432",
-                database = "ddss-database-assignment-2")
+    conn = psycopg2.connect(
+        user=os.getenv("DB_USER"),
+        password=os.getenv("DB_PASSWORD"),
+        host=os.getenv("DB_HOST"),
+        port=os.getenv("DB_PORT"),
+        database=os.getenv("DB_NAME")
+    )
     return conn
 
 def part1_vulnerable():
@@ -33,7 +37,7 @@ def part1_vulnerable():
     message = "Failed Credentials"
     
     if not results:
-        return render_template("part1.html",message=message)
+        return render_template("part1.html",messages=message, message_type="error")
     username_d, password_d, salt_d = results[0]
     salt_d = salt_d.encode(encoding="utf-8")
     salt_d = base64.decodebytes(salt_d)
@@ -47,6 +51,6 @@ def part1_vulnerable():
         else:
             session.permanent = False
         session['username'] = username
-        return render_template("part1.html",message=message)
+        return render_template("part1.html",messages=message, message_type="success")
     else:
-        return render_template("part1.html", message=message)
+        return render_template("part1.html", messages=message,message_type="error")

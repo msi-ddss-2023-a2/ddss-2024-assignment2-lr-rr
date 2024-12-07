@@ -3,29 +3,36 @@
 
 from flask import Flask, render_template, jsonify, g, request, redirect, url_for, session, make_response
 import logging, psycopg2
-from register.routes import register_html, register
+from register.routesc import register
+
 from part1.routesv import part1_vulnerable
 from part1.deletesession import delete_session
 from part1.routesc import part1_correct
 from datetime import timedelta, datetime
 from markupsafe import escape
 #from flask_talisman import Talisman
+import os
+from dotenv import load_dotenv
 
+#Load environment variables from a .env file
+load_dotenv() 
 app = Flask(__name__, static_folder='templates/static/')
 #Talisman(app)
+
 
 @app.route("/")
 def home():
     return render_template("index.html")
 
-# Register routes for registration
+#Register routes for registration
 @app.route("/register.html")
 def register_page():
-    return register_html()
+    return render_template("register.html")
 
 @app.route("/register", methods=["POST", "GET"])
 def register_action():
-    return register()
+    return register() 
+
 
 @app.route('/target')
 def target():
@@ -420,12 +427,18 @@ def part3_correct():
 ##########################################################
 
 def get_db():
-    db = psycopg2.connect(user = "ddss-database-assignment-2",
-                password = "ddss-database-assignment-2",
-                host = "db",
-                port = "5432",
-                database = "ddss-database-assignment-2")
-    return db
+    try:
+        db = psycopg2.connect(
+            user=os.getenv("DB_USER"),
+            password=os.getenv("DB_PASSWORD"),
+            host=os.getenv("DB_HOST", "localhost"),  # Default to localhost
+            port=os.getenv("DB_PORT", "5432"),       # Default to 5432
+            database=os.getenv("DB_NAME")
+        )
+        return db
+    except psycopg2.OperationalError as e:
+        logging.error("Database connection failed: %s", e)
+        raise
 
 ##########################################################
 ## MAIN
@@ -450,11 +463,15 @@ if __name__ == "__main__":
     logger.info("\n---------------------\n\n")
 
     #app.run(debug=False)  # Disable debug mode in production    
-    ####################################
-    #TODO:Falar com o Rui sobre isto
-    app.secret_key = 'super secret key'
-    ####################################
-    app.run(host="0.0.0.0", port=5000, debug=True, threaded=True, ssl_context=('certificates/cert.pem', 'certificates/key.pem'))  # Enable debug mode for development
+    #Use environment variable for SSL context (optional for production)
+    cert_path = os.getenv("SSL_CERT_PATH", "certificates/cert.pem")
+    key_path = os.getenv("SSL_KEY_PATH", "certificates/key.pem")
+
+    #Use environment variable for Flask secret key
+    app.secret_key = os.getenv("FLASK_SECRET_KEY", "fallback_secret_key")
+
+    app.run(host="0.0.0.0", port=5000, debug=True, threaded=True, ssl_context=(cert_path, key_path))  # Enable debug mode for development
+    
 
 
 

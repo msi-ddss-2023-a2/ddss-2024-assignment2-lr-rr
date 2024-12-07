@@ -22,7 +22,8 @@ DROP TABLE IF EXISTS books;
 CREATE TABLE users (
     username    VARCHAR( 32)    primary key,
     password    VARCHAR(512)    NOT NULL,
-    salt        VARCHAR(512)    NOT NULL
+    salt        VARCHAR(512)    NOT NULL,
+    phonenumber   INT           
 );
 
 
