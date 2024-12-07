@@ -81,8 +81,10 @@ def part1_correct():
             session.permanent = True
         else:
             session.permanent = False
+        if 'username' in session:
+            return redirect(url_for('mfa_verification'))
         session['username'] = username
-        #return render_template("part1.html",messages=message,message_type="success")
-         return redirect(url_for('mfa_verification'))
+        return render_template("part1.html",messages=message,message_type="success")
+         
     else:
         return render_template("part1.html", messages=message,message_type="error")

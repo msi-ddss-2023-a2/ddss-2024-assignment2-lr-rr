@@ -1399,3 +1399,70 @@ INFO:werkzeug:172.18.0.4 - - [07/Dec/2024 01:18:25] "[36mGET /static/js/script.
 INFO:werkzeug:172.18.0.4 - - [07/Dec/2024 01:18:25] "[36mGET /static/css/style.css HTTP/1.0[0m" 304 -
 INFO:werkzeug: * Detected change in '/app/part1/routesc.py', reloading
 INFO:werkzeug: * Restarting with stat
+INFO:logger:
+---------------------
+
+
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:5000
+ * Running on https://172.18.0.3:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+INFO:logger:
+---------------------
+
+
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 514-701-929
+INFO:werkzeug:172.18.0.4 - - [07/Dec/2024 01:28:17] "GET / HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [07/Dec/2024 01:28:17] "[36mGET /static/css/style.css HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [07/Dec/2024 01:28:17] "[36mGET /static/js/script.js HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [07/Dec/2024 01:28:19] "GET /part1.html HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [07/Dec/2024 01:28:19] "[36mGET /static/css/style.css HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [07/Dec/2024 01:28:19] "[36mGET /static/js/script.js HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [07/Dec/2024 01:28:21] "GET /logout HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [07/Dec/2024 01:28:21] "[36mGET /static/css/style.css HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [07/Dec/2024 01:28:21] "[36mGET /static/js/script.js HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [07/Dec/2024 01:28:30] "GET /part1_correct?c_username=lreis&c_password=1234 HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [07/Dec/2024 01:28:30] "[36mGET /static/js/script.js HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [07/Dec/2024 01:28:30] "[36mGET /static/css/style.css HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [07/Dec/2024 01:28:55] "GET /register.html HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [07/Dec/2024 01:28:55] "[36mGET /static/css/style.css HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [07/Dec/2024 01:28:55] "[36mGET /static/js/script.js HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [07/Dec/2024 01:29:04] "GET /register?c_username=lreis&c_password=1234&c_phonenumber=937123586 HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [07/Dec/2024 01:29:04] "[36mGET /static/css/style.css HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [07/Dec/2024 01:29:04] "[36mGET /static/js/script.js HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [07/Dec/2024 01:29:06] "GET /part1.html HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [07/Dec/2024 01:29:06] "[36mGET /static/css/style.css HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [07/Dec/2024 01:29:06] "[36mGET /static/js/script.js HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [07/Dec/2024 01:29:12] "GET /part1_correct?c_username=lreis&c_password=1234 HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [07/Dec/2024 01:29:12] "[36mGET /static/css/style.css HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [07/Dec/2024 01:29:12] "[36mGET /static/js/script.js HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [07/Dec/2024 01:30:05] "GET /target HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [07/Dec/2024 01:30:05] "[36mGET /static/css/style.css HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [07/Dec/2024 01:30:05] "[36mGET /static/js/script.js HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [07/Dec/2024 01:30:15] "GET / HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [07/Dec/2024 01:30:15] "[36mGET /static/css/style.css HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [07/Dec/2024 01:30:15] "[36mGET /static/js/script.js HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [07/Dec/2024 01:30:18] "GET /part1.html HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [07/Dec/2024 01:30:18] "[36mGET /static/css/style.css HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [07/Dec/2024 01:30:18] "[36mGET /static/js/script.js HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [07/Dec/2024 01:30:19] "GET /logout HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [07/Dec/2024 01:30:19] "[36mGET /static/css/style.css HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [07/Dec/2024 01:30:19] "[36mGET /static/js/script.js HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [07/Dec/2024 01:30:44] "GET /target HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [07/Dec/2024 01:30:44] "[36mGET /static/css/style.css HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [07/Dec/2024 01:30:44] "[36mGET /static/js/script.js HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [07/Dec/2024 01:30:45] "GET /part1.html HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [07/Dec/2024 01:30:45] "[36mGET /static/css/style.css HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [07/Dec/2024 01:30:45] "[36mGET /static/js/script.js HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [07/Dec/2024 01:30:58] "GET /part1_vulnerable?v_username=lreis&v_password=1234 HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [07/Dec/2024 01:30:58] "[36mGET /static/css/style.css HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [07/Dec/2024 01:30:58] "[36mGET /static/js/script.js HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [07/Dec/2024 01:31:01] "GET /logout HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [07/Dec/2024 01:31:01] "[36mGET /static/css/style.css HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [07/Dec/2024 01:31:01] "[36mGET /static/js/script.js HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [07/Dec/2024 01:31:03] "GET /target HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [07/Dec/2024 01:31:03] "[36mGET /static/css/style.css HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [07/Dec/2024 01:31:03] "[36mGET /static/js/script.js HTTP/1.0[0m" 304 -
