@@ -32,23 +32,16 @@ def db_connection():
  #   return render_template("mfa_verification.html")
 
 def sanitize_input(user_input):
-    if user_input.find("eval") != -1:
-        return -1
-    elif user_input.find("exec") != -1:
-        return -1
-    elif user_input.find("execfile") != -1:
-        return -1
-    elif user_input.find("input")  != -1:
-        return -1
-    elif user_input.find("compile")  != -1:
-        return -1
-    elif user_input.find("open")  != -1:
-        return -1
-    elif user_input.find("os.system")  != -1:
-        return -1
-    else:
-        return 0
+    dangerous_terms = {"eval", "exec", "execfile", "input", "compile", "open", "os.system"}
     
+    # Convert input to lowercase for case-insensitive comparison
+    user_input = user_input.lower()
+    
+    # Check if any dangerous term is in the input
+    if any(term in user_input for term in dangerous_terms):
+        return -1
+    return 0
+
 
 def part1_correct():
     if request.method == 'GET':
@@ -90,18 +83,13 @@ def part1_correct():
     hash_object = hashlib.sha256()
     hash_object.update(salt_d + password.encode())
     hash_password = hash_object.hexdigest()
+    
     if password_d == hash_password:
-
-        message = "Success"
-        if remember == "on":
-            session.permanent = True
-        else:
-            session.permanent = False
-        if 'username' in session:
-            return redirect(url_for('mfa_verification'))
-        session['username'] = username
-        return redirect("mfa_verification.html")
-        #return render_template("part1.html",messages=message,message_type="success")
-         
+        # Password is correct; set temporary session flag for MFA verification
+        session.clear()  # Clear session to avoid bypass
+        session['temp_username'] = username  # Temporary session variable for MFA
+        session.permanent = remember == "on"
+        return redirect(url_for('mfa_verification'))
     else:
-        return render_template("part1.html", messages=message,message_type="error")
+        return render_template("part1.html", messages="Failed Credentials", message_type="error")
+

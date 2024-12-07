@@ -4,14 +4,14 @@
 from flask import Flask, render_template, jsonify, g, request, redirect, url_for, session, make_response
 import logging, psycopg2
 from register.register import register
-
 from part1.routesv import part1_vulnerable
 from part1.deletesession import delete_session
 from part1.routesc import part1_correct
 from datetime import timedelta, datetime
 from markupsafe import escape
 #from flask_talisman import Talisman
-import os
+import os,pyotp
+from twilio.rest import Client
 from dotenv import load_dotenv
 
 #Load environment variables from a .env file
@@ -46,11 +46,56 @@ def login():
 def part1_vulnerable_app():
     return part1_vulnerable()
 
+def generate_secret_key():
+    return pyotp.random_base32()
 
+def generate_otp(secret_key):
+    totp = pyotp.TOTP(secret_key)
+    return totp.now()
 
-@app.route("/mfa_verification.html", methods=['GET', 'POST'])
-def mfa_verification_func():
+def verify_otp(secret_key, otp):
+    totp = pyotp.TOTP(secret_key)
+    return totp.verify(otp)
+
+@app.route('/mfa_verification', methods=['GET', 'POST'])
+def mfa_verification():
+    temp_username = session.get('temp_username')  # Use temporary session variable
+    if not temp_username:
+        return redirect(url_for('part1_correct'))  # Redirect to login if not in the temp session
+
+    if request.method == 'POST':
+        user_totp = request.form['totp']
+
+        # Retrieve the user's MFA secret
+        conn = get_db()
+        cursor = conn.cursor()
+        query = "SELECT mfa_secret FROM users WHERE username = %s"
+        cursor.execute(query, (temp_username,))
+        result = cursor.fetchone()
+        conn.close()
+
+        if result:
+            mfa_secret = result[0]
+            totp = pyotp.TOTP(mfa_secret)
+
+            if totp.verify(user_totp):
+                # MFA Verified; finalize session
+                session['username'] = session.pop('temp_username')  # Promote temp session to authenticated session
+                return redirect("part1.html") 
+            else:
+                return render_template("mfa_verification.html", messages="Invalid MFA Code. Please try again.", message_type="error")
+
+        # If MFA secret is not found
+        session.clear()  # Clear session on unexpected errors
+        return redirect(url_for('part1_correct'))
+
+    # Render the MFA verification page
     return render_template("mfa_verification.html")
+
+
+@app.route("/mfa_completevalid", methods=['GET', 'POST'])
+def mfa_verification_valid():
+    return redirect("part1.html")
 
 @app.route("/part1_correct", methods=['GET', 'POST'])
 def part1_correct_app():

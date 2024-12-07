@@ -1,6 +1,9 @@
 from flask import Flask, render_template, g, request, redirect, url_for,  make_response,  render_template_string
 import psycopg2, hashlib, os,re
 from base64 import b64encode
+import pyotp
+import qrcode
+from io import BytesIO
 # Route for showing the registration page
 
 from dotenv import load_dotenv
@@ -15,25 +18,17 @@ def db_connection():
         database=os.getenv("DB_NAME")
     )
     return conn
-def sanitize_input(user_input):
-    if user_input.find("eval") != -1:
-        return -1
-    elif user_input.find("exec") != -1:
-        return -1
-    elif user_input.find("execfile") != -1:
-        return -1
-    elif user_input.find("input")  != -1:
-        return -1
-    elif user_input.find("compile")  != -1:
-        return -1
-    elif user_input.find("open")  != -1:
-        return -1
-    elif user_input.find("os.system")  != -1:
-        return -1
-    
-    else:
-        return 0
 
+def sanitize_input(user_input):
+    dangerous_terms = {"eval", "exec", "execfile", "input", "compile", "open", "os.system"}
+    
+    # Convert input to lowercase for case-insensitive comparison
+    user_input = user_input.lower()
+    
+    # Check if any dangerous term is in the input
+    if any(term in user_input for term in dangerous_terms):
+        return -1
+    return 0
 
 #Password validation function
 def is_password_strong(password):
@@ -64,13 +59,20 @@ def register():
    
 
     if request.method == 'GET':
-        password = request.args.get('c_password') 
+        password = request.args.get('c_password')
+        passwordv =  request.args.get('c_passwordv')
         username = request.args.get('c_username')
-        phonenumber =  request.args.get('c_phonenumber')
+        #phonenumber =  request.args.get('c_phonenumber')
     else:
         password = request.form['c_password']
         username = request.form['c_username']
-        phonenumber =  request.args.get('c_phonenumber')
+        passwordv =  request.args.get('c_passwordv')
+        #phonenumber =  request.args.get('c_phonenumber')
+    
+    #Verificar se a password e igual
+    if password != passwordv:
+        message="Passwords not correspond"
+        return render_template("register.html",messages=message, message_type="error")
     #Verificar se o utilizador ou password nao tem codigo la pelo meio
     verif_user = sanitize_input(username)
     if verif_user == -1:
@@ -96,27 +98,48 @@ def register():
     #password_feedback = is_password_strong(password)
     #if password_feedback:
     #    return render_template("register.html", messages=password_feedback, message_type="error") 
+    
     #Verificar o numero de telemovel
-    if not phonenumber.isnumeric():
-        message = "Input only numbers"
-        return render_template("register.html", messages=message, message_type="error")
-    if not len(phonenumber) == 9:
-        message = "Input nine numbers"
-        return render_template("register.html", messages=message, message_type="error")
+    #if not phonenumber.isnumeric():
+    #    message = "Input only numbers"
+    #    return render_template("register.html", messages=message, message_type="error")
+    #if not len(phonenumber) == 9:
+    #    message = "Input nine numbers"
+    #    return render_template("register.html", messages=message, message_type="error")
+    
     #Criar o utilizador
     salt = os.urandom(64)
     hash_object = hashlib.sha256()
     hash_object.update(salt + password.encode())
     hash_password = hash_object.hexdigest()
     salted_s = b64encode(salt).decode('utf-8')
+    
+    
+    # Generate an MFA secret
+    mfa_secret = pyotp.random_base32()
+
+    # Create QR Code
+    totp = pyotp.TOTP(mfa_secret)
+    provisioning_uri = totp.provisioning_uri(name=username, issuer_name="CDSS-A2-MFA")
+    qr = qrcode.make(provisioning_uri)
+
+    # Save QR Code as a base64 string for the template
+    buffer = BytesIO()
+    qr.save(buffer, format="PNG")
+    qr_base64 = b64encode(buffer.getvalue()).decode('utf-8')
+
+    # Save user to the database
     conn = db_connection()
     conn.autocommit = True
     cursor = conn.cursor()
     sql = """ INSERT INTO users
-                       (username, password, salt,phonenumber) VALUES (%s,%s,%s,%s)"""
-    tuple1 = (username,hash_password, salted_s,phonenumber)
+                       (username, password, salt, mfa_secret) VALUES (%s,%s,%s,%s)"""
+    tuple1 = (username,hash_password, salted_s, mfa_secret)
     cursor.execute(sql, tuple1)  
     conn.commit()
     conn.close()
-    message = "The user created successfly" 
-    return render_template("register.html", messages=message, message_type="success") 
+    
+    message = "The user was created successfully. Scan the QR code with Google Authenticator."
+    
+    return render_template("register.html", messages=message, message_type="success", qr_code=qr_base64,
+        mfa_secret=mfa_secret) 

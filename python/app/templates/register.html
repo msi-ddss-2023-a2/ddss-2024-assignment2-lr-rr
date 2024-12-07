@@ -57,12 +57,12 @@
               </td>
             </tr>
             <tr>
-              <td><label>Phone Number</label></td>
+              <td><label>Confirmation Password</label></td>
               <td>
                 <input
-                  type="tel"
-                  placeholder="Enter Phone Number"
-                  name="c_phonenumber"
+                  type="password"
+                  placeholder="Enter Password"
+                  name="c_passwordv"
                   required
                 />
               </td>
@@ -80,6 +80,11 @@
       <div class="message {{ message_type }}">
           {{ messages }}
       </div>
+      {% endif %}
+      {% if qr_code %}
+        <p>Scan the QR code with Google Authenticator:</p>
+        <img src="data:image/png;base64,{{ qr_code }}" alt="QR Code">
+        <p>Alternatively, use this secret key: <strong>{{ mfa_secret }}</strong></p>
       {% endif %}
       <a href="{{ url_for('login') }}">Go Back</a>
     </div>
