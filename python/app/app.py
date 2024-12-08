@@ -32,7 +32,9 @@ def register_action():
 
 @app.route('/target')
 def target():
-    return render_template('index.html')
+    session['authenticated'] = True  # Set to False for unauthenticated users
+    return render_template('index.html', authenticated=session.get('authenticated', False))
+
 
 @app.route("/part1.html", methods=['GET'])
 def login():
