@@ -10058,3 +10058,297 @@ INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 22:49:53] "GET /static/css/style.css H
 INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 22:49:56] "GET /target HTTP/1.0" 200 -
 INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 22:49:56] "[36mGET /static/css/style.css HTTP/1.0[0m" 304 -
 INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 22:49:56] "[36mGET /static/js/script.js HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:04:06] "GET / HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:04:07] "[36mGET /static/css/style.css HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:04:07] "[36mGET /static/js/script.js HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:04:09] "GET /part1.html HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:04:09] "[36mGET /static/js/script.js HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:04:09] "[36mGET /static/css/style.css HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:04:11] "GET /target HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:04:11] "[36mGET /static/css/style.css HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:04:11] "[36mGET /static/js/script.js HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:04:32] "GET / HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:04:32] "[36mGET /static/js/script.js HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:04:32] "[36mGET /static/css/style.css HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:05:15] "GET / HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:05:15] "[36mGET /static/js/script.js HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:05:15] "[36mGET /static/css/style.css HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:05:17] "GET /part1.html HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:05:17] "[36mGET /static/js/script.js HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:05:17] "[36mGET /static/css/style.css HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:05:19] "GET /target HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:05:19] "[36mGET /static/css/style.css HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:05:19] "[36mGET /static/js/script.js HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:05:53] "GET /target HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:05:54] "[36mGET /static/js/script.js HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:05:54] "[36mGET /static/css/style.css HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:05:56] "GET /part1.html HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:05:56] "[36mGET /static/js/script.js HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:05:56] "GET /static/css/style.css HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:05:58] "GET /target HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:05:59] "[36mGET /static/css/style.css HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:05:59] "[36mGET /static/js/script.js HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:06:04] "GET / HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:06:04] "GET /static/css/style.css HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:06:04] "[36mGET /static/js/script.js HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:06:04] "[33mGET /favicon.ico HTTP/1.0[0m" 404 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:06:17] "GET / HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:06:17] "[36mGET /static/js/script.js HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:06:17] "GET /static/css/style.css HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:06:18] "GET / HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:06:18] "GET /static/css/style.css HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:06:18] "[36mGET /static/js/script.js HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:06:19] "GET / HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:06:19] "[36mGET /static/css/style.css HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:06:19] "[36mGET /static/js/script.js HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:06:29] "GET / HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:06:29] "[36mGET /static/css/style.css HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:06:29] "[36mGET /static/js/script.js HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:06:31] "GET / HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:06:32] "GET /static/css/style.css HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:06:32] "GET /static/js/script.js HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:06:32] "[33mGET /favicon.ico HTTP/1.0[0m" 404 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:06:51] "GET / HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:06:51] "[36mGET /static/css/style.css HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:06:51] "[36mGET /static/js/script.js HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:06:53] "GET /part1.html HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:06:54] "[36mGET /static/css/style.css HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:06:54] "[36mGET /static/js/script.js HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:06:55] "GET /target HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:06:55] "[36mGET /static/css/style.css HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:06:55] "[36mGET /static/js/script.js HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:07:10] "GET /target HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:07:10] "[36mGET /static/css/style.css HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:07:10] "[36mGET /static/js/script.js HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:07:22] "GET / HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:07:22] "[36mGET /static/css/style.css HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:07:22] "[36mGET /static/js/script.js HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:07:24] "GET /part1.html HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:07:25] "[36mGET /static/css/style.css HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:07:25] "[36mGET /static/js/script.js HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:07:27] "GET /target HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:07:27] "[36mGET /static/css/style.css HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:07:27] "[36mGET /static/js/script.js HTTP/1.0[0m" 304 -
+ERROR:app:Exception on /part3.html [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app.py", line 269, in part3
+    def part3_vulnerable():
+               ^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/flask/templating.py", line 152, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/flask/templating.py", line 133, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/jinja2/environment.py", line 1304, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.12/site-packages/jinja2/environment.py", line 939, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/app/templates/part3.html", line 390, in top-level template code
+    <a href="{{ url_for('/') }}">Go to home</a>
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1071, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1060, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint '/'. Did you mean 'static' instead?
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:07:29] "[35m[1mGET /part3.html HTTP/1.0[0m" 500 -
+ERROR:app:Exception on /part3.html [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app.py", line 269, in part3
+    def part3_vulnerable():
+               ^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/flask/templating.py", line 152, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/flask/templating.py", line 133, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/jinja2/environment.py", line 1304, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.12/site-packages/jinja2/environment.py", line 939, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/app/templates/part3.html", line 390, in top-level template code
+    <a href="{{ url_for('/') }}">Go to home</a>
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1071, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1060, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint '/'. Did you mean 'static' instead?
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:07:34] "[35m[1mGET /part3.html HTTP/1.0[0m" 500 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:07:35] "GET /part2.html HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:07:35] "[36mGET /static/css/style.css HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:07:35] "[36mGET /static/js/script.js HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:07:37] "GET /part1.html HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:07:37] "[36mGET /static/css/style.css HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:07:37] "[36mGET /static/js/script.js HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:07:43] "GET /target HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:07:43] "[36mGET /static/css/style.css HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:07:43] "[36mGET /static/js/script.js HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:07:44] "GET /part2.html HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:07:44] "[36mGET /static/css/style.css HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:07:44] "[36mGET /static/js/script.js HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:07:45] "GET /part1.html HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:07:45] "[36mGET /static/css/style.css HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:07:45] "[36mGET /static/js/script.js HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:07:49] "GET /target HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:07:49] "[36mGET /static/css/style.css HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:07:49] "[36mGET /static/js/script.js HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:07:50] "GET /part2.html HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:07:52] "GET /static/css/style.css HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:07:52] "GET /static/js/script.js HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:07:52] "[33mGET /favicon.ico HTTP/1.0[0m" 404 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:08:35] "GET / HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:08:35] "[36mGET /static/css/style.css HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:08:35] "[36mGET /static/js/script.js HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:08:36] "GET /part1.html HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:08:36] "[36mGET /static/js/script.js HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:08:36] "[36mGET /static/css/style.css HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:08:38] "GET /target HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:08:39] "[36mGET /static/css/style.css HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:08:39] "[36mGET /static/js/script.js HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:08:41] "GET /part2.html HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:08:41] "[36mGET /static/css/style.css HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:08:41] "[36mGET /static/js/script.js HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:08:42] "GET /part1.html HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:08:42] "[36mGET /static/js/script.js HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:08:42] "GET /static/css/style.css HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.1 - - [08/Dec/2024 23:09:01] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [08/Dec/2024 23:09:01] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [08/Dec/2024 23:09:01] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [08/Dec/2024 23:09:02] "GET /part1.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [08/Dec/2024 23:09:02] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [08/Dec/2024 23:09:02] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [08/Dec/2024 23:09:05] "GET /target HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [08/Dec/2024 23:09:05] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [08/Dec/2024 23:09:05] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [08/Dec/2024 23:09:07] "GET /part2.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [08/Dec/2024 23:09:07] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [08/Dec/2024 23:09:07] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [08/Dec/2024 23:09:09] "GET /part1.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [08/Dec/2024 23:09:09] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [08/Dec/2024 23:09:09] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [08/Dec/2024 23:09:13] "GET /target HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [08/Dec/2024 23:09:13] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [08/Dec/2024 23:09:13] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+ERROR:app:Exception on /part3.html [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app.py", line 269, in part3
+    def part3_vulnerable():
+               ^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/flask/templating.py", line 152, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/flask/templating.py", line 133, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/jinja2/environment.py", line 1304, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.12/site-packages/jinja2/environment.py", line 939, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/app/templates/part3.html", line 390, in top-level template code
+    <a href="{{ url_for('target') }}">Go to home</a>
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1071, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1060, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint '/'. Did you mean 'static' instead?
+INFO:werkzeug:172.18.0.1 - - [08/Dec/2024 23:09:14] "[35m[1mGET /part3.html HTTP/1.1[0m" 500 -
+INFO:logger:
+---------------------
+
+
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:5000
+ * Running on https://172.18.0.3:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:11:15] "[33mGET / HTTP/1.0[0m" 404 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:11:26] "[31m[1mGET /target HTTP/1.0[0m" 405 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:11:31] "GET /part1.html HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:11:31] "GET /static/css/style.css HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:11:31] "GET /static/js/script.js HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:12:51] "GET /part1.html HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:12:51] "GET /static/css/style.css HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:12:51] "GET /static/js/script.js HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:12:53] "[33mGET / HTTP/1.0[0m" 404 -
+INFO:logger:
+---------------------
+
+
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:5000
+ * Running on https://172.18.0.3:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:14:44] "GET / HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:14:44] "[36mGET /static/js/script.js HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:14:44] "GET /static/css/style.css HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:14:46] "GET /part1.html HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:14:46] "[36mGET /static/js/script.js HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:14:46] "GET /static/css/style.css HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:14:48] "GET / HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:14:49] "[36mGET /static/css/style.css HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:14:49] "[36mGET /static/js/script.js HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:14:50] "GET /part2.html HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:14:50] "GET /static/css/style.css HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:14:50] "[36mGET /static/js/script.js HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:14:51] "GET / HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:14:51] "[36mGET /static/css/style.css HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:14:51] "[36mGET /static/js/script.js HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:14:53] "GET /part3.html HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:14:53] "[36mGET /static/css/style.css HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:14:53] "[36mGET /static/js/script.js HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:14:55] "GET / HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:14:55] "[36mGET /static/js/script.js HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:14:55] "GET /static/css/style.css HTTP/1.0" 200 -
