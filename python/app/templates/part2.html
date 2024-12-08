@@ -24,6 +24,7 @@
       </div>
       <br />
 
+      {% if session['username'] %}
       <div class="container">
         <!-- Vulnerable Form -->
         <form
@@ -113,7 +114,12 @@
           {% endfor %}
         </tbody>
       </table>
-
+      {% else %}
+      <p>
+        You must <a href="part1.html">Log In</a> or
+        <a href="register.html">Register</a> to access Part 1.2 and Part 1.3.
+      </p>
+      {% endif %}
       <a href="{{ url_for('home') }}">Go to home</a>
     </div>
     <script src="static/js/script.js"></script>

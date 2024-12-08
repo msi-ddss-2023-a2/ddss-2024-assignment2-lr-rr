@@ -18,7 +18,10 @@ app = Flask(__name__, static_folder='templates/static/')
 
 @app.route("/")
 def home():
-    return render_template("index.html")
+    if 'username' in session:
+        return render_template("index.html", authenticated=True)
+    
+    return render_template("index.html", authenticated=False)
 
 #Register routes for registration
 @app.route("/register.html")
