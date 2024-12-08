@@ -32,13 +32,11 @@ def register_action():
 
 @app.route('/target')
 def target():
-    session['authenticated'] = True  # Set to False for unauthenticated users
-    return render_template('index.html', authenticated=session.get('authenticated', False))
+    return render_template('index.html')
 
-
-@app.route("/part1.html", methods=['GET'])
+@app.route('/part1.html', methods=['GET'])
 def login():
-    return render_template("part1.html");
+    return render_template("part1.html")
 
 @app.route("/part1_vulnerable", methods=['GET', 'POST'])
 def part1_vulnerable_app():
