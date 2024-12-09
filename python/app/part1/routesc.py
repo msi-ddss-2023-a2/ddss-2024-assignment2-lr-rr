@@ -65,7 +65,7 @@ def part1_correct():
     username_d, password_d, salt_d = results[0]
     salt_d = salt_d.encode(encoding="utf-8")
     salt_d = base64.decodebytes(salt_d)
-    hash_object = hashlib.sha256()
+    hash_object = hashlib.sha512()
     hash_object.update(salt_d + password.encode())
     hash_password = hash_object.hexdigest()
     

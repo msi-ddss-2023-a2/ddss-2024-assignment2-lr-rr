@@ -100,7 +100,7 @@ def register():
     
     #Criar o utilizador
     salt = os.urandom(64)
-    hash_object = hashlib.sha256()
+    hash_object = hashlib.sha512()
     hash_object.update(salt + password.encode())
     hash_password = hash_object.hexdigest()
     salted_s = b64encode(salt).decode('utf-8')
