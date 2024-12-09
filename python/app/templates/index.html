@@ -23,15 +23,22 @@
           >The contents of this repository do not replace the proper reading of
           the assignment description.</em
         >
-      
       </div>
 
       <br /><br />
 
       <!-- Links to Parts -->
+
       <a href="part1.html">Part 1.1</a>
+      {% if session['username'] %}
       <a href="part2.html">Part 1.2</a>
       <a href="part3.html">Part 1.3</a>
+      {% else %}
+      <p>
+        You must <a href="part2.html">Log In</a> or
+        <a href="register.html">Register</a> to access Part 1.2 and Part 1.3.
+      </p>
+      {% endif %}
     </div>
 
     <!-- Link to external JavaScript file -->

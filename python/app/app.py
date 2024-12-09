@@ -18,7 +18,10 @@ app = Flask(__name__, static_folder='templates/static/')
 
 @app.route("/")
 def home():
-    return render_template("index.html")
+    if 'username' in session:
+        return render_template("index.html", authenticated=True)
+    
+    return render_template("index.html", authenticated=False)
 
 #Register routes for registration
 @app.route("/register.html")
@@ -29,14 +32,9 @@ def register_page():
 def register_action():
     return register() 
 
-
-@app.route('/target')
-def target():
-    return render_template('index.html')
-
-@app.route("/part1.html", methods=['GET'])
+@app.route('/part1.html', methods=['GET'])
 def login():
-    return render_template("part1.html");
+    return render_template("part1.html")
 
 @app.route("/part1_vulnerable", methods=['GET', 'POST'])
 def part1_vulnerable_app():

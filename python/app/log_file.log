@@ -1,0 +1,59 @@
+INFO:logger:
+---------------------
+
+
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:5000
+ * Running on https://172.18.0.3:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:30:49] "GET /part3.html HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:30:49] "[36mGET /static/js/script.js HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:30:49] "GET /static/css/style.css HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:30:58] "[33mGET /login HTTP/1.0[0m" 404 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:31:00] "GET / HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:31:00] "[36mGET /static/css/style.css HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:31:00] "[36mGET /static/js/script.js HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:31:07] "GET /part1.html HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:31:07] "[36mGET /static/css/style.css HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:31:07] "[36mGET /static/js/script.js HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:31:09] "GET / HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:31:09] "GET /static/css/style.css HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:31:09] "[36mGET /static/js/script.js HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:31:13] "[33mGET /login HTTP/1.0[0m" 404 -
+INFO:logger:
+---------------------
+
+
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:5000
+ * Running on https://172.18.0.3:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:35:10] "GET / HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:35:10] "GET /static/css/style.css HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:35:10] "GET /static/js/script.js HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:35:14] "GET /part2.html HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:35:14] "GET /static/css/style.css HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:35:14] "GET /static/js/script.js HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:35:21] "GET / HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:35:21] "[36mGET /static/css/style.css HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:35:21] "[36mGET /static/js/script.js HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:35:22] "GET /register.html HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:35:22] "[36mGET /static/js/script.js HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:35:22] "[36mGET /static/css/style.css HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:35:25] "GET /part1.html HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:35:26] "[36mGET /static/css/style.css HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:35:26] "[36mGET /static/js/script.js HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:35:30] "GET / HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:35:30] "[36mGET /static/js/script.js HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:35:30] "GET /static/css/style.css HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:35:47] "GET /part2.html HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:35:47] "[36mGET /static/js/script.js HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:35:47] "GET /static/css/style.css HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:35:49] "GET /part2.html HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:35:49] "[36mGET /static/js/script.js HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:35:49] "GET /static/css/style.css HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:35:52] "GET / HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:35:52] "[36mGET /static/css/style.css HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:35:53] "[36mGET /static/js/script.js HTTP/1.0[0m" 304 -

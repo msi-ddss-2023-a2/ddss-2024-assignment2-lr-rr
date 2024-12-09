@@ -24,7 +24,7 @@
       </div>
       <br />
       <br />
-
+      {% if session['username'] %}
       <div id="forms-mix">
             <form action="/part3_vulnerable" class="form-container vulnerable-form" method="post"> 
               <table class="vuln-table">
@@ -386,8 +386,14 @@
       {% elif request.method == "POST" %}
           <p>No results found.</p>
       {% endif %}
-  
-        <a href="{{ url_for('target') }}">Go to home</a>
+          
+      {% else %}
+      <p>
+        You must <a href="part1.html">Log In</a> or
+        <a href="register.html">Register</a> to access Part 1.2 and Part 1.3.
+      </p>
+      {% endif %}
+        <a href="{{ url_for('home') }}">Go to home</a>
     </div>
     <script src="static/js/script.js"></script>
   </body>

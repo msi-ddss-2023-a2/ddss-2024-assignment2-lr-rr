@@ -5,19 +5,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="static/css/style.css" />
-      {% if message == 'The user exist in the database' %}
-          <script>alert('The user exist in the database');</script>
-      {% elif message == 'Username not permitted' %}
-          <script>alert('Username not permitted');</script>
-      {% elif message == 'Password not permitted' %}
-          <script>alert('Password not permitted');</script>
-      {% elif message == 'The user created successfly' %}
-          <script>alert('The user created successfly');</script>
-      {% elif message == 'Input only numbers' %}
-          <script>alert('Input only numbers');</script>
-      {% elif message == 'Input nine numbers' %}
-          <script>alert('Input nine numbers');</script>
-      {% endif %}
+    {% if message == 'The user exist in the database' %}
+    <script>
+      alert("The user exist in the database");
+    </script>
+    {% elif message == 'Username not permitted' %}
+    <script>
+      alert("Username not permitted");
+    </script>
+    {% elif message == 'Password not permitted' %}
+    <script>
+      alert("Password not permitted");
+    </script>
+    {% elif message == 'The user created successfly' %}
+    <script>
+      alert("The user created successfly");
+    </script>
+    {% elif message == 'Input only numbers' %}
+    <script>
+      alert("Input only numbers");
+    </script>
+    {% elif message == 'Input nine numbers' %}
+    <script>
+      alert("Input nine numbers");
+    </script>
+    {% endif %}
   </head>
   <body>
     <div class="container">
@@ -77,14 +89,13 @@
       </form>
       <!-- Display message if available -->
       {% if messages %}
-      <div class="message {{ message_type }}">
-          {{ messages }}
-      </div>
-      {% endif %}
-      {% if qr_code %}
-        <p>Scan the QR code with Google Authenticator:</p>
-        <img src="data:image/png;base64,{{ qr_code }}" alt="QR Code">
-        <p>Alternatively, use this secret key: <strong>{{ mfa_secret }}</strong></p>
+      <div class="message {{ message_type }}">{{ messages }}</div>
+      {% endif %} {% if qr_code %}
+      <p>Scan the QR code with Google Authenticator:</p>
+      <img src="data:image/png;base64,{{ qr_code }}" alt="QR Code" />
+      <p>
+        Alternatively, use this secret key: <strong>{{ mfa_secret }}</strong>
+      </p>
       {% endif %}
       <a href="{{ url_for('login') }}">Go Back</a>
     </div>
