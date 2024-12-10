@@ -41,11 +41,11 @@ def part1_correct():
     #Verificar se o utilizador ou password nao tem codigo la pelo meio
     verif_user = sanitize_input(username)
     if verif_user == -1:
-        message = "Username not permitted"
+        message = "Username not permitted."
         return render_template("part1.html",messages=message, message_type="error")
     verif_password = sanitize_input(password)
     if verif_password == -1:
-        message = "Password not permitted"
+        message = "Password not permitted."
         return render_template("part1.html",messages=message, message_type="error")
     #Verificar se o utilizador existe        
     conn = db_connection()
@@ -56,7 +56,7 @@ def part1_correct():
     results = cursor.fetchall()
     conn.commit()
     conn.close()
-    message = "Failed Credentials"
+    message = "The authentication failed. Wrong credentials."
     if not results:
         return render_template("part1.html",messages=message, message_type="error")
     

@@ -34,7 +34,7 @@ def part1_vulnerable():
     results = cursor.fetchall() 
     conn.commit()
     conn.close()
-    message = "Failed Credentials"
+    message = "The authentication failed. Wrong credentials."
     
     if not results:
         return render_template("part1.html",messages=message, message_type="error")
