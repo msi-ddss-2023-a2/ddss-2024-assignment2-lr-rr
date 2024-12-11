@@ -1,8 +1,6 @@
 from flask import Flask, render_template, g, request, redirect, url_for,  make_response,  render_template_string
-import psycopg2, hashlib, os,re
+import psycopg2, hashlib, os,re, bcrypt, pyotp, qrcode
 from base64 import b64encode
-import pyotp
-import qrcode
 from io import BytesIO
 # Route for showing the registration page
 
@@ -81,6 +79,7 @@ def register():
     if verif_password == -1:
         message = "Password not permitted."
         return render_template("register.html",messages=message, message_type="error")
+   
     #Verificar se o utilizador existe        
     conn = db_connection()
     conn.autocommit = True
@@ -90,20 +89,18 @@ def register():
     results = cursor.fetchall() 
     conn.commit()
     conn.close()
+    
     if results:
         message = "The user already exists in the database." 
         return render_template("register.html", messages=message,message_type="error")
-     #Check password strength
+    
+    #Check password strength
     password_feedback = is_password_strong(password)
     if password_feedback:
         return render_template("register.html", messages=password_feedback, message_type="error") 
     
-    # Hash the password using PBKDF2
-    iterations = 100000  # Use at least 100,000 iterations
-    hash_object = hashlib.pbkdf2_hmac('sha512', password.encode(), salt, iterations)
-    hashed_password = b64encode(hash_object).decode('utf-8')
-
-    salted_s = b64encode(salt).decode('utf-8')    
+    salt = bcrypt.gensalt()  # Generate a random salt
+    hashed_password = bcrypt.hashpw(password.encode('utf-8'), salt)  # Hash the password 
     
     # Generate an MFA secret
     mfa_secret = pyotp.random_base32()
@@ -124,7 +121,7 @@ def register():
     cursor = conn.cursor()
     sql = """ INSERT INTO users
                        (username, password, salt, mfa_secret) VALUES (%s,%s,%s,%s)"""
-    tuple1 = (username,hash_password, salted_s, mfa_secret)
+    tuple1 = (username,hashed_password.decode('utf-8'), salt.decode('utf-8'), mfa_secret)
     cursor.execute(sql, tuple1)  
     conn.commit()
     conn.close()

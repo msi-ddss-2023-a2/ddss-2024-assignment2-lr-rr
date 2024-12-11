@@ -1,6 +1,6 @@
 
 from flask import Flask, render_template, g, request, redirect, url_for, session, make_response
-import logging, psycopg2
+import logging, psycopg2, bcrypt
 import base64, hashlib, os
 from dotenv import load_dotenv
 
@@ -25,31 +25,33 @@ def part1_vulnerable():
         password = request.form['v_password']
         username = request.form['v_username']
         remember = request.form['v_remember']
+
     #Verificar se o utilizador existe        
     conn = db_connection()
     conn.autocommit = True
     cursor = conn.cursor()  
+    
     sql = "SELECT username,password,salt FROM users where username = '" + username + "';" 
     cursor.execute(sql) 
     results = cursor.fetchall() 
     conn.commit()
     conn.close()
+    
     message = "The authentication failed. Wrong credentials."
     
     if not results:
         return render_template("part1.html",messages=message, message_type="error")
+    
     username_d, password_d, salt_d = results[0]
-    salt_d = salt_d.encode(encoding="utf-8")
-    salt_d = base64.decodebytes(salt_d)
-    hash_object = hashlib.sha512()
-    hash_object.update(salt_d + password.encode())
-    hash_password = hash_object.hexdigest()
-    if password_d == hash_password:
-        message = "Sucess"
+    
+    if bcrypt.checkpw(password.encode(), password_d.encode()):
+        message = "You were successfully authenticated."
+        
         if remember == "on":
             session.permanent = True
         else:
             session.permanent = False
+        
         session['username'] = username
         return render_template("part1.html",messages=message, message_type="success")
     else:

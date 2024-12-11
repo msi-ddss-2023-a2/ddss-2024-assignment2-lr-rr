@@ -12,7 +12,7 @@ run pip install psycopg2-binary
 
 run pip install python-dotenv
 
-run pip install pyotp qrcode pillow
+run pip install pyotp qrcode pillow bcrypt
 
 copy . /app
 

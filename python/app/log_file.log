@@ -57,3 +57,309 @@ INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:35:49] "GET /static/css/style.css H
 INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:35:52] "GET / HTTP/1.0" 200 -
 INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:35:52] "[36mGET /static/css/style.css HTTP/1.0[0m" 304 -
 INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:35:53] "[36mGET /static/js/script.js HTTP/1.0[0m" 304 -
+INFO:logger:
+---------------------
+
+
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:5000
+ * Running on https://172.18.0.3:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:38:45] "GET / HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:38:45] "[36mGET /static/css/style.css HTTP/1.0[0m" 304 -
+INFO:werkzeug:172.18.0.4 - - [08/Dec/2024 23:38:45] "[36mGET /static/js/script.js HTTP/1.0[0m" 304 -
+INFO:logger:
+---------------------
+
+
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:5000
+ * Running on https://172.18.0.3:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:172.18.0.1 - - [10/Dec/2024 23:50:05] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [10/Dec/2024 23:50:05] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [10/Dec/2024 23:50:05] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [10/Dec/2024 23:50:07] "GET /part1.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [10/Dec/2024 23:50:07] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [10/Dec/2024 23:50:07] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [10/Dec/2024 23:50:14] "GET /part1_vulnerable?v_username=rui&v_password=teste&v_remember=on HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [10/Dec/2024 23:50:14] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [10/Dec/2024 23:50:14] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [10/Dec/2024 23:50:21] "GET /register.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [10/Dec/2024 23:50:21] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [10/Dec/2024 23:50:21] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [10/Dec/2024 23:50:28] "GET /register?c_username=rui&c_password=teste&c_passwordv=teste HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [10/Dec/2024 23:50:28] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [10/Dec/2024 23:50:28] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [10/Dec/2024 23:50:54] "GET /register?c_username=rui&c_password=wyZx2WOjxXFANvd&c_passwordv=wyZx2WOjxXFANvd HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [10/Dec/2024 23:50:54] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [10/Dec/2024 23:50:54] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+ERROR:app:Exception on /register [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app.py", line 33, in register_action
+    return register()
+          ^^^^^^^^^^
+  File "/app/register/register.py", line 103, in register
+    hash_object = hashlib.pbkdf2_hmac('sha512', password.encode(), salt, iterations)
+                                                                   ^^^^
+NameError: name 'salt' is not defined
+INFO:werkzeug:172.18.0.1 - - [10/Dec/2024 23:51:07] "[35m[1mGET /register?c_username=rui&c_password=9Q8MUMnG!-{6WG2&c_passwordv=9Q8MUMnG!-{6WG2 HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /register [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app.py", line 33, in register_action
+    return register()
+          ^^^^^^^^^^
+  File "/app/register/register.py", line 103, in register
+    hash_password = hash_object.hexdigest()
+                                            
+NameError: name 'salt' is not defined
+INFO:werkzeug:172.18.0.1 - - [10/Dec/2024 23:52:37] "[35m[1mGET /register?c_username=rui&c_password=9Q8MUMnG!-{6WG2&c_passwordv=9Q8MUMnG!-{6WG2 HTTP/1.1[0m" 500 -
+INFO:logger:
+---------------------
+
+
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:5000
+ * Running on https://172.18.0.3:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:172.18.0.1 - - [10/Dec/2024 23:54:14] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [10/Dec/2024 23:54:14] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [10/Dec/2024 23:54:14] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [10/Dec/2024 23:54:16] "GET /register.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [10/Dec/2024 23:54:17] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [10/Dec/2024 23:54:17] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+ERROR:app:Exception on /register [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app.py", line 33, in register_action
+    return register()
+          ^^^^^^^^^^
+  File "/app/register/register.py", line 102, in register
+    hash_object.update(salt_d + password.encode())
+                       ^^^^^^
+NameError: name 'salt_d' is not defined
+INFO:werkzeug:172.18.0.1 - - [10/Dec/2024 23:54:32] "[35m[1mGET /register?c_username=rui&c_password=9Q8MUMnG!-{6WG2&c_passwordv=9Q8MUMnG!-{6WG2 HTTP/1.1[0m" 500 -
+INFO:logger:
+---------------------
+
+
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:5000
+ * Running on https://172.18.0.3:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:172.18.0.1 - - [11/Dec/2024 00:10:48] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [11/Dec/2024 00:10:48] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [11/Dec/2024 00:10:48] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [11/Dec/2024 00:10:51] "GET /register.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [11/Dec/2024 00:10:51] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [11/Dec/2024 00:10:51] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [11/Dec/2024 00:11:05] "GET /register?c_username=rui&c_password=9Q8MUMnG!-{6WG2&c_passwordv=9Q8MUMnG!-{6WG2 HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [11/Dec/2024 00:11:05] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [11/Dec/2024 00:11:05] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [11/Dec/2024 00:12:00] "GET /part1.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [11/Dec/2024 00:12:00] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [11/Dec/2024 00:12:00] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+ERROR:app:Exception on /part1_vulnerable [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app.py", line 41, in part1_vulnerable_app
+    return part1_vulnerable()
+           ^^^^^^^^^^^^^^^^^^
+  File "/app/part1/routesv.py", line 43, in part1_vulnerable
+    salt_d = base64.decodebytes(salt_d)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/base64.py", line 554, in decodebytes
+    return binascii.a2b_base64(s)
+           ^^^^^^^^^^^^^^^^^^^^^^
+binascii.Error: Invalid base64-encoded string: number of data characters (25) cannot be 1 more than a multiple of 4
+INFO:werkzeug:172.18.0.1 - - [11/Dec/2024 00:12:08] "[35m[1mGET /part1_vulnerable?v_username=rui&v_password=9Q8MUMnG!-{6WG2&v_remember=on HTTP/1.1[0m" 500 -
+INFO:logger:
+---------------------
+
+
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:5000
+ * Running on https://172.18.0.3:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:172.18.0.1 - - [11/Dec/2024 00:28:37] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [11/Dec/2024 00:28:37] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [11/Dec/2024 00:28:37] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [11/Dec/2024 00:28:40] "GET /register.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [11/Dec/2024 00:28:40] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [11/Dec/2024 00:28:40] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [11/Dec/2024 00:28:51] "GET /register?c_username=rui&c_password=9Q8MUMnG!-{6WG2&c_passwordv=9Q8MUMnG!-{6WG2 HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [11/Dec/2024 00:28:51] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [11/Dec/2024 00:28:51] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [11/Dec/2024 00:29:09] "GET /part1.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [11/Dec/2024 00:29:09] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [11/Dec/2024 00:29:09] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+ERROR:app:Exception on /part1_vulnerable [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app.py", line 41, in part1_vulnerable_app
+    return part1_vulnerable()
+           ^^^^^^^^^^^^^^^^^^
+  File "/app/part1/routesv.py", line 45, in part1_vulnerable
+    if bcrypt.checkpw(password.encode(), password_d.encode):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: argument 'hashed_password': 'builtin_function_or_method' object cannot be converted to 'PyBytes'
+INFO:werkzeug:172.18.0.1 - - [11/Dec/2024 00:29:17] "[35m[1mGET /part1_vulnerable?v_username=rui&v_password=9Q8MUMnG!-{6WG2&v_remember=on HTTP/1.1[0m" 500 -
+INFO:werkzeug:172.18.0.1 - - [11/Dec/2024 00:34:39] "[32mGET /part1_correct?c_username=rui&c_password=9Q8MUMnG!-{6WG2&c_remember=on HTTP/1.1[0m" 302 -
+INFO:werkzeug:172.18.0.1 - - [11/Dec/2024 00:34:39] "GET /mfa_verification HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [11/Dec/2024 00:34:39] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [11/Dec/2024 00:34:39] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [11/Dec/2024 00:34:56] "[32mPOST /mfa_verification HTTP/1.1[0m" 302 -
+INFO:werkzeug:172.18.0.1 - - [11/Dec/2024 00:34:56] "GET /part1.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [11/Dec/2024 00:34:56] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [11/Dec/2024 00:34:56] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [11/Dec/2024 00:35:03] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [11/Dec/2024 00:35:03] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [11/Dec/2024 00:35:03] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [11/Dec/2024 00:35:07] "GET /part1.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [11/Dec/2024 00:35:07] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [11/Dec/2024 00:35:07] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [11/Dec/2024 00:35:08] "GET /logout HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [11/Dec/2024 00:35:08] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [11/Dec/2024 00:35:08] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+ERROR:app:Exception on /part1_vulnerable [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app.py", line 41, in part1_vulnerable_app
+    return part1_vulnerable()
+           ^^^^^^^^^^^^^^^^^^
+  File "/app/part1/routesv.py", line 45, in part1_vulnerable
+    if bcrypt.checkpw(password.encode(), password_d.encode):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: argument 'hashed_password': 'builtin_function_or_method' object cannot be converted to 'PyBytes'
+INFO:werkzeug:172.18.0.1 - - [11/Dec/2024 00:39:48] "[35m[1mGET /part1_vulnerable?v_username=rui&v_password=9Q8MUMnG!-{6WG2&v_remember=on HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /part1_vulnerable [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app.py", line 41, in part1_vulnerable_app
+    return part1_vulnerable()
+           ^^^^^^^^^^^^^^^^^^
+  File "/app/part1/routesv.py", line 45, in part1_vulnerable
+    username_d, password_d, salt_d = results[0]
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: argument 'hashed_password': 'builtin_function_or_method' object cannot be converted to 'PyBytes'
+INFO:werkzeug:172.18.0.1 - - [11/Dec/2024 00:41:22] "[35m[1mGET /part1_vulnerable?v_username=rui&v_password=9Q8MUMnG!-{6WG2&v_remember=on HTTP/1.1[0m" 500 -
+INFO:logger:
+---------------------
+
+
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on https://127.0.0.1:5000
+ * Running on https://172.18.0.3:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:172.18.0.1 - - [11/Dec/2024 00:43:12] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [11/Dec/2024 00:43:12] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [11/Dec/2024 00:43:12] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [11/Dec/2024 00:43:24] "GET /register.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [11/Dec/2024 00:43:24] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [11/Dec/2024 00:43:24] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [11/Dec/2024 00:43:32] "GET /register?c_username=rui&c_password=9Q8MUMnG!-{6WG2&c_passwordv=9Q8MUMnG!-{6WG2 HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [11/Dec/2024 00:43:32] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [11/Dec/2024 00:43:32] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [11/Dec/2024 00:43:53] "GET /part1.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [11/Dec/2024 00:43:53] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [11/Dec/2024 00:43:53] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [11/Dec/2024 00:44:00] "GET /part1_vulnerable?v_username=rui&v_password=9Q8MUMnG!-{6WG2&v_remember=on HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [11/Dec/2024 00:44:00] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [11/Dec/2024 00:44:00] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [11/Dec/2024 00:44:04] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [11/Dec/2024 00:44:04] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [11/Dec/2024 00:44:04] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [11/Dec/2024 00:44:06] "GET /part3.html HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [11/Dec/2024 00:44:06] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [11/Dec/2024 00:44:06] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [11/Dec/2024 00:44:08] "POST /part3_vulnerable HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [11/Dec/2024 00:44:08] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [11/Dec/2024 00:44:08] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [11/Dec/2024 00:44:10] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.18.0.1 - - [11/Dec/2024 00:44:10] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.18.0.1 - - [11/Dec/2024 00:44:10] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
