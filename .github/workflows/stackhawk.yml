@@ -50,8 +50,14 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Set up Docker
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y docker.io
+          sudo apt-get install -y docker-compose
+
       - name: Start your service
-        run: docker-compose -f docker-compose-python-psql.yml up --build # ✏️ Update this to run your own service to be scanned
+        run: ./docker-compose-python-psql.sh # ✏️ Update this to run your own service to be scanned
 
       - name: Run HawkScan
         uses: stackhawk/hawkscan-action@4c3258cd62248dac6d9fe91dd8d45928c697dee0
