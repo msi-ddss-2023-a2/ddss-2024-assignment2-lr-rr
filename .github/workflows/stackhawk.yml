@@ -26,16 +26,15 @@
 # 5.  Update the "Start your service" Step: Update the "Start your service" step in the StackHawk workflow below to
 #     start your service so that it can be scanned with the "Run HawkScan" step.
 
-
 name: "StackHawk"
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
   pull_request:
-    branches: [ "main" ]
+    branches: ["main"]
   schedule:
-    - cron: '36 5 * * 2'
+    - cron: "36 5 * * 2"
 
 permissions:
   contents: read
@@ -52,11 +51,11 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Start your service
-        run: ./docker-compose-python-psql.sh                   # ✏️ Update this to run your own service to be scanned
+        run: docker-compose -f docker-compose-python-psql.yml up --build # ✏️ Update this to run your own service to be scanned
 
       - name: Run HawkScan
         uses: stackhawk/hawkscan-action@4c3258cd62248dac6d9fe91dd8d45928c697dee0
-        continue-on-error: true                   # ✏️ Set to false to break your build on scan errors
+        continue-on-error: true # ✏️ Set to false to break your build on scan errors
         with:
           apiKey: ${{ secrets.HAWK_API_KEY }}
           codeScanningAlerts: true
