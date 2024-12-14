@@ -4,7 +4,7 @@
 #
 # Authors: Nuno Antunes <nmsa@dei.uc.pt>, João Antunes <jcfa@dei.uc.pt>
 #
-version: "3.8"
+version: "3.3"
 
 services:
   db:
