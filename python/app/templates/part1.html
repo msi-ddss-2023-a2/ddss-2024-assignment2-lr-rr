@@ -73,7 +73,13 @@
                           </td>
                       </tr>
                   </table>
-              </form>              
+              </form>        
+              {% if messages %}
+              <div class="message {{ message_type }}">
+                  {{ messages }}
+              </div>
+              {% endif %}
+                    
                 <a href="/logout">Logout</a>
       {% else %}
       <h1>Design and Development of Secure Software</h1>
@@ -189,11 +195,7 @@
           </tbody>
         </table>
       </form>
-      {% if messages %}
-      <div class="message {{ message_type }}">
-          {{ messages }}
-      </div>
-      {% endif %}
+  
       <a href="register.html">Register</a>
       {% endif %}
 
