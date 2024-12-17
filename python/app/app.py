@@ -220,6 +220,9 @@ def insert_book():
         if category not in valid_categories:
             return render_template("part1.html", messages="You must submit a category!", message_type="error")
 
+        # Map category ID to category name
+        category_name = valid_categories[category]
+
         # Validate price
         try:
             price = float(price)
