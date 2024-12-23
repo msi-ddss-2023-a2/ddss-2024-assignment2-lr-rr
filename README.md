@@ -1,28 +1,14 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/XKmDKkvn)
-
 # MSI DDSS - Assignment 2
 
 The code and resources available in this repository are to be used in the scope of the _DDSS_ course.
 
-**Important:** these sources are merely suggestions of implementations.
-You should modify everything you deem as necessary and be responsible for all the content that is delivered.
-
-The main purpose of this repository is to provide help with the initial setup of the applications that must be developed for the assignment. In particular, all the projects available are totally automated to be easily deployed in third-party setups with the help of a tool (in this case docker or maven, depending on the project).
-
-_The contents of this repository do not replace the proper reading of the assignment description._
-
 ## Overview of the Contents
 
-In this repository you will find the supporting resources for Assignment 2 of MSI-DDSS 2023/2024.
+In this repository you will find the supporting resources for Assignment 2 of MSI-DDSS 2024/2025.
 
 - [**`PostgreSQL`**](postgresql) - Database ready to run in a docker container with or without the help of the docker-compose tool;
 - [**`Python`**](python) - Source code of web application template in python with Docker container configured. Ready to run in docker-compose with PostgreSQL
   - [`app/`](python/app) folder is mounted to allow developing with container running
-- [**`Java`**](java) - Source code of web application template in java/spark with Docker container configured. Ready to run in docker-compose with PostgreSQL or in your favorite IDE.
-- [**`NodeJS`**](nodejs) - Source code of web application template in nodejs with Docker container configured. Ready to run in docker-compose with PostgreSQL
-  - [`src/`](nodejs/src) folder is mounted for developing with container running
-- [**`php`**](php) - Source code of web application template in php with Docker container configured. Ready to run in docker-compose with PostgreSQL
-  - [`htdocs/`](php/htdocs) folder is mounted for developing with container running
 - [**`interfaces`**](interfaces) - the html interfaces mentioned in the assignment description. Necessary html interfaces in case other language/framework is adopted.
 - [**`docker-compose`**](.) - Files that start the demo Python, Java, NodeJS and php applications together with a PostgreSQL database;
 
@@ -32,18 +18,13 @@ To execute this project it is required to have installed:
 
 - `docker`
 - `docker-compose`
-- `maven` only if you opt for the [java](java) option
 
 ## Development
 
 You should select one of the options or add your own.
 Then you just need to develop inside the folder and run the script (e.g. [`./docker-compose-php-psql.sh`](docker-compose-php-psql.sh)) to have both the server and the database running.
 
-[`Python`](python), [`php`](php) and [`NodeJS`](nodejs) allow you to be developing while the containers are running, and the sources are continuously being integrated.
-
-In the case of [`Java`](java) we suggest that you have the container of the database running and you develop from your favourite IDE.
-Only for delivery you need the code to be working inside the `docker` image.
-All IDEs support `maven`, and if your program works with `maven` it should be OK. Ask for the help of the professors if you face difficulties.
+[`Python`](python) allow you to be developing while the containers are running, and the sources are continuously being integrated.
 
 **Delete everything you are not planing to you in your assignment.**
 
@@ -54,10 +35,7 @@ You should run your commands as superuser, and therefore you should prefix your 
 
 After the required commands and having started the web application, they will available on your browser at:
 
-- NodeJs version: http://localhost:8080;
-- Python version: http://localhost:8080;
-- PHP version: http://localhost:8080;
-- Java version: http://localhost:8080;
+- Python version: https://localhost:443;
 
 # Authors
 
